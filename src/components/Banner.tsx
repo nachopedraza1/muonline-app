@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import { Grid, Typography } from '@mui/material';
+import { ModalEventTimmer } from './ModalEventTimmer';
 
 export const Banner = () => {
+
+    const [open, setOpen] = useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     return (
         <Grid container position="relative" justifyContent="end" alignItems="center">
             <img src="assets/images/banner.png" alt="" width="100%" />
@@ -18,12 +25,26 @@ export const Banner = () => {
                     height: "280px",
                 }}>
                 <Grid item>
-                    <Typography className='eventText' variant='h3' fontSize={22}> Active <br /> events</Typography>
+                    <Typography
+                        className='eventText'
+                        variant='h3'
+                        fontSize={22}>
+                        Active <br />
+                        events
+                    </Typography>
                 </Grid>
                 <Grid item >
-                    <Typography className='eventText' variant='h3' fontSize={22}>Time <br /> Events</Typography>
+                    <Typography
+                        className='eventText'
+                        variant='h3'
+                        fontSize={22}
+                        onClick={handleOpen}>
+                        Time <br />
+                        Events
+                    </Typography>
                 </Grid>
             </Grid>
+            <ModalEventTimmer open={open} handleClose={handleClose} />
         </Grid >
     )
 }

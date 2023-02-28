@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material';
+import { createTheme, Tab, Tabs } from '@mui/material';
 
 export const MuTheme = createTheme({
     components: {
@@ -24,6 +24,7 @@ export const MuTheme = createTheme({
                     ":after": {
                         borderTop: "thin solid #8953C3"
                     },
+                    borderTop: "thin solid white"
                 }
             }
         },
@@ -49,12 +50,24 @@ export const MuTheme = createTheme({
                 }
             }
         },
+        MuiTab: {
+            styleOverrides: {
+                root: {
+                    color: "#514e4e",
+                    fontSize: "23px",
+                    fontWeight: 500,
+                }
+            }
+        }
     },
     palette: {
         primary: {
             main: "#0A97FE",
             light: "#2A2A2E",
             dark: "#181819",
+        },
+        secondary: {
+            main: "#FFFFFF"
         },
     },
     typography: {

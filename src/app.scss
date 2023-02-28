@@ -111,13 +111,16 @@ button:hover {
     }
 }
 
-
 .eventText {
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 .eventText:hover {
-    color: #0A97FE;
-    transition: all 0.5s;
+    color: #947f7f;
+    transition: all 0.3s;
     cursor: url(../assets/cursor/CursorPush.png), auto
+}
+
+.divider {
+    border-bottom: 1px #464040 dashed;
 }
