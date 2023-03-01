@@ -8,8 +8,8 @@ const navItems = [
     { text: "Guia de inicio", path: "/" },
     { text: "Invasiones", path: "/" },
     { text: "Bosses", path: "/" },
-    { text: "Semiboss", path: "/" },
     { text: "Eventos", path: "/" },
+    { text: "Drop List", path: "/" },
 ]
 
 export const Navbar: React.FC = () => {

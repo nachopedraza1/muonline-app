@@ -15,8 +15,10 @@ const headerTimmer = {
 
 const bodyTimmer = {
     width: 500,
+    height: 430,
     boxShadow: 24,
     backgroundColor: "#0e0d0d",
+    overflowY: "scroll",
     p: 2,
 };
 

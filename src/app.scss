@@ -1,3 +1,11 @@
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0A97FE;
+}
+
 body,
 a {
     cursor: url(../assets/cursor/Cursor.png), auto
