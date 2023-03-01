@@ -1,21 +1,16 @@
 import { useState, useEffect } from 'react';
 import { Link as RouterLink } from "react-router-dom";
+
+import { InvasionsMenu, BossMenu } from '../components';
+
 import { Container, Grid, List, ListItem, Link, Button } from '@mui/material';
 import { ExpandMore } from "@mui/icons-material";
 
 
-const navItems = [
-    { text: "Guia de inicio", path: "/" },
-    { text: "Invasiones", path: "/" },
-    { text: "Bosses", path: "/" },
-    { text: "Eventos", path: "/" },
-    { text: "Drop List", path: "/" },
-]
-
 export const Navbar: React.FC = () => {
 
-    const [stickyClass, setStickyClass] = useState('');
-    const [offSetClass, setOffsetClass] = useState('');
+    const [stickyClass, setStickyClass] = useState<string>('nosticky-nav');
+    const [offSetClass, setOffsetClass] = useState<string>('');
 
     useEffect(() => {
         window.addEventListener('scroll', stickNavbar);
@@ -25,10 +20,16 @@ export const Navbar: React.FC = () => {
     const stickNavbar = () => {
         if (window !== undefined) {
             let windowHeight = window.scrollY;
-            windowHeight > 54 ? setStickyClass('sticky-nav') : setStickyClass('');
+            windowHeight > 54 ? setStickyClass('sticky-nav') : setStickyClass('nosticky-nav');
             windowHeight > 54 ? setOffsetClass('offsetnav') : setOffsetClass('');
         }
     };
+
+    const [openSubmenu, setOpenSubmenu] = useState<string>("");
+
+    const handleOpen = (type: string) => {
+        setOpenSubmenu(type);
+    }
 
     return (
         <>
@@ -40,15 +41,35 @@ export const Navbar: React.FC = () => {
                             <img src="assets/images/LOGO.png" alt="" width="190px" />
                         </Grid>
                         <Grid>
-                            <List className="navlinks" disablePadding sx={{ display: "flex" }}>
-                                {navItems.map(({ text, path }) => (
-                                    <ListItem key={text}>
-                                        <Link component={RouterLink} to={path} underline="none" noWrap color="white" fontSize={18}>
-                                            {text.toUpperCase()}
-                                        </Link>
-                                        <ExpandMore />
-                                    </ListItem>
-                                ))}
+                            <List component="nav" className="navlinks" disablePadding sx={{ display: "flex" }}>
+                                <ListItem>
+                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
+                                        GUIA DE INICIO
+                                    </Link>
+                                </ListItem>
+                                <ListItem>
+                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18} onMouseEnter={() => handleOpen("invasions")}>
+                                        INVASIONES
+                                    </Link>
+                                    <ExpandMore />
+                                </ListItem>
+                                <ListItem>
+                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18} onMouseEnter={() => handleOpen("boss")}>
+                                        BOSSES
+                                    </Link>
+                                    <ExpandMore />
+                                </ListItem>
+                                <ListItem>
+                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
+                                        EVENTOS
+                                    </Link>
+                                    <ExpandMore />
+                                </ListItem>
+                                <ListItem>
+                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
+                                        DROP LIST
+                                    </Link>
+                                </ListItem>
                             </List>
                         </Grid>
                         <Grid item xs={2} textAlign="end">
@@ -58,9 +79,10 @@ export const Navbar: React.FC = () => {
                         </Grid>
                     </Grid>
                 </Container>
+                <InvasionsMenu openSubmenu={openSubmenu} />
+                <BossMenu openSubmenu={openSubmenu} />
             </Grid >
         </>
-
     )
 }
 
