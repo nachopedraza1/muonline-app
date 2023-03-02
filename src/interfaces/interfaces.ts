@@ -1,7 +1,7 @@
 import { SetStateAction } from 'react';
 
 export interface ModalType {
-    open: boolean,
+    openModal: boolean,
     handleClose: (value: SetStateAction<boolean>) => void;
     handleOpen?: (value: SetStateAction<boolean>) => void;
 }

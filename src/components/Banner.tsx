@@ -4,13 +4,23 @@ import { ModalEventTimmer } from './ModalEventTimmer';
 
 export const Banner = () => {
 
-    const [open, setOpen] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const [openModal, setOpenModal] = useState(false);
+    const handleOpen = () => setOpenModal(true);
+    const handleClose = () => setOpenModal(false);
 
     return (
         <Grid container position="relative" justifyContent="end" alignItems="center">
             <img src="assets/images/banner.png" alt="" width="100%" />
+            <Typography
+                variant='h4'
+                fontFamily="Rajdhani"
+                fontWeight={800}
+                position="absolute"
+                left={200}
+            >
+                TODA LA INFORMACION SOBRE <br />
+                NUESTROS EVENTOS!
+            </Typography>
             <Grid
                 container
                 position="absolute"
@@ -44,7 +54,7 @@ export const Banner = () => {
                     </Typography>
                 </Grid>
             </Grid>
-            <ModalEventTimmer open={open} handleClose={handleClose} />
+            <ModalEventTimmer openModal={openModal} handleClose={handleClose} />
         </Grid >
     )
 }

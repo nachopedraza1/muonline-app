@@ -36,7 +36,7 @@ const TabPanel = (props: TabPanelProps) => {
     );
 }
 
-export const ModalEventTimmer: React.FC<ModalType> = ({ open, handleClose }) => {
+export const ModalEventTimmer: React.FC<ModalType> = ({ openModal, handleClose }) => {
 
     const [value, setValue] = useState(0);
 
@@ -46,7 +46,7 @@ export const ModalEventTimmer: React.FC<ModalType> = ({ open, handleClose }) => 
 
     return (
         <Modal
-            open={open}
+            open={openModal}
             onClose={handleClose}
             closeAfterTransition
             sx={{
@@ -55,7 +55,7 @@ export const ModalEventTimmer: React.FC<ModalType> = ({ open, handleClose }) => 
                 alignItems: "center"
             }}
         >
-            <Fade in={open} timeout={600}>
+            <Fade in={openModal} timeout={600}>
                 <Box sx={{ outline: "none", position: "relative" }}>
                     <img src="assets/images/sm-1.png"
                         width="400px"

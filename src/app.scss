@@ -108,17 +108,19 @@ button:hover {
         svg {
             transition: all 0.4s;
         }
+    }
+}
 
-        &:hover a {
-            color: #0A97FE;
-            transition: all 0.4s;
-        }
+.active {
+    a {
+        color: #0A97FE;
+        transition: all 0.4s;
+    }
 
-        &:hover svg {
-            color: #0A97FE;
-            transition: all 0.4s;
-            transform: rotate(180deg);
-        }
+    svg {
+        color: #0A97FE;
+        transition: all 0.4s;
+        transform: rotate(180deg);
     }
 }
 

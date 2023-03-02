@@ -12,10 +12,14 @@ export const Navbar: React.FC = () => {
 
     const { stickyNavbar, offSetNavbar } = useSticky();
 
-    const [openSubmenu, setOpenSubmenu] = useState<string>("");
+    const [openSubmenu, setOpenSubmenu] = useState<string>('');
+    const [activeClass, setActiveClass] = useState<string>('');
 
-    const handleOpen = (type: string) => setOpenSubmenu(type);
-    const handleClose = () => setOpenSubmenu("");
+    const handleOpen = (type: string) => {
+        setOpenSubmenu(type);
+        setActiveClass('active');
+    }
+    const handleClose = () => setOpenSubmenu('');
 
     return (
         <>
@@ -28,30 +32,30 @@ export const Navbar: React.FC = () => {
                         </Grid>
                         <Grid>
                             <List component="nav" className="navlinks" disablePadding sx={{ display: "flex" }}>
-                                <ListItem onMouseEnter={handleClose}>
+                                <ListItem onMouseEnter={handleClose} >
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         GUIA DE INICIO
                                     </Link>
                                 </ListItem>
-                                <ListItem onMouseEnter={() => handleOpen("invasions")}>
+                                <ListItem onMouseEnter={() => handleOpen("invasions")} className={openSubmenu === "invasions" ? activeClass : ""} >
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         INVASIONES
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem onMouseEnter={() => handleOpen("boss")}>
+                                <ListItem onMouseEnter={() => handleOpen("boss")} className={openSubmenu === "boss" ? activeClass : ""}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         BOSSES
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem onMouseEnter={() => handleOpen("events")}>
+                                <ListItem onMouseEnter={() => handleOpen("events")} className={openSubmenu === "events" ? activeClass : ""}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         EVENTOS
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem onMouseEnter={handleClose}>
+                                <ListItem onMouseEnter={handleClose} >
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         DROP LIST
                                     </Link>
