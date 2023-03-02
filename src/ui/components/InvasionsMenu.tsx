@@ -1,9 +1,9 @@
 import { useSticky } from '../hooks/useSticky';
 import { Grid } from '@mui/material';
 
-export const InvasionsMenu: React.FC<{ openSubmenu: string }> = ({ openSubmenu }) => {
+export const InvasionsMenu: React.FC<{ openSubmenu: string, handleClose: () => void }> = ({ openSubmenu, handleClose }) => {
 
-    const { stickyClassSub } = useSticky();
+    const { stickySubMenu } = useSticky();
 
     const isOpen = openSubmenu === "invasions" ? "submenu-active" : "";
 
@@ -11,11 +11,12 @@ export const InvasionsMenu: React.FC<{ openSubmenu: string }> = ({ openSubmenu }
         <Grid
             container
             component="ul"
-            position="absolute"
+            position="fixed"
             width="100%"
             height="200px"
             bgcolor="red"
-            className={`submenu ${openSubmenu ? stickyClassSub : null} ${isOpen}`}
+            className={`submenu ${isOpen && openSubmenu ? stickySubMenu : ""} ${isOpen}`}
+            onMouseOut={handleClose}
         >
             invasions
         </Grid>

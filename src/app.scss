@@ -128,18 +128,37 @@ button:hover {
 
 .nosticky-nav {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .sticky-nav {
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     top: 0;
     left: 0;
     transition: all 0.3s;
 }
 
 .submenu {
+    position: fixed;
+    z-index: 1;
+    margin-top: -100%;
+    transition: all 0.5s;
+}
+
+.submenu-active {
+    z-index: 1;
+    transition: all 0.5s;
+    margin-top: 0px;
+}
+
+.submenu-sticky {
+    z-index: 1;
+    transition: all 0.5s;
+    margin-top: -55px;
+}
+
+/* .submenu {
     position: absolute;
     top: 100%;
     box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
@@ -160,4 +179,4 @@ button:hover {
     visibility: visible;
     opacity: 1;
     margin-top: 0;
-}
+} */

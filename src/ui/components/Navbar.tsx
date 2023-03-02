@@ -5,36 +5,23 @@ import { InvasionsMenu, BossMenu } from '../components';
 
 import { Container, Grid, List, ListItem, Link, Button } from '@mui/material';
 import { ExpandMore } from "@mui/icons-material";
+import { useSticky } from '../hooks/useSticky';
 
 
 export const Navbar: React.FC = () => {
 
-    const [stickyClass, setStickyClass] = useState<string>('nosticky-nav');
-    const [offSetClass, setOffsetClass] = useState<string>('');
-
-    useEffect(() => {
-        window.addEventListener('scroll', stickNavbar);
-        return () => window.removeEventListener('scroll', stickNavbar);
-    }, []);
-
-    const stickNavbar = () => {
-        if (window !== undefined) {
-            let windowHeight = window.scrollY;
-            windowHeight > 54 ? setStickyClass('sticky-nav') : setStickyClass('nosticky-nav');
-            windowHeight > 54 ? setOffsetClass('offsetnav') : setOffsetClass('');
-        }
-    };
+    const { stickyNavbar, offSetNavbar } = useSticky();
 
     const [openSubmenu, setOpenSubmenu] = useState<string>("");
 
-    const handleOpen = (type: string) => {
-        setOpenSubmenu(type);
-    }
+    const handleOpen = (type: string) => setOpenSubmenu(type);
+    const handleClose = () => setOpenSubmenu("");
+
 
     return (
         <>
-            <div className={`${offSetClass}`}></div>
-            <Grid container bgcolor="primary.dark" p="15px 0px" className={`${stickyClass}`}>
+            <div className={offSetNavbar}></div>
+            <Grid component="nav" container bgcolor="primary.dark" p="15px 0px" className={stickyNavbar}>
                 <Container maxWidth="lg">
                     <Grid container justifyContent="space-between" alignItems="center">
                         <Grid item xs={2}>
@@ -42,19 +29,19 @@ export const Navbar: React.FC = () => {
                         </Grid>
                         <Grid>
                             <List component="nav" className="navlinks" disablePadding sx={{ display: "flex" }}>
-                                <ListItem>
+                                <ListItem onMouseEnter={handleClose}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         GUIA DE INICIO
                                     </Link>
                                 </ListItem>
-                                <ListItem>
-                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18} onMouseEnter={() => handleOpen("invasions")}>
+                                <ListItem onMouseEnter={() => handleOpen("invasions")}>
+                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         INVASIONES
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem>
-                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18} onMouseEnter={() => handleOpen("boss")}>
+                                <ListItem onMouseEnter={() => handleOpen("boss")}>
+                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         BOSSES
                                     </Link>
                                     <ExpandMore />
@@ -65,7 +52,7 @@ export const Navbar: React.FC = () => {
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem>
+                                <ListItem onMouseEnter={handleClose}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         DROP LIST
                                     </Link>
@@ -79,9 +66,9 @@ export const Navbar: React.FC = () => {
                         </Grid>
                     </Grid>
                 </Container>
-                <InvasionsMenu openSubmenu={openSubmenu} />
-                <BossMenu openSubmenu={openSubmenu} />
             </Grid >
+            <InvasionsMenu openSubmenu={openSubmenu} handleClose={handleClose} />
+            <BossMenu openSubmenu={openSubmenu} handleClose={handleClose} />
         </>
     )
 }
