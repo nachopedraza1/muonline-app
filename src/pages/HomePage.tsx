@@ -6,8 +6,6 @@ export const HomePage: React.FC = () => {
         <>
             <Header />
             <Banner />
-            <Banner />
-            <Banner />
         </>
     )
 }

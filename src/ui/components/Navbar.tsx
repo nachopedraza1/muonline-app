@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link as RouterLink } from "react-router-dom";
 
-import { InvasionsMenu, BossMenu } from '../components';
+import { useSticky } from '../hooks/useSticky';
+import { InvasionsMenu, BossMenu, EventsMenu } from '../components';
 
 import { Container, Grid, List, ListItem, Link, Button } from '@mui/material';
 import { ExpandMore } from "@mui/icons-material";
-import { useSticky } from '../hooks/useSticky';
 
 
 export const Navbar: React.FC = () => {
@@ -17,11 +17,10 @@ export const Navbar: React.FC = () => {
     const handleOpen = (type: string) => setOpenSubmenu(type);
     const handleClose = () => setOpenSubmenu("");
 
-
     return (
         <>
             <div className={offSetNavbar}></div>
-            <Grid component="nav" container bgcolor="primary.dark" p="15px 0px" className={stickyNavbar}>
+            <Grid container bgcolor="primary.dark" p="15px 0px" className={stickyNavbar}>
                 <Container maxWidth="lg">
                     <Grid container justifyContent="space-between" alignItems="center">
                         <Grid item xs={2}>
@@ -46,7 +45,7 @@ export const Navbar: React.FC = () => {
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem>
+                                <ListItem onMouseEnter={() => handleOpen("events")}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         EVENTOS
                                     </Link>
@@ -69,6 +68,7 @@ export const Navbar: React.FC = () => {
             </Grid >
             <InvasionsMenu openSubmenu={openSubmenu} handleClose={handleClose} />
             <BossMenu openSubmenu={openSubmenu} handleClose={handleClose} />
+            <EventsMenu openSubmenu={openSubmenu} handleClose={handleClose} />
         </>
     )
 }

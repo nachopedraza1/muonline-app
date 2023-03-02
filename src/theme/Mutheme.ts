@@ -4,9 +4,9 @@ export const MuTheme = createTheme({
     components: {
         MuiCssBaseline: {
             styleOverrides: `
+            body{background: #181819}
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Rajdhani:wght@400;700&display=swap');
             `,
-
         },
         MuiTypography: {
             styleOverrides: {
@@ -84,6 +84,6 @@ export const MuTheme = createTheme({
         },
         h3: {
             fontFamily: "Bebas Neue",
-        }
-    }
+        },
+    },
 });

@@ -1,11 +1,11 @@
 import { useSticky } from '../hooks/useSticky';
 import { Grid } from '@mui/material';
 
-export const BossMenu: React.FC<{ openSubmenu: string, handleClose: () => void }> = ({ openSubmenu, handleClose }) => {
+export const EventsMenu: React.FC<{ openSubmenu: string, handleClose: () => void }> = ({ openSubmenu, handleClose }) => {
 
     const { stickySubMenu } = useSticky();
 
-    const isOpen = openSubmenu === "boss" ? "submenu-active" : "";
+    const isOpen = openSubmenu === "events" ? "submenu-active" : "";
 
     return (
         <Grid
@@ -17,7 +17,7 @@ export const BossMenu: React.FC<{ openSubmenu: string, handleClose: () => void }
             className={`submenu ${isOpen && openSubmenu ? stickySubMenu : ""} ${isOpen}`}
             onMouseOut={handleClose}
         >
-            boss
+            Eventos
         </Grid>
     )
 }
