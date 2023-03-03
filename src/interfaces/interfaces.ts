@@ -11,3 +11,8 @@ export interface TabPanelProps {
     index: number;
     value: number;
 }
+
+export interface SubMenuProps {
+    openSubmenu: string,
+    handleClose: () => void;
+}

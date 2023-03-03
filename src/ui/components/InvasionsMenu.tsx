@@ -1,16 +1,19 @@
 import { useSticky } from '../hooks/useSticky';
 import { Grid, Typography, Box } from '@mui/material';
+import { SubMenuProps } from '../../interfaces/interfaces';
 
 const invasions = [
-    { id: 1, text: "Skeleton", img: "assets/images/skeleton.png", width: "100px", path: "/" },
-    { id: 1, text: "White Wizard", img: "assets/images/white-wizard.png", width: "110px", path: "/" },
-    { id: 1, text: "Red Dragon", img: "assets/images/red-dragon.png", width: "140px", path: "/" },
-    { id: 1, text: "Golden Invasion", img: "assets/images/golden.png", width: "100px", path: "/" },
-    { id: 1, text: "Cursed Santa", img: "assets/images/santa.png", width: "170px", path: "/" },
-    { id: 1, text: "Hydra Invasion", img: "assets/images/hydra.png", width: "160px", path: "/" },
+    { id: 1, text: "Golden Invasion", img: "assets/images/invasions/golden.png", width: "100px", path: "/", status: "active" },
+    { id: 2, text: "Gorgon", img: "assets/images/invasions/gorgon.png", width: "120px", path: "/", status: "active" },
+    { id: 3, text: "Golems", img: "assets/images/invasions/golem-totem.png", width: "140px", path: "/", status: "active" },
+    { id: 4, text: "Fire Flame", img: "assets/images/invasions/fireflame.png", width: "100px", path: "/", status: "active" },
+    { id: 5, text: "Rabbits", img: "assets/images/invasions/rabit.png", width: "140px", path: "/", status: "active" },
+    { id: 6, text: "Pouchs", img: "assets/images/invasions/puch.png", width: "140px", path: "/", status: "active" },
+    { id: 7, text: "Ice Queen", img: "assets/images/invasions/ice-queen.png", width: "120px", path: "/", status: "active" },
+    { id: 8, text: "Hydra", img: "assets/images/invasions/hydra.png", width: "170px", path: "/", status: "active" },
 ];
 
-export const InvasionsMenu: React.FC<{ openSubmenu: string, handleClose: () => void }> = ({ openSubmenu, handleClose }) => {
+export const InvasionsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) => {
 
     const { stickySubMenu } = useSticky();
 
@@ -25,11 +28,11 @@ export const InvasionsMenu: React.FC<{ openSubmenu: string, handleClose: () => v
             alignItems="end"
             padding={2}
             gap={4}
-            bgcolor="rgba(0, 0, 0, 0.7)"
+            bgcolor="rgba(0, 0, 0, 0.9)"
             className={`submenu ${isOpen && openSubmenu ? stickySubMenu : ""} ${isOpen}`}
             onMouseLeave={handleClose}
         >
-            {invasions.map(({ id, text, img, width, path }) => (
+            {invasions.map(({ id, text, img, width, path, status }) => (
                 <Grid item key={id} textAlign="center">
                     <Box width={width}>
                         <img

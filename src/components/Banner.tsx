@@ -11,16 +11,16 @@ export const Banner = () => {
     return (
         <Grid container position="relative" justifyContent="end" alignItems="center">
             <img src="assets/images/banner.png" alt="" width="100%" />
-            <Typography
+           {/*  <Typography
                 variant='h4'
                 fontFamily="Rajdhani"
                 fontWeight={800}
                 position="absolute"
-                left={200}
+                left="8%"
             >
                 TODA LA INFORMACION SOBRE <br />
                 NUESTROS EVENTOS!
-            </Typography>
+            </Typography> */}
             <Grid
                 container
                 position="absolute"

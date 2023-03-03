@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link as RouterLink } from "react-router-dom";
 
 import { useSticky } from '../hooks/useSticky';
-import { InvasionsMenu, BossMenu, EventsMenu } from '../components';
+import { InvasionsMenu, BossMenu, EventsMenu, SemiBossMenu } from '../components';
 
 import { Container, Grid, List, ListItem, Link, Button } from '@mui/material';
 import { ExpandMore } from "@mui/icons-material";
@@ -32,11 +32,6 @@ export const Navbar: React.FC = () => {
                         </Grid>
                         <Grid>
                             <List component="nav" className="navlinks" disablePadding sx={{ display: "flex" }}>
-                                <ListItem onMouseEnter={handleClose} >
-                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
-                                        GUIA DE INICIO
-                                    </Link>
-                                </ListItem>
                                 <ListItem onMouseEnter={() => handleOpen("invasions")} className={openSubmenu === "invasions" ? activeClass : ""} >
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         INVASIONES
@@ -46,6 +41,12 @@ export const Navbar: React.FC = () => {
                                 <ListItem onMouseEnter={() => handleOpen("boss")} className={openSubmenu === "boss" ? activeClass : ""}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         BOSSES
+                                    </Link>
+                                    <ExpandMore />
+                                </ListItem>
+                                <ListItem onMouseEnter={() => handleOpen("semiboss")} className={openSubmenu === "semiboss" ? activeClass : ""}>
+                                    <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
+                                        SEMIBOSS
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
@@ -72,6 +73,7 @@ export const Navbar: React.FC = () => {
             </Grid >
             <InvasionsMenu openSubmenu={openSubmenu} handleClose={handleClose} />
             <BossMenu openSubmenu={openSubmenu} handleClose={handleClose} />
+            <SemiBossMenu openSubmenu={openSubmenu} handleClose={handleClose} />
             <EventsMenu openSubmenu={openSubmenu} handleClose={handleClose} />
         </>
     )
