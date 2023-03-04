@@ -148,7 +148,17 @@ button:hover {
     top: -100%;
     overflow-y: scroll;
     max-height: 75vh;
+
+    a {
+        transition: all 0.3s;
+    }
+
+    .submenu-item:hover a {
+        color: #0A97FE;
+        transition: all 0.4s;
+    }
 }
+
 
 .submenu-active {
     z-index: 1;

@@ -4,7 +4,7 @@ export const MuTheme = createTheme({
     components: {
         MuiCssBaseline: {
             styleOverrides: `
-            body{background: #181819}
+            body{background: #1C1C1C}
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Rajdhani:wght@400;700&display=swap');
             `,
         },
