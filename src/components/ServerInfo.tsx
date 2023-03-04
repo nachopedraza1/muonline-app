@@ -13,8 +13,7 @@ const serverInfo = [
     { id: 10, type: "Borra stats", text: "Activado" },
     { id: 11, type: "Mu helper", text: "Level 50" },
     { id: 12, type: "Off helper", text: "Activado" },
-    { id: 13, type: "Borra stats", text: "Activado" },
-    { id: 14, type: "Servidor", text: "Dedicado" },
+    { id: 13, type: "Servidor", text: "Dedicado" },
 ]
 
 export const ServerInfo: React.FC = () => {
