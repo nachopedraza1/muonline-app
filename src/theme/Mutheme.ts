@@ -4,7 +4,7 @@ export const MuTheme = createTheme({
     components: {
         MuiCssBaseline: {
             styleOverrides: `
-            body{background: #1C1C1C}
+            body{background: #040612}
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Rajdhani:wght@400;700&display=swap');
             `,
         },
@@ -70,8 +70,8 @@ export const MuTheme = createTheme({
     palette: {
         primary: {
             main: "#0A97FE",
-            light: "#2A2A2E",
-            dark: "#181819",
+            light: "#080D28",
+            dark: "#040612",
         },
         secondary: {
             main: "#FFFFFF"

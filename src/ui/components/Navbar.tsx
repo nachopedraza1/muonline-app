@@ -28,7 +28,7 @@ export const Navbar: React.FC = () => {
                 <Container maxWidth="lg">
                     <Grid container justifyContent="space-between" alignItems="center">
                         <Grid item xs={2}>
-                            <img src="assets/images/LOGO.png" alt="" width="190px" />
+                            <img src="assets/images/LOGO.png" alt="Protocol Mu" className='logo' width="190px" />
                         </Grid>
                         <Grid>
                             <List component="nav" className="navlinks" disablePadding sx={{ display: "flex" }}>
