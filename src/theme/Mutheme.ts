@@ -82,6 +82,9 @@ export const MuTheme = createTheme({
         h5: {
             fontFamily: "Poppins",
         },
+        h4: {
+            fontFamily: "Bebas Neue",
+        },
         h3: {
             fontFamily: "Bebas Neue",
         },

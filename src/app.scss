@@ -115,6 +115,23 @@ button:hover {
     }
 }
 
+.navbar {
+    background-color: #040612;
+    padding: 15px 0px;
+
+    &::after {
+        content: '';
+        background: url('/assets/images/section_arrow_down.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        bottom: -11px;
+        width: 100%;
+        height: 12px;
+    }
+}
+
 .navlinks {
     li {
         a {
@@ -197,7 +214,22 @@ button:hover {
     }
 }
 
+.banner-home {
+    position: relative;
+    justify-content: end;
+    align-items: center;
 
+    /*  &::after {
+        content: '';
+        background: url(assets/images/scroll-icon.png) no-repeat;
+        background-size: 100%;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        height: 25px;
+        bottom: 0px;
+    } */
+}
 
 .middle-menu {
     transition: all 0.3s;
@@ -218,11 +250,17 @@ button:hover {
         transition: all 0.3s;
     }
 
-    &__arrow {
+    &::after {
+        content: '';
+        background: url(/assets/images/title_arrow_down.png) no-repeat;
+        background-position: center;
+        background-size: 100%;
         position: absolute;
+        bottom: -51px;
         width: 500px;
-        padding-top: 78px;
+        height: 200px;
     }
+
 }
 
 .middle-menu:hover {

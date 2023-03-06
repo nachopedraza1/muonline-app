@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
                     </ListItem>
                 ))}
             </List>
-            <img src="assets/images/LOGO.png" alt="" width="250px" />
+            <img src="/assets/images/LOGO.png" alt="" width="250px" />
             <SocialButtons />
         </Grid>
     )

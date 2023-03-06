@@ -7,8 +7,8 @@ import { CloseOutlined } from '@mui/icons-material';
 import { SubMenuProps } from '../../interfaces/interfaces';
 
 const invasions = [
-    { id: 1, text: "Golden Invasion", img: "/assets/images/invasions/golden.png", width: "100px", path: "/guides/golden-invasion", status: "inactive" },
-    { id: 2, text: "Gorgon", img: "/assets/images/invasions/gorgon.png", width: "120px", path: "/", status: "active" },
+    { id: 1, text: "Golden", img: "/assets/images/invasions/golden.png", width: "100px", path: "/guides/1", status: "inactive" },
+    { id: 2, text: "Gorgon", img: "/assets/images/invasions/gorgon.png", width: "120px", path: "/guides/2", status: "active" },
     { id: 3, text: "Golems", img: "/assets/images/invasions/golem-totem.png", width: "140px", path: "/", status: "active" },
     { id: 4, text: "Fire Flame", img: "/assets/images/invasions/fireflame.png", width: "100px", path: "/", status: "active" },
     { id: 5, text: "Rabbits", img: "/assets/images/invasions/rabit.png", width: "140px", path: "/", status: "active" },

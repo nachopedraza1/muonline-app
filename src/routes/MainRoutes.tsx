@@ -8,7 +8,7 @@ export const MainRoutes = () => {
             <Header />
             <Routes>
                 <Route path="/" element={< HomePage />} />
-                <Route path="/guides/:guideName" element={<ViewGuide />} />
+                <Route path="/guides/:guideId" element={<ViewGuide />} />
                 <Route path="/*" element={<Navigate to="/" replace={true} />} />
             </Routes>
         </>

@@ -12,7 +12,7 @@ export const Banner = () => {
     const handleClose = () => setOpenModal(false);
 
     return (
-        <Grid container position="relative" justifyContent="end" alignItems="center">
+        <Grid container className='banner-home'>
             <img src="assets/images/banner.png" alt="" width="100%" />
             <Typography
                 variant='h4'

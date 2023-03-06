@@ -24,7 +24,7 @@ export const Navbar: React.FC = () => {
     return (
         <>
             <div className={offSetNavbar}></div>
-            <Grid container bgcolor="primary.dark" p="15px 0px" className={stickyNavbar}>
+            <Grid container className={`navbar ${stickyNavbar}`}>
                 <Container maxWidth="lg">
                     <Grid container justifyContent="space-between" alignItems="center">
                         <Grid item xs={2}>
@@ -71,6 +71,7 @@ export const Navbar: React.FC = () => {
                     </Grid>
                 </Container>
             </Grid >
+
             <InvasionsMenu openSubmenu={openSubmenu} handleClose={handleClose} />
             <BossMenu openSubmenu={openSubmenu} handleClose={handleClose} />
             <SemiBossMenu openSubmenu={openSubmenu} handleClose={handleClose} />

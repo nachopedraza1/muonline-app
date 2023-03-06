@@ -16,17 +16,14 @@ export const HomePage: React.FC = () => {
                     <Grid item xs={4} className="middle-menu">
                         <Typography>DROP LIST</Typography>
                         <img src="/assets/images/img1.png" className="middle-menu__img" alt="" width="100%" />
-                        <img src="/assets/images/title_arrow_down.png" className="middle-menu__arrow" alt="" />
                     </Grid>
                     <Grid item xs={4} className="middle-menu">
                         <Typography>CHARACTER</Typography>
                         <img src="/assets/images/img2.png" className="middle-menu__img" alt="" width="100%" />
-                        <img src="/assets/images/title_arrow_down.png" className="middle-menu__arrow" alt="" />
                     </Grid>
                     <Grid item xs={4} className="middle-menu">
                         <Typography>SUPPORT</Typography>
                         <img src="/assets/images/img3.png" className="middle-menu__img" alt="" width="100%" />
-                        <img src="/assets/images/title_arrow_down.png" className="middle-menu__arrow" alt="" />
                     </Grid>
                 </Grid>
                 <ServerInfo />
