@@ -13,12 +13,8 @@ export const Navbar: React.FC = () => {
     const { stickyNavbar, offSetNavbar } = useSticky();
 
     const [openSubmenu, setOpenSubmenu] = useState<string>('');
-    const [activeClass, setActiveClass] = useState<string>('');
 
-    const handleOpen = (type: string) => {
-        setOpenSubmenu(type);
-        setActiveClass('active');
-    }
+    const handleOpen = (type: string) => setOpenSubmenu(type);
     const handleClose = () => setOpenSubmenu('');
 
     return (
@@ -32,25 +28,25 @@ export const Navbar: React.FC = () => {
                         </Grid>
                         <Grid>
                             <List component="nav" className="navlinks" disablePadding sx={{ display: "flex" }}>
-                                <ListItem onMouseEnter={() => handleOpen("invasions")} className={openSubmenu === "invasions" ? activeClass : ""} >
+                                <ListItem onMouseEnter={() => handleOpen("invasions")} className={openSubmenu === "invasions" ? "active" : ""} >
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         INVASIONES
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem onMouseEnter={() => handleOpen("boss")} className={openSubmenu === "boss" ? activeClass : ""}>
+                                <ListItem onMouseEnter={() => handleOpen("boss")} className={openSubmenu === "boss" ? "active" : ""}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         BOSSES
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem onMouseEnter={() => handleOpen("semiboss")} className={openSubmenu === "semiboss" ? activeClass : ""}>
+                                <ListItem onMouseEnter={() => handleOpen("semiboss")} className={openSubmenu === "semiboss" ? "active" : ""}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         SEMIBOSS
                                     </Link>
                                     <ExpandMore />
                                 </ListItem>
-                                <ListItem onMouseEnter={() => handleOpen("events")} className={openSubmenu === "events" ? activeClass : ""}>
+                                <ListItem onMouseEnter={() => handleOpen("events")} className={openSubmenu === "events" ? "active" : ""}>
                                     <Link component={RouterLink} to="/" underline="none" noWrap color="white" fontSize={18}>
                                         EVENTOS
                                     </Link>

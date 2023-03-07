@@ -13,8 +13,10 @@ export interface TabPanelProps {
 }
 
 export interface SubMenuProps {
-    openSubmenu: string,
-    handleClose: () => void;
+    children?: React.ReactNode;
+    typeMenu?: string;
+    openSubmenu?: string,
+    handleClose?: () => void;
 }
 
 export interface GuideType {

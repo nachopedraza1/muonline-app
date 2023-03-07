@@ -1,6 +1,6 @@
 import { Link as RouterLink } from "react-router-dom";
-import { useSticky } from '../hooks/useSticky';
 
+import { SubMenuLayout } from '../layout/SubMenuLayout';
 import { Grid, Box, Link, IconButton } from '@mui/material';
 import { CloseOutlined } from '@mui/icons-material';
 
@@ -17,23 +17,10 @@ const semiboss = [
 
 export const SemiBossMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) => {
 
-    const { stickySubMenu } = useSticky();
-
-    const isOpen = openSubmenu === "semiboss" ? "submenu-active" : "";
+    const typeMenu = openSubmenu === "semiboss" ? "submenu-active" : "";
 
     return (
-        <Grid
-            container
-            component="ul"
-            position="fixed"
-            justifyContent="center"
-            alignItems="end"
-            padding={2}
-            gap={4}
-            bgcolor="rgba(0, 0, 0, 0.9)"
-            className={`submenu ${isOpen && openSubmenu ? stickySubMenu : ""} ${isOpen}`}
-            onMouseLeave={handleClose}
-        >
+        <SubMenuLayout openSubmenu={openSubmenu} typeMenu={typeMenu} handleClose={handleClose}>
             {semiboss.map(({ id, text, img, width, path, status }) => (
                 <Grid item key={id} textAlign="center" className='submenu-item'>
                     <Link
@@ -59,6 +46,6 @@ export const SemiBossMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose 
             <IconButton onClick={handleClose} sx={{ position: "absolute", top: 10, right: 10 }}>
                 <CloseOutlined />
             </IconButton>
-        </Grid>
+        </SubMenuLayout>
     )
 }
