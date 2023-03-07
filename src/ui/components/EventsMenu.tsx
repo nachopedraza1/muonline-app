@@ -1,23 +1,14 @@
-import { useSticky } from '../hooks/useSticky';
-import { Grid } from '@mui/material';
 
-export const EventsMenu: React.FC<{ openSubmenu: string, handleClose: () => void }> = ({ openSubmenu, handleClose }) => {
+import { SubMenuLayout } from '../layout/SubMenuLayout';
+import { SubMenuProps } from '../../interfaces/interfaces';
 
-    const { stickySubMenu } = useSticky();
+export const EventsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) => {
 
-    const isOpen = openSubmenu === "events" ? "submenu-active" : "";
+    const typeMenu = openSubmenu === "events" ? "submenu-active" : "";
 
     return (
-        <Grid
-            container
-            component="ul"
-            width="100%"
-            height="200px"
-            bgcolor="rgba(0, 0, 0, 0.7)"
-            className={`submenu ${isOpen && openSubmenu ? stickySubMenu : ""} ${isOpen}`}
-            onMouseOut={handleClose}
-        >
+        <SubMenuLayout openSubmenu={openSubmenu} typeMenu={typeMenu} handleClose={handleClose}>
             Eventos
-        </Grid>
+        </SubMenuLayout>
     )
 }

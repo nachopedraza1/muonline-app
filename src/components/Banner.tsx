@@ -1,6 +1,9 @@
 import { useState } from 'react';
-import { Grid, Typography } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
 import { ModalEventTimmer } from './ModalEventTimmer';
+
+import Typewriter from 'typewriter-effect';
+
 
 export const Banner = () => {
 
@@ -9,17 +12,31 @@ export const Banner = () => {
     const handleClose = () => setOpenModal(false);
 
     return (
-        <Grid container position="relative" justifyContent="end" alignItems="center">
+        <Grid container className='banner-home'>
             <img src="assets/images/banner.png" alt="" width="100%" />
             <Typography
                 variant='h4'
                 fontFamily="Rajdhani"
                 fontWeight={800}
                 position="absolute"
-                left={200}
+                left={{ xs: "8%", xl: "20%" }}
             >
-                TODA LA INFORMACION SOBRE <br />
-                NUESTROS EVENTOS!
+                <Typewriter
+                    options={{
+                        autoStart: true,
+                        loop: true,
+                    }}
+                    onInit={(typewriter) => {
+                        typewriter.typeString(`BIEVENIDO GUERRERO! `)
+                            .pauseFor(3500)
+                            .deleteAll()
+                            .start();
+                        typewriter.typeString('SERVIDOR DEDICADO <br> 100% PLAY TO WIN')
+                            .pauseFor(3500)
+                            .deleteAll()
+                            .start();
+                    }}
+                />
             </Typography>
             <Grid
                 container

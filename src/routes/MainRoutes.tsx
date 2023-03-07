@@ -1,11 +1,16 @@
 import { Routes, Route, Navigate } from "react-router-dom"
-import { HomePage } from "../pages"
+import { Header } from "../ui/Header";
+import { HomePage, ViewGuide } from "../pages"
 
 export const MainRoutes = () => {
     return (
-        <Routes>
-            <Route path="/" element={< HomePage />} />
-            <Route path="/*" element={<Navigate to="/" replace={true} />} />
-        </Routes>
+        <>
+            <Header />
+            <Routes>
+                <Route path="/" element={< HomePage />} />
+                <Route path="/guides/:guideId" element={<ViewGuide />} />
+                <Route path="/*" element={<Navigate to="/" replace={true} />} />
+            </Routes>
+        </>
     )
 }

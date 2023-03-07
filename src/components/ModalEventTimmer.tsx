@@ -1,14 +1,16 @@
 import { useState } from 'react';
 import { DailyTimmerEvent } from './DailyTimmerEvent';
 
-import { Box, Modal, Fade, Tabs, Tab } from '@mui/material';
+import { Box, Modal, Fade, Tabs, Tab, IconButton } from '@mui/material';
+import { CloseOutlined } from '@mui/icons-material';
 
 import { ModalType, TabPanelProps } from '../interfaces/interfaces';
 
 const headerTimmer = {
+    position: "relative",
     display: "flex",
     justifyContent: "center",
-    background: "#181819",
+    background: "#0B182B",
     borderTop: "2px solid #0A97FE",
     p: 2,
 }
@@ -17,7 +19,7 @@ const bodyTimmer = {
     width: 500,
     height: 430,
     boxShadow: 24,
-    backgroundColor: "#0e0d0d",
+    backgroundColor: "#0b182bc6",
     overflowY: "scroll",
     p: 2,
 };
@@ -57,19 +59,15 @@ export const ModalEventTimmer: React.FC<ModalType> = ({ openModal, handleClose }
         >
             <Fade in={openModal} timeout={600}>
                 <Box sx={{ outline: "none", position: "relative" }}>
-                    <img src="assets/images/sm-1.png"
-                        width="400px"
-                        style={{
-                            position: "absolute",
-                            zIndex: -1,
-                            top: -150,
-                            left: 185
-                        }} />
                     <Box sx={headerTimmer} >
+                        <IconButton sx={{ position: "absolute", top: -26, right: -26 }} onClick={() => handleClose(false)}>
+                            <CloseOutlined fontSize='large' sx={{ color: "primary.main" }} />
+                        </IconButton>
                         <Tabs value={value} onChange={handleChange} textColor='secondary'>
                             <Tab label="EVENTOS DIARIOS" disableRipple />
                             <Tab label="EVENTOS SEMANALES" disableRipple />
                         </Tabs>
+
                     </Box>
                     <Box sx={bodyTimmer}>
                         <TabPanel value={value} index={0}>

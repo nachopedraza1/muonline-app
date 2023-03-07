@@ -4,7 +4,7 @@ export const MuTheme = createTheme({
     components: {
         MuiCssBaseline: {
             styleOverrides: `
-            body{background: #181819}
+            body{background: #040612}
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Rajdhani:wght@400;700&display=swap');
             `,
         },
@@ -66,12 +66,21 @@ export const MuTheme = createTheme({
                 }
             }
         },
+        MuiLink: {
+            styleOverrides: {
+                root: {
+                    color: "white",
+                    textDecoration: "none",
+                    whiteSpace: "nowrap"
+                }
+            }
+        }
     },
     palette: {
         primary: {
             main: "#0A97FE",
-            light: "#2A2A2E",
-            dark: "#181819",
+            light: "#080D28",
+            dark: "#040612",
         },
         secondary: {
             main: "#FFFFFF"
@@ -81,6 +90,9 @@ export const MuTheme = createTheme({
         fontFamily: "Rajdhani",
         h5: {
             fontFamily: "Poppins",
+        },
+        h4: {
+            fontFamily: "Bebas Neue",
         },
         h3: {
             fontFamily: "Bebas Neue",
