@@ -186,9 +186,15 @@ button:hover {
         transition: all 0.3s;
     }
 
+
     .submenu-item:hover a {
         color: #0A97FE;
         transition: all 0.4s;
+    }
+
+    .submenu-item-gray {
+        transition: all 0.4s;
+        filter: grayscale(100%);
     }
 }
 
@@ -315,5 +321,87 @@ button:hover {
         right: -150px;
         top: -150px;
         width: 510px;
+    }
+}
+
+
+.map-item {
+    position: relative;
+
+    .img-map {
+        box-shadow: 0px 17px 33px rgba(10, 151, 254, 0.3);
+        width: 80%;
+    }
+
+    &::after {
+        content: '';
+        background: url(../assets/images/section_arrow_down.png) no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        bottom: -8px;
+        z-index: 1;
+        width: 80%;
+        height: 10px
+    }
+}
+
+.text-shadow {
+    text-shadow: 0px 5px 33px #0A97FE;
+}
+
+.blue-light {
+    background: url(../assets/images/blue-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    width: 300px;
+    height: 300px;
+    top: -10px;
+    left: -50px;
+    position: absolute;
+    animation: 12s p-next linear infinite;
+    opacity: 0.7
+}
+
+.yellow-light {
+    background: url(../assets/images/yellow-light.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+    width: 300px;
+    height: 300px;
+    top: -10px;
+    left: -50px;
+    position: absolute;
+    animation: 12s p-prev linear infinite;
+    opacity: 0.7;
+}
+
+@keyframes p-next {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes p-prev {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(-180deg)
+    }
+
+    100% {
+        transform: rotate(-360deg)
     }
 }

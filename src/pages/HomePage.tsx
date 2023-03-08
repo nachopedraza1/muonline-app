@@ -1,4 +1,4 @@
-import { Box, Grid, Container, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import { Footer } from "../ui/Footer";
 import { ServerInfo } from "../components";
 import { Banner } from '../components/Banner';
@@ -26,7 +26,7 @@ export const HomePage: React.FC = () => {
                         <img src="/assets/images/img3.png" className="middle-menu__img" alt="" width="100%" />
                     </Grid>
                 </Grid>
-                <ServerInfo />
+                {/*    <ServerInfo /> */}
                 <Footer />
             </MainLayout >
         </>
