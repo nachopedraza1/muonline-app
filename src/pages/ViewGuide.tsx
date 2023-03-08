@@ -4,6 +4,7 @@ import { MainLayout } from '../layout/MainLayout';
 import { Footer } from '../ui/Footer';
 import { MobStats } from '../components';
 import { useFindMob } from '../hooks/useFindMob';
+import SimpleSlider from '../components/SimpleSlider';
 
 
 export const ViewGuide: React.FC = () => {
@@ -14,8 +15,7 @@ export const ViewGuide: React.FC = () => {
         <Grid container>
             <MainLayout>
                 <Grid container direction="column" alignItems="center">
-                    <Grid
-                        item
+                    <Grid item
                         sx={{
                             backgroundImage: "url(/assets/images/pvp-item-bg-def.png)",
                             backgroundSize: "100%",
@@ -37,7 +37,7 @@ export const ViewGuide: React.FC = () => {
                     <Typography
                         m={5}
                         maxWidth="md"
-                        fontSize={22}
+                        fontSize={17}
                         fontWeight={600}
                         textAlign="center"
                     >
@@ -45,12 +45,9 @@ export const ViewGuide: React.FC = () => {
                     </Typography>
 
                     <Grid container justifyContent="center">
-                        {maps.map(({ mapName, mapUrl, mapUrlTex }) => (
-                            <Grid key={mapName} item xs={4} display="flex" flexDirection="column" alignItems="center" className='map-item'>
-                                <img src={mapUrlTex} width="150px" alt={`${mapName} protocol mu`} />
-                                <img src={mapUrl} alt={`${mapName} protocol mu`} className="img-map" />
-                            </Grid>
-                        ))}
+                        <Grid item xs={4} sx={{ boxShadow: "0px 17px 33px rgba(10, 151, 254, 0.3)" }}>
+                            <SimpleSlider maps={maps} />
+                        </Grid>
                         <Grid key={1} item xs={4} display="flex" flexDirection="column" alignItems="center">
                             <Grid item display="flex" alignItems="center" mb={5}>
                                 <img src="/assets/images/icons/drop.png" width="50px" />

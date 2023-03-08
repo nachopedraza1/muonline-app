@@ -330,10 +330,10 @@ button:hover {
 
     .img-map {
         box-shadow: 0px 17px 33px rgba(10, 151, 254, 0.3);
-        width: 80%;
+        width: 100%;
     }
 
-    &::after {
+ /*    &::after {
         content: '';
         background: url(../assets/images/section_arrow_down.png) no-repeat;
         background-size: cover;
@@ -343,7 +343,7 @@ button:hover {
         z-index: 1;
         width: 80%;
         height: 10px
-    }
+    } */
 }
 
 .text-shadow {
@@ -354,10 +354,10 @@ button:hover {
     background: url(../assets/images/blue-light.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 400px;
+    background-size: 4;
     width: 300px;
     height: 300px;
-    top: -10px;
+    top: 0px;
     left: -50px;
     position: absolute;
     animation: 12s p-next linear infinite;
@@ -371,7 +371,7 @@ button:hover {
     background-size: 400px;
     width: 300px;
     height: 300px;
-    top: -10px;
+    top: 0px;
     left: -50px;
     position: absolute;
     animation: 12s p-prev linear infinite;

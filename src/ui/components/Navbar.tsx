@@ -19,7 +19,6 @@ const navLinks = [
 export const Navbar: React.FC = () => {
 
     const { stickyNavbar, offSetNavbar } = useSticky();
-
     const [openSubmenu, setOpenSubmenu] = useState<string>('');
 
     const handleOpen = (type: string) => setOpenSubmenu(type);
