@@ -5,6 +5,7 @@ import { MobStats, SlideMaps } from '../components';
 import { MainLayout } from '../layout/MainLayout';
 
 import { Grid, Typography } from '@mui/material';
+import { Box } from '@mui/system';
 
 
 export const ViewGuide: React.FC = () => {
@@ -34,7 +35,6 @@ export const ViewGuide: React.FC = () => {
                 <MobStats />
 
                 <Typography
-                    m={5}
                     maxWidth="md"
                     fontSize={17}
                     fontWeight={600}
@@ -43,11 +43,19 @@ export const ViewGuide: React.FC = () => {
                     {info}
                 </Typography>
 
-                <Grid container justifyContent="center">
-                    <Grid item xs={4} sx={{ boxShadow: "0px 17px 33px rgba(10, 151, 254, 0.3)" }}>
+                <Grid container justifyContent="center" mt={3}>
+
+                    <Grid item xs={4} gap={4} display="flex" flexDirection="column">
+                        <Grid display="flex" justifyContent="center" alignItems="center">
+                            <img src="/assets/images/icons/map.png" width="50px" />
+                            <Typography variant='h4' ml={1} className="text-shadow">
+                                Maps
+                            </Typography>
+                        </Grid>
                         <SlideMaps maps={maps} />
                     </Grid>
-                    <Grid key={1} item xs={4} display="flex" flexDirection="column" alignItems="center">
+
+                    <Grid item xs={4} gap={4} display="flex" flexDirection="column" alignItems="center">
                         <Grid item display="flex" alignItems="center" mb={5}>
                             <img src="/assets/images/icons/drop.png" width="50px" />
                             <Typography variant='h4' ml={1} className="text-shadow">
@@ -55,7 +63,9 @@ export const ViewGuide: React.FC = () => {
                             </Typography>
                         </Grid>
                     </Grid>
+
                 </Grid>
+
             </Grid>
         </MainLayout >
     )
