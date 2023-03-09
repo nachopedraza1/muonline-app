@@ -1,9 +1,11 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 import Slider from "react-slick";
 import { Grid } from "@mui/material";
+import { Maps } from "../interfaces/interfaces";
 
-export default function SimpleSlider({ maps }) {
+export const SlideMaps: React.FC<{ maps: Maps[] }> = ({ maps }) => {
     const settings = {
         dots: false,
         infinite: true,
@@ -12,7 +14,7 @@ export default function SimpleSlider({ maps }) {
         slidesToScroll: 1,
     };
     return (
-        <Slider {...settings}>
+        <Slider {...settings} className="ptasd">
             {maps.map(({ mapName, mapUrlTex, mapUrl }) => (
                 <Grid key={mapName} container className='map-item'>
                     <img

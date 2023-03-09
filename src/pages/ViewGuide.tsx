@@ -1,10 +1,10 @@
-import { Grid, Typography } from '@mui/material';
+import { useFindMob } from '../hooks/useFindMob';
 
 import { MainLayout } from '../layout/MainLayout';
+import { MobStats, SlideMaps } from '../components';
 import { Footer } from '../ui/Footer';
-import { MobStats } from '../components';
-import { useFindMob } from '../hooks/useFindMob';
-import SimpleSlider from '../components/SimpleSlider';
+
+import { Grid, Typography } from '@mui/material';
 
 
 export const ViewGuide: React.FC = () => {
@@ -12,7 +12,6 @@ export const ViewGuide: React.FC = () => {
     const { name, info, maps, drop } = useFindMob();
 
     return (
-        <Grid container>
             <MainLayout>
                 <Grid container direction="column" alignItems="center">
                     <Grid item
@@ -46,7 +45,7 @@ export const ViewGuide: React.FC = () => {
 
                     <Grid container justifyContent="center">
                         <Grid item xs={4} sx={{ boxShadow: "0px 17px 33px rgba(10, 151, 254, 0.3)" }}>
-                            <SimpleSlider maps={maps} />
+                            <SlideMaps maps={maps} />
                         </Grid>
                         <Grid key={1} item xs={4} display="flex" flexDirection="column" alignItems="center">
                             <Grid item display="flex" alignItems="center" mb={5}>
@@ -60,6 +59,5 @@ export const ViewGuide: React.FC = () => {
                 </Grid>
                 <Footer />
             </MainLayout >
-        </Grid >
     )
 }
