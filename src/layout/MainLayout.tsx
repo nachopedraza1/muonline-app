@@ -1,20 +1,12 @@
 import { Grid, Container } from '@mui/material';
 
 
-export const MainLayout: React.FC<{ children: JSX.Element[] }> = ({ children }) => {
+export const MainLayout: React.FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => {
     return (
-        <Grid
-            container
-            sx={{
-                pt: 5,
-                backgroundImage: "url(/assets/images/fon-bg-bottom.jpg)",
-                backgroundPosition: "bottom center",
-                backgroundSize: "clamp(1600px, 80%, 1500px) auto",
-                backgroundRepeat:"no-repeat"
-            }}>
+        <Grid container pt={5}>
             <Container maxWidth="lg">
                 {children}
             </Container>
-        </Grid>
+        </Grid >
     )
 }

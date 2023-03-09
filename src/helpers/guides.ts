@@ -9,37 +9,37 @@ export const guideList: GuideType[] = [
         maps: [
             {
                 mapName: "Lorencia",
-                mapUrlTex: "/assets/images/maps/dungeon-text.png",
+                mapUrlTex: "/assets/images/maps/dungeon.png",
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
             {
                 mapName: "Noria",
-                mapUrlTex: "/assets/images/maps/dungeon-text.png",
+                mapUrlTex: "/assets/images/maps/dungeon.png",
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
             {
                 mapName: "Devias",
-                mapUrlTex: "/assets/images/maps/dungeon-text.png",
+                mapUrlTex: "/assets/images/maps/dungeon.png",
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
             {
                 mapName: "Elbeland",
-                mapUrlTex: "/assets/images/maps/dungeon-text.png",
+                mapUrlTex: "/assets/images/maps/dungeon.png",
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
             {
                 mapName: "Dungeon",
-                mapUrlTex: "/assets/images/maps/dungeon-text.png",
+                mapUrlTex: "/assets/images/maps/dungeon.png",
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
             {
                 mapName: "Atlans",
-                mapUrlTex: "/assets/images/maps/dungeon-text.png",
+                mapUrlTex: "/assets/images/maps/dungeon.png",
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
             {
                 mapName: "Lost Tower",
-                mapUrlTex: "/assets/images/maps/dungeon-text.png",
+                mapUrlTex: "/assets/images/maps/dungeon.png",
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
         ],
@@ -65,7 +65,7 @@ export const guideList: GuideType[] = [
         maps: [
             {
                 mapName: "Dungeon",
-                mapUrlTex: "/assets/images/maps/dungeon-text.png",
+                mapUrlTex: "/assets/images/maps/dungeon.png",
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
         ],
