@@ -24,6 +24,7 @@ export interface GuideType {
     name: string;
     type: string;
     info: string;
+    infoDrop: string,
     maps: Maps[]
     photoUrl: string;
     photoWidth: string;

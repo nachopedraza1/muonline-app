@@ -7,14 +7,14 @@ import { CloseOutlined } from '@mui/icons-material';
 import { SubMenuProps } from '../../interfaces/interfaces';
 
 const invasions = [
-    { id: 1, text: "Golden", img: "/assets/images/invasions/golden.png", width: "100px", path: "/guides/1", status: "active" },
-    { id: 2, text: "Gorgon", img: "/assets/images/invasions/gorgon.png", width: "120px", path: "/guides/2", status: "active" },
-    { id: 3, text: "Golems", img: "/assets/images/invasions/golem-totem.png", width: "140px", path: "/guides/3", status: "active" },
-    { id: 4, text: "Summer", img: "/assets/images/invasions/fireflame.png", width: "100px", path: "/guides/7", status: "active" },
-    { id: 5, text: "Rabbits", img: "/assets/images/invasions/rabit.png", width: "90px", path: "/guides/6", status: "active" },
-    { id: 6, text: "New Year", img: "/assets/images/invasions/puch.png", width: "140px", path: "/guides/8", status: "active" },
-    { id: 7, text: "Ice Queen", img: "/assets/images/invasions/ice-queen.png", width: "120px", path: "/guides/4", status: "active" },
-    { id: 8, text: "Hydra", img: "/assets/images/invasions/hydra.png", width: "170px", path: "/guides/5", status: "active" },
+    { id: 1, text: "Golden", img: "/assets/images/invasions/golden.webp", width: "100px", path: "/guides/1", status: "active" },
+    { id: 2, text: "Gorgon", img: "/assets/images/invasions/gorgon.webp", width: "120px", path: "/guides/2", status: "active" },
+    { id: 3, text: "Golems", img: "/assets/images/invasions/golem-totem.webp", width: "140px", path: "/guides/3", status: "active" },
+    { id: 4, text: "Summer", img: "/assets/images/invasions/fireflame.webp", width: "100px", path: "/guides/7", status: "active" },
+    { id: 5, text: "Rabbits", img: "/assets/images/invasions/rabit.webp", width: "90px", path: "/guides/6", status: "active" },
+    { id: 6, text: "New Year", img: "/assets/images/invasions/puch.webp", width: "140px", path: "/guides/8", status: "active" },
+    { id: 7, text: "Ice Queen", img: "/assets/images/invasions/ice-queen.webp", width: "120px", path: "/guides/4", status: "active" },
+    { id: 8, text: "Hydra", img: "/assets/images/invasions/hydra.webp", width: "170px", path: "/guides/5", status: "active" },
 ];
 
 export const InvasionsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) => {

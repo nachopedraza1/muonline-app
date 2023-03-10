@@ -47,6 +47,22 @@ button:hover {
     border-bottom: 1px #464040 dashed;
 }
 
+.divider-section::after {
+    content: '';
+    background: url('/assets/images/title_arrow_down.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 550px;
+    height: 200px;
+
+}
+
 .social-list {
     li {
         a {

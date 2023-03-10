@@ -6,6 +6,7 @@ export const guideList: GuideType[] = [
         name: "Golden",
         type: "invasions",
         info: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+        infoDrop:"1 Jewel random por mob.",
         maps: [
             {
                 mapName: "Lorencia",
@@ -43,7 +44,7 @@ export const guideList: GuideType[] = [
                 mapUrl: "/assets/images/maps/losttower.jpg"
             },
         ],
-        photoUrl: "/assets/images/invasions/golden.png",
+        photoUrl: "/assets/images/invasions/golden.webp",
         photoWidth: "210px",
         drop: [
             {
@@ -69,6 +70,7 @@ export const guideList: GuideType[] = [
         name: "Gorgon",
         type: "invasions",
         info: "Tres (3) poderosos magos atacan el poblado de Dungeon, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+        infoDrop:"1 Jewel random por mob.",
         maps: [
             {
                 mapName: "Dungeon",
@@ -76,7 +78,7 @@ export const guideList: GuideType[] = [
                 mapUrl: "/assets/images/maps/dungeon.jpg"
             },
         ],
-        photoUrl: "/assets/images/invasions/gorgon.png",
+        photoUrl: "/assets/images/invasions/gorgon.webp",
         photoWidth: "210px",
         drop: [
             {
@@ -102,6 +104,7 @@ export const guideList: GuideType[] = [
         name: "Totem Golem",
         type: "invasions",
         info: "Cuenta la leyenda que en el bosque de elbeland viven tres (3) guardianes con mas fuerza de lo que podrías imaginar, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+        infoDrop:"1 Jewel random por mob.",
         maps: [
             {
                 mapName: "Elbeland",
@@ -109,7 +112,7 @@ export const guideList: GuideType[] = [
                 mapUrl: "/assets/images/maps/elbeland.jpg"
             },
         ],
-        photoUrl: "/assets/images/invasions/golem-totem.png",
+        photoUrl: "/assets/images/invasions/golem-totem.webp",
         photoWidth: "220px",
         drop: [
             {
@@ -135,6 +138,7 @@ export const guideList: GuideType[] = [
         name: "Ice Queen",
         type: "invasions",
         info: "El poblado de Devias fue atacado por tres (3) poderosas emperatrices, tu deber es derrotarlas. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+        infoDrop:"1 Jewel random por mob.",
         maps: [
             {
                 mapName: "Devias",
@@ -142,7 +146,7 @@ export const guideList: GuideType[] = [
                 mapUrl: "/assets/images/maps/devias.jpg"
             },
         ],
-        photoUrl: "/assets/images/invasions/ice-queen.png",
+        photoUrl: "/assets/images/invasions/ice-queen.webp",
         photoWidth: "210px",
         drop: [
             {
@@ -168,6 +172,7 @@ export const guideList: GuideType[] = [
         name: "Hydra",
         type: "invasions",
         info: "Tres (3) monstruos  Marinos Invades el reino marino de Atlans,  tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+        infoDrop:"1 Jewel random por mob.",
         maps: [
             {
                 mapName: "atlans",
@@ -175,7 +180,7 @@ export const guideList: GuideType[] = [
                 mapUrl: "/assets/images/maps/atlans.jpg"
             },
         ],
-        photoUrl: "/assets/images/invasions/hydra.png",
+        photoUrl: "/assets/images/invasions/hydra.webp",
         photoWidth: "210px",
         drop: [
             {
@@ -201,6 +206,7 @@ export const guideList: GuideType[] = [
         name: "Rabbits",
         type: "invasions",
         info: "Los rabbis Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
+        infoDrop:"1 Jewel random por mob.",
         maps: [
             {
                 mapName: "devias",
@@ -208,7 +214,7 @@ export const guideList: GuideType[] = [
                 mapUrl: "/assets/images/maps/devias.jpg"
             },
         ],
-        photoUrl: "/assets/images/invasions/rabit.png",
+        photoUrl: "/assets/images/invasions/rabit.webp",
         photoWidth: "140px",
         drop: [
             {
@@ -234,6 +240,7 @@ export const guideList: GuideType[] = [
         name: "Summer",
         type: "invasions",
         info: "Los paraguas Invaden Lost Tower! Buscalos y derrota los diez (10) por todo el mapa!",
+        infoDrop:"Conseguiras un (1) Jewel random por mob.",
         maps: [
             {
                 mapName: "lost tower",
@@ -241,7 +248,7 @@ export const guideList: GuideType[] = [
                 mapUrl: "/assets/images/maps/losttower.jpg"
             },
         ],
-        photoUrl: "/assets/images/invasions/fireflame.png",
+        photoUrl: "/assets/images/invasions/fireflame.webp",
         photoWidth: "210px",
         drop: [
             {
@@ -290,6 +297,7 @@ export const guideList: GuideType[] = [
         name: "New Year",
         type: "invasions",
         info: "Los pouchs Invaden Lorencia! Buscalos y derrota los diez (10) por todo el mapa!",
+        infoDrop:"1 Jewel random por mob.",
         maps: [
             {
                 mapName: "lorencia",
@@ -297,7 +305,7 @@ export const guideList: GuideType[] = [
                 mapUrl: "/assets/images/maps/lorencia.jpg"
             },
         ],
-        photoUrl: "/assets/images/invasions/puch.png",
+        photoUrl: "/assets/images/invasions/puch.webp",
         photoWidth: "210px",
         drop: [
             {

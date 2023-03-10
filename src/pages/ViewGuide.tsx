@@ -3,12 +3,12 @@ import { useFindMob } from '../hooks/useFindMob';
 import { MobStats, SlideMaps, DropMob } from '../components';
 import { MainLayout } from '../layout/MainLayout';
 
-import { Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 
 
 export const ViewGuide: React.FC = () => {
 
-    const { name, info, maps, drop } = useFindMob();
+    const { name, info, maps, drop, infoDrop } = useFindMob();
 
     return (
         <MainLayout>
@@ -39,6 +39,7 @@ export const ViewGuide: React.FC = () => {
                 <MobStats />
 
                 <Typography
+
                     maxWidth="md"
                     fontSize={17}
                     fontWeight={600}
@@ -48,9 +49,9 @@ export const ViewGuide: React.FC = () => {
                     {info}
                 </Typography>
 
-                <Grid container justifyContent="center" mt={3}>
+                <Grid container justifyContent="center" mt={3} gap={4}>
 
-                    <Grid item xs={4} gap={4} display="flex" flexDirection="column">
+                    <Grid item xs={4} gap={3} display="flex" flexDirection="column">
                         <Grid display="flex" justifyContent="center" alignItems="center">
                             <img src="/assets/images/icons/map.png" width="50px" />
                             <Typography variant='h4' ml={1} className="text-shadow">
@@ -60,14 +61,14 @@ export const ViewGuide: React.FC = () => {
                         <SlideMaps maps={maps} />
                     </Grid>
 
-                    <Grid item xs={4} gap={4} display="flex" flexDirection="column" alignItems="center">
-                        <Grid item display="flex" alignItems="center" mb={5}>
+                    <Grid item xs={4} gap={3} display="flex" flexDirection="column">
+                        <Grid display="flex" justifyContent="center" alignItems="center">
                             <img src="/assets/images/icons/drop.png" width="50px" />
                             <Typography variant='h4' ml={1} className="text-shadow">
                                 Drop
                             </Typography>
                         </Grid>
-                        <DropMob drop={drop} />
+                        <DropMob drop={drop} infoDrop={infoDrop} />
                     </Grid>
 
                 </Grid>
