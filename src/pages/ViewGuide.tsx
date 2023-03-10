@@ -1,11 +1,9 @@
 import { useFindMob } from '../hooks/useFindMob';
 
-import { Footer } from '../ui/Footer';
-import { MobStats, SlideMaps } from '../components';
+import { MobStats, SlideMaps, DropMob } from '../components';
 import { MainLayout } from '../layout/MainLayout';
 
 import { Grid, Typography } from '@mui/material';
-import { Box } from '@mui/system';
 
 
 export const ViewGuide: React.FC = () => {
@@ -14,7 +12,13 @@ export const ViewGuide: React.FC = () => {
 
     return (
         <MainLayout>
-            <Grid container direction="column" alignItems="center">
+            <Grid
+                container
+                direction="column"
+                alignItems="center"
+                key={name}
+                className="animate__animated animate__fadeIn"
+            >
                 <Grid item
                     sx={{
                         backgroundImage: "url(/assets/images/pvp-item-bg-def.png)",
@@ -39,6 +43,7 @@ export const ViewGuide: React.FC = () => {
                     fontSize={17}
                     fontWeight={600}
                     textAlign="center"
+                    mt={2}
                 >
                     {info}
                 </Typography>
@@ -62,6 +67,7 @@ export const ViewGuide: React.FC = () => {
                                 Drop
                             </Typography>
                         </Grid>
+                        <DropMob drop={drop} />
                     </Grid>
 
                 </Grid>

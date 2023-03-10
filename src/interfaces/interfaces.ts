@@ -27,7 +27,7 @@ export interface GuideType {
     maps: Maps[]
     photoUrl: string;
     photoWidth: string;
-    drop: string;
+    drop: Drop[];
     stats: Stats
 }
 
@@ -46,4 +46,11 @@ export interface Maps {
     mapName: string
     mapUrlTex: string
     mapUrl: string
+}
+
+export interface Drop {
+    itemUrl: string,
+    itemName: string,
+    size: string,
+    quantity: number,
 }

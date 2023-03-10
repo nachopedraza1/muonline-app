@@ -37,13 +37,23 @@ export const MobStats: React.FC = () => {
                     </Grid>
                 ))}
             </Grid>
-            <Grid item xs={2.2} height="340px" textAlign="center" position="relative">
-                <Box key={photoUrl} className="animate__animated animate__fadeIn">
+
+            <Grid
+                item
+                xs={2.2}
+                height="340px"
+                display="flex"
+                position="relative"
+                alignItems="center"
+                justifyContent="center"
+            >
+                <Box >
                     <div className="blue-light"></div>
                     <div className="yellow-light"></div>
                 </Box>
-                <img src={photoUrl} alt={`${name} protocol mu`} width={photoWidth} className="animate__animated animate__fadeIn" />
+                <img src={photoUrl} key={photoUrl} alt={`${name} protocol mu`} width={photoWidth} className="animate__animated animate__fadeIn" />
             </Grid>
+            
             <Grid item ml={7} key={photoUrl} className="animate__animated animate__fadeInRight">
                 {statsBoss.slice(4, 8).map(({ id, text, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" gap={1.5} m={2} key={id}>
