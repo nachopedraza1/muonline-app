@@ -1,8 +1,10 @@
 import { Grid, Typography } from '@mui/material';
 
-import { Drop } from '../interfaces/interfaces';
+import { Drop, Info } from '../interfaces/interfaces';
 
-export const DropMob: React.FC<{ drop: Drop[], infoDrop: string }> = ({ drop, infoDrop }) => {
+export const DropMob: React.FC<{ drop: Drop[], info: Info }> = ({ drop, info }) => {
+
+    const { infoDrop } = info;
 
     return (
         <Grid container direction="column" alignItems="center">

@@ -23,11 +23,9 @@ export interface GuideType {
     id: string;
     name: string;
     type: string;
-    info: string;
-    infoDrop: string,
+    info: Info;
     maps: Maps;
-    photoUrl: string;
-    photoWidth: string;
+    media: Media;
     drop: Drop[];
     stats: Stats
 }
@@ -54,4 +52,14 @@ export interface Drop {
     itemName: string,
     size: string,
     quantity: number,
+}
+
+export interface Media {
+    photoUrl: string;
+    photoWidth: string;
+}
+
+export interface Info {
+    infoBoss: string,
+    infoDrop: string,
 }

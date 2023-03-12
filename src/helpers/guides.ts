@@ -5,15 +5,19 @@ export const guideList: GuideType[] = [
         id: "1",
         name: "Golden Budge Dragon",
         type: "invasions",
-        info: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-        infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        info: {
+            infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        },
         maps: {
             mapName: "Lorencia",
             mapUrlTex: "/assets/images/maps/lorencia-text.webp",
             mapUrl: "/assets/images/maps/lorencia-map.webp"
         },
-        photoUrl: "/assets/images/invasions/goldendragon.webp",
-        photoWidth: "160px",
+        media: {
+            photoUrl: "/assets/images/invasions/goldendragon.webp",
+            photoWidth: "160px",
+        },
         drop: [
             {
                 itemName: "Box of Kundun",
@@ -37,15 +41,19 @@ export const guideList: GuideType[] = [
         id: "2",
         name: "Gorgon",
         type: "invasions",
-        info: "Tres (3) poderosos magos atacan el poblado de Dungeon, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-        infoDrop: "1 Jewel random por mob.",
+        info: {
+            infoBoss: "Tres (3) poderosos magos atacan el poblado de Dungeon, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "1 Jewel random por mob.",
+        },
         maps: {
             mapName: "Dungeon",
             mapUrlTex: "/assets/images/maps/dungeon-text.webp",
             mapUrl: "/assets/images/maps/dungeon-map.webp"
         },
-        photoUrl: "/assets/images/invasions/gorgon.webp",
-        photoWidth: "210px",
+        media: {
+            photoUrl: "/assets/images/invasions/gorgon.webp",
+            photoWidth: "210px",
+        },
         drop: [
             {
                 itemName: "",
@@ -69,15 +77,19 @@ export const guideList: GuideType[] = [
         id: "3",
         name: "Totem Golem",
         type: "invasions",
-        info: "Cuenta la leyenda que en el bosque de elbeland viven tres (3) guardianes con mas fuerza de lo que podrías imaginar, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-        infoDrop: "1 Jewel random por mob.",
+        info: {
+            infoBoss: "Cuenta la leyenda que en el bosque de elbeland viven tres (3) guardianes con mas fuerza de lo que podrías imaginar, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "1 Jewel random por mob.",
+        },
         maps: {
             mapName: "Elbeland",
             mapUrlTex: "/assets/images/maps/elbeland-text.webp",
             mapUrl: "/assets/images/maps/elbeland-map.webp"
         },
-        photoUrl: "/assets/images/invasions/golem-totem.webp",
-        photoWidth: "220px",
+        media: {
+            photoUrl: "/assets/images/invasions/golem-totem.webp",
+            photoWidth: "220px",
+        },
         drop: [
             {
                 itemName: "",
@@ -101,15 +113,19 @@ export const guideList: GuideType[] = [
         id: "4",
         name: "Ice Queen",
         type: "invasions",
-        info: "El poblado de Devias fue atacado por tres (3) poderosas emperatrices, tu deber es derrotarlas. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-        infoDrop: "1 Jewel random por mob.",
+        info: {
+            infoBoss: "El poblado de Devias fue atacado por tres (3) poderosas emperatrices, tu deber es derrotarlas. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "1 Jewel random por mob.",
+        },
         maps: {
             mapName: "Devias",
             mapUrlTex: "/assets/images/maps/devias-text.webp",
             mapUrl: "/assets/images/maps/devias-map.webp"
         },
-        photoUrl: "/assets/images/invasions/ice-queen.webp",
-        photoWidth: "210px",
+        media: {
+            photoUrl: "/assets/images/invasions/ice-queen.webp",
+            photoWidth: "210px",
+        },
         drop: [
             {
                 itemName: "",
@@ -133,15 +149,19 @@ export const guideList: GuideType[] = [
         id: "5",
         name: "Hydra",
         type: "invasions",
-        info: "Tres (3) monstruos  Marinos Invades el reino marino de Atlans,  tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-        infoDrop: "1 Jewel random por mob.",
+        info: {
+            infoBoss: "Tres (3) monstruos  Marinos Invades el reino marino de Atlans,  tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "1 Jewel random por mob.",
+        },
         maps: {
             mapName: "atlans",
             mapUrlTex: "/assets/images/maps/atlans-text.webp",
             mapUrl: "/assets/images/maps/atlans-map.webp"
         },
-        photoUrl: "/assets/images/invasions/hydra.webp",
-        photoWidth: "210px",
+        media: {
+            photoUrl: "/assets/images/invasions/hydra.webp",
+            photoWidth: "210px",
+        },
         drop: [
             {
                 itemName: "",
@@ -165,15 +185,19 @@ export const guideList: GuideType[] = [
         id: "6",
         name: "Rabbits",
         type: "invasions",
-        info: "Los rabbis Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
-        infoDrop: "1 Jewel random por mob.",
+        info: {
+            infoBoss: "Los rabbis Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
+            infoDrop: "1 Jewel random por mob.",
+        },
         maps: {
             mapName: "devias",
             mapUrlTex: "/assets/images/maps/devias-text.webp",
             mapUrl: "/assets/images/maps/devias-map.webp"
         },
-        photoUrl: "/assets/images/invasions/rabit.webp",
-        photoWidth: "140px",
+        media: {
+            photoWidth: "140px",
+            photoUrl: "/assets/images/invasions/rabit.webp",
+        },
         drop: [
             {
                 itemName: "",
@@ -197,15 +221,19 @@ export const guideList: GuideType[] = [
         id: "7",
         name: "Summer",
         type: "invasions",
-        info: "Los paraguas Invaden Lost Tower! Buscalos y derrota los diez (10) por todo el mapa!",
-        infoDrop: "Conseguiras un (1) Jewel random por mob.",
+        info: {
+            infoBoss: "Los paraguas Invaden Lost Tower! Buscalos y derrota los diez (10) por todo el mapa!",
+            infoDrop: "Conseguiras un (1) Jewel random por mob.",
+        },
         maps: {
             mapName: "lost tower",
             mapUrlTex: "/assets/images/maps/losttower-text.webp",
             mapUrl: "/assets/images/maps/losttower-map.webp"
         },
-        photoUrl: "/assets/images/invasions/fireflame.webp",
-        photoWidth: "210px",
+        media: {
+            photoUrl: "/assets/images/invasions/fireflame.webp",
+            photoWidth: "210px",
+        },
         drop: [
             {
                 itemName: "Jewel of Soul",
@@ -252,15 +280,19 @@ export const guideList: GuideType[] = [
         id: "8",
         name: "New Year",
         type: "invasions",
-        info: "Los pouchs Invaden Lorencia! Buscalos y derrota los diez (10) por todo el mapa!",
-        infoDrop: "1 Jewel random por mob.",
+        info: {
+            infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        },
         maps: {
             mapName: "lorencia",
             mapUrlTex: "/assets/images/maps/lorencia-text.webp",
             mapUrl: "/assets/images/maps/lorencia-map.webp"
         },
-        photoUrl: "/assets/images/invasions/puch.webp",
-        photoWidth: "210px",
+        media: {
+            photoUrl: "/assets/images/invasions/puch.webp",
+            photoWidth: "210px",
+        },
         drop: [
             {
                 itemName: "",
@@ -281,18 +313,22 @@ export const guideList: GuideType[] = [
         },
     },
     {
-        id: "9",
+        id: "1",
         name: "Golden Goblin",
         type: "invasions",
-        info: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-        infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        info: {
+            infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        },
         maps: {
             mapName: "noria",
             mapUrlTex: "/assets/images/maps/noria-text.webp",
             mapUrl: "/assets/images/maps/noria-map.webp"
         },
-        photoUrl: "/assets/images/invasions/goldengoblin.webp",
-        photoWidth: "160px",
+        media: {
+            photoUrl: "/assets/images/invasions/goldengoblin.webp",
+            photoWidth: "160px",
+        },
         drop: [
             {
                 itemName: "Box of Kundun",
@@ -313,18 +349,22 @@ export const guideList: GuideType[] = [
         },
     },
     {
-        id: "10",
+        id: "1",
         name: "Golden Rabbit",
         type: "invasions",
-        info: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-        infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        info: {
+            infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        },
         maps: {
             mapName: "elbeland",
             mapUrlTex: "/assets/images/maps/elbeland-text.webp",
             mapUrl: "/assets/images/maps/elbeland-map.webp"
         },
-        photoUrl: "/assets/images/invasions/goldenrabbit.webp",
-        photoWidth: "160px",
+        media: {
+            photoUrl: "/assets/images/invasions/goldenrabbit.webp",
+            photoWidth: "160px",
+        },
         drop: [
             {
                 itemName: "Box of Kundun",
@@ -344,5 +384,112 @@ export const guideList: GuideType[] = [
             poisonResist: "100%",
         },
     },
-
+    {
+        id: "1",
+        name: "Golden Solider",
+        type: "invasions",
+        info: {
+            infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        },
+        maps: {
+            mapName: "devias",
+            mapUrlTex: "/assets/images/maps/devias-text.webp",
+            mapUrl: "/assets/images/maps/devias-map.webp"
+        },
+        media: {
+            photoUrl: "/assets/images/invasions/goldensolider.webp",
+            photoWidth: "160px",
+        },
+        drop: [
+            {
+                itemName: "Box of Kundun",
+                itemUrl: "/assets/images/drop/kundun1.png",
+                size: "50px",
+                quantity: 1
+            },
+        ],
+        stats: {
+            level: "46",
+            defense: "32",
+            minDmg: "1320",
+            maxDmg: "1355",
+            hp: "19.996.000",
+            atkrate: "100%",
+            iceResist: "23%",
+            poisonResist: "100%",
+        },
+    },
+    {
+        id: "1",
+        name: "Golden Dark Knight",
+        type: "invasions",
+        info: {
+            infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        },
+        maps: {
+            mapName: "dungeon",
+            mapUrlTex: "/assets/images/maps/dungeon-text.webp",
+            mapUrl: "/assets/images/maps/dungeon-map.webp"
+        },
+        media: {
+            photoUrl: "/assets/images/invasions/goldendarkking.webp",
+            photoWidth: "160px",
+        },
+        drop: [
+            {
+                itemName: "Box of Kundun",
+                itemUrl: "/assets/images/drop/kundun1.png",
+                size: "50px",
+                quantity: 1
+            },
+        ],
+        stats: {
+            level: "60",
+            defense: "50",
+            minDmg: "1320",
+            maxDmg: "1355",
+            hp: "21.800.000",
+            atkrate: "100%",
+            iceResist: "25%",
+            poisonResist: "100%",
+        },
+    },
+    {
+        id: "1",
+        name: "Golden Titan",
+        type: "invasions",
+        info: {
+            infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+        },
+        maps: {
+            mapName: "devias",
+            mapUrlTex: "/assets/images/maps/devias-text.webp",
+            mapUrl: "/assets/images/maps/devias-map.webp"
+        },
+        media: {
+            photoUrl: "/assets/images/invasions/gioldentitan.webp",
+            photoWidth: "160px",
+        },
+        drop: [
+            {
+                itemName: "Box of Kundun",
+                itemUrl: "/assets/images/drop/kundun1.png",
+                size: "50px",
+                quantity: 1
+            },
+        ],
+        stats: {
+            level: "53",
+            defense: "75",
+            minDmg: "1775",
+            maxDmg: "1881",
+            hp: "25.996.000",
+            atkrate: "100%",
+            iceResist: "29%",
+            poisonResist: "100%",
+        },
+    },
 ];

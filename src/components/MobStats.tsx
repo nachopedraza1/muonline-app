@@ -1,5 +1,6 @@
-import { useFindMob } from '../hooks/useFindMob';
+
 import { Grid, Typography, Box } from '@mui/material';
+import { Media, Stats } from '../interfaces/interfaces';
 
 
 const statsBoss = [
@@ -13,13 +14,14 @@ const statsBoss = [
     { id: 8, text: "poison Resist", iconName: "poison Resist", iconUrl: "/assets/images/icons/poisonresist.png" },
 ];
 
-export const MobStats: React.FC = () => {
+export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, media }) => {
 
-    const { name, photoUrl, photoWidth, level, atkrate, defense, hp, iceResist, maxDmg, minDmg, poisonResist } = useFindMob();
+    const { hp, level, defense, atkrate, iceResist, maxDmg, minDmg, poisonResist } = stats;
+    const { photoUrl, photoWidth } = media;
 
     return (
         <Grid container justifyContent="center" alignItems="center" mt={2}>
-            <Grid item mr={7} key={name} className="animate__animated animate__fadeInLeft" >
+            <Grid item mr={7}>
                 {statsBoss.slice(0, 4).map(({ id, text, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" gap={1.5} m={2} key={id}>
                         <img src={iconUrl} width="40px" />
@@ -53,8 +55,8 @@ export const MobStats: React.FC = () => {
                 </Box>
                 <img src={photoUrl} key={photoUrl} alt={`${name} protocol mu`} width={photoWidth} className="animate__animated animate__fadeIn" />
             </Grid>
-            
-            <Grid item ml={7} key={photoUrl} className="animate__animated animate__fadeInRight">
+
+            <Grid item ml={7} >
                 {statsBoss.slice(4, 8).map(({ id, text, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" gap={1.5} m={2} key={id}>
                         <img src={iconUrl} width="40px" />
