@@ -9,7 +9,7 @@ import { Box, Grid, Typography } from '@mui/material';
 export const ViewGuide: React.FC = () => {
 
     const { name, info, maps, drop, infoDrop } = useFindMob();
-
+    
     return (
         <MainLayout>
             <Grid
@@ -39,10 +39,9 @@ export const ViewGuide: React.FC = () => {
                 <MobStats />
 
                 <Typography
-
                     maxWidth="md"
                     fontSize={17}
-                    fontWeight={600}
+                    fontWeight={300}
                     textAlign="center"
                     mt={2}
                 >

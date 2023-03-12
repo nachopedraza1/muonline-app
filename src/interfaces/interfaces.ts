@@ -25,7 +25,7 @@ export interface GuideType {
     type: string;
     info: string;
     infoDrop: string,
-    maps: Maps[]
+    maps: Maps;
     photoUrl: string;
     photoWidth: string;
     drop: Drop[];

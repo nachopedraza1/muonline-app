@@ -339,16 +339,17 @@ button:hover {
     }
 }
 
-.slide-item {
+/* .slide-item {
     box-shadow: 0px 17px 33px rgba(10, 151, 254, 0.3);
     max-height: 384px;
-}
+} */
 
 .map-item {
     position: relative;
+    box-shadow: 0px 17px 33px rgba(10, 151, 254, 0.3);
+    max-height: 384px;
 
     .img-map {
-        /* box-shadow: 0px 17px 33px rgba(10, 151, 254, 0.3); */
         width: 100%;
     }
 
