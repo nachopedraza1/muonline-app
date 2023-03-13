@@ -208,7 +208,10 @@ button:hover {
 
     .submenu-item-gray {
         transition: all 0.4s;
-        filter: grayscale(100%);
+
+        img {
+            filter: grayscale(100%);
+        }
     }
 }
 
@@ -422,6 +425,7 @@ button:hover {
 }
 
 .custom-slick {
+
     .slick-prev,
     .slick-next {
         top: 20%;

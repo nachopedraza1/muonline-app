@@ -1,8 +1,8 @@
 import { Link as RouterLink } from 'react-router-dom';
 
 import { SubMenuLayout } from '../layout/SubMenuLayout';
-import { Grid, Box, Link, IconButton } from '@mui/material';
-import { CloseOutlined } from '@mui/icons-material';
+import { Grid, Box, Link, IconButton, Tooltip } from '@mui/material';
+import { Circle, CloseOutlined } from '@mui/icons-material';
 
 import { SubMenuProps } from '../../interfaces/interfaces';
 
@@ -48,6 +48,11 @@ export const BossMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) =
                             />
                         </Box>
                         {text}
+                        <Tooltip title={status.toUpperCase()} arrow placement="top">
+                            <IconButton>
+                                <Circle sx={{ fontSize: "10px", color: status != "active" ? "red" : "green" }} />
+                            </IconButton>
+                        </Tooltip>
                     </Link>
                 </Grid>
             ))}

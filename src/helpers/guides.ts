@@ -648,4 +648,264 @@ export const guideList: GuideType[] = [
             poisonResist: "100%",
         },
     },
+    {
+        id: "9",
+        name: "Red Dragon",
+        type: "semiboss",
+        info: {
+            infoBoss: "El pueblo de Noria una vez mas se ve invadida por extrañas criaturas. En esta ocasión serán los dragones rojos los que aparecerán por toda Noria irrumpiendo con la tranquilidad y la paz. Durante esta invasión dos tipos de dragones rojos podrán ser vistos, y cada uno otorgará diferentes recompensas a quien logre derrotarlos.",
+            infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
+        },
+        maps: {
+            mapName: "noria",
+            mapUrlTex: "/assets/images/maps/noria-text.webp",
+            mapUrl: "/assets/images/maps/noria-map.webp"
+        },
+        media: {
+            photoUrl: "/assets/images/semiboss/red-dragon.png",
+            photoWidth: "230px",
+        },
+        drop: [
+            {
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 10
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/chaos.png",
+                size: "24px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/creation.png",
+                size: "36px",
+                quantity: 1
+            },
+        ],
+        stats: {
+            level: "95",
+            defense: "200",
+            minDmg: "13750",
+            maxDmg: "14810",
+            hp: "90.000.000",
+            atkrate: "100%",
+            iceResist: "100%",
+            poisonResist: "100%",
+        },
+    },
+    {
+        id: "10",
+        name: "Skeleton",
+        type: "semiboss",
+        info: {
+            infoBoss: "El Rey Leoric, enloquecido por el Devil Kundum y muerto a manos de su más fiel caballero en una trágica batalla, vuelve al continente Mu. Su espíritu, maldito por los poderes malignos, vaga sin descanso en algún lugar de las catacumbas, hasta que deseoso de sed de venganza, invade la superficie del continente buscando a aquellos que lo traicionaron. Tu misión será proporcionarle el descanso eterno y traer paz a dicha alma perdida. El rey muerto o Skeleton King volverá en forma de esqueleto gigante e invadirá Lorencia a la vez acompañado de sus súbditos para asesinar a cualquier guerrero descuidado que ronde los alrededores.",
+            infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
+        },
+        maps: {
+            mapName: "lorencia",
+            mapUrlTex: "/assets/images/maps/lorencia-text.webp",
+            mapUrl: "/assets/images/maps/lorencia-map.webp"
+        },
+        media: {
+            photoUrl: "/assets/images/semiboss/skeleton.png",
+            photoWidth: "170px",
+        },
+        drop: [
+            {
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 10
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/chaos.png",
+                size: "24px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/creation.png",
+                size: "36px",
+                quantity: 1
+            },
+        ],
+        stats: {
+            level: "95",
+            defense: "200",
+            minDmg: "13750",
+            maxDmg: "14810",
+            hp: "90.000.000",
+            atkrate: "100%",
+            iceResist: "100%",
+            poisonResist: "100%",
+        },
+    },
+    {
+        id: "11",
+        name: "Zaikan",
+        type: "semiboss",
+        info: {
+            infoBoss: "Cuenta la leyenda que en lo mas profundo del desierto de tarkan  habita una bestia llamada Zaikan de mas de 500 años cuyo poderes son capaces de acabar con todo un ejercito de guerreros. Muchos intentaron  derrotarlo y muchos fallaron  ¿será por fin derrotada la bestia de 500 años ?",
+            infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
+        },
+        maps: {
+            mapName: "tarkan",
+            mapUrlTex: "/assets/images/maps/tarkan-text.webp",
+            mapUrl: "/assets/images/maps/tarkan-map.webp"
+        },
+        media: {
+            photoUrl: "/assets/images/semiboss/skeleton.png",
+            photoWidth: "170px",
+        },
+        drop: [
+            {
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 10
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/chaos.png",
+                size: "24px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/creation.png",
+                size: "36px",
+                quantity: 1
+            },
+        ],
+        stats: {
+            level: "200",
+            defense: "200",
+            minDmg: "13750",
+            maxDmg: "14810",
+            hp: "90.000.000",
+            atkrate: "100%",
+            iceResist: "100%",
+            poisonResist: "100%",
+        },
+    },
+    {
+        id: "12",
+        name: "White Wizard",
+        type: "semiboss",
+        info: {
+            infoBoss: "Tres veces por día, el White Wizard con su ejercito invade el continente de Mu Protocol! Ellos atacan constantemente en Devias, tratando de matar a nuestros viajeros de pocos reset y nivel bajo. Asesina al White Wizard y su ejercito para ayudar a mantener la zona mas segura para nuestros nuevos guerreros! Además de ser una manera fácil de conseguir Jewels y el anillo Wizard's Ring, que te dará un Buff extraordinario!",
+            infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
+        },
+        maps: {
+            mapName: "devias",
+            mapUrlTex: "/assets/images/maps/devias-text.webp",
+            mapUrl: "/assets/images/maps/devias-map.webp"
+        },
+        media: {
+            photoUrl: "/assets/images/semiboss/white-wizard.png",
+            photoWidth: "190px",
+        },
+        drop: [
+            {
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 10
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/chaos.png",
+                size: "24px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/creation.png",
+                size: "36px",
+                quantity: 1
+            },
+        ],
+        stats: {
+            level: "200",
+            defense: "200",
+            minDmg: "13750",
+            maxDmg: "14810",
+            hp: "90.000.000",
+            atkrate: "100%",
+            iceResist: "100%",
+            poisonResist: "100%",
+        },
+    },
 ];

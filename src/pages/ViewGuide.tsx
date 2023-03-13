@@ -2,9 +2,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
-import { useFindMob } from '../hooks/useFindMob';
 
-import { NextArrow, PrevArrow } from "../helpers/arrows";
+import { useFindMob } from '../hooks/useFindMob';
+import { NextArrow, PrevArrow } from "../helpers";
 
 import { MainLayout } from '../layout/MainLayout';
 import { MobStats, MapContainer, DropMob } from '../components';
@@ -32,7 +32,7 @@ export const ViewGuide: React.FC = () => {
         <MainLayout>
             <Slider {...settings} key={idEffect} className="animate__animated animate__fadeIn custom-slick">
                 {guides.map(({ name, info, drop, maps, media, stats }) => (
-                    <Grid container direction="column" alignItems="center" >
+                    <Grid container direction="column" alignItems="center" key={name} >
 
                         <Grid
                             item
