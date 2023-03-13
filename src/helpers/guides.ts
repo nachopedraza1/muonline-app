@@ -7,7 +7,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+            infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "Lorencia",
@@ -43,7 +43,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Tres (3) poderosos magos atacan el poblado de Dungeon, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "1 Jewel random por mob.",
+            infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
             mapName: "Dungeon",
@@ -56,9 +56,38 @@ export const guideList: GuideType[] = [
         },
         drop: [
             {
-                itemName: "",
-                itemUrl: "",
-                size: "",
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 5
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/chaos.png",
+                size: "24px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/creation.png",
+                size: "36px",
                 quantity: 1
             },
         ],
@@ -79,7 +108,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Cuenta la leyenda que en el bosque de elbeland viven tres (3) guardianes con mas fuerza de lo que podrías imaginar, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "1 Jewel random por mob.",
+            infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
             mapName: "Elbeland",
@@ -92,9 +121,38 @@ export const guideList: GuideType[] = [
         },
         drop: [
             {
-                itemName: "",
-                itemUrl: "",
-                size: "",
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 5
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/chaos.png",
+                size: "24px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/creation.png",
+                size: "36px",
                 quantity: 1
             },
         ],
@@ -114,8 +172,8 @@ export const guideList: GuideType[] = [
         name: "Ice Queen",
         type: "invasions",
         info: {
-            infoBoss: "El poblado de Devias fue atacado por tres (3) poderosas emperatrices, tu deber es derrotarlas. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "1 Jewel random por mob.",
+            infoBoss: "La reina Rosalia, tras enterarse que su trono iba a ser destruido dicidio congelarse en alguna parte del continente Mu. Tras muchos años despues el hijo del guerrero que destruyo el trono dicidio despertarla para poder asesinarla. Pero lo que no sabia el hijo del guerrero era quela reina habia hecho un trato con un brujo, por si algun dia deciden asesinarla iba a reencarnar como una Ice Queen para poder vengarse.",
+            infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
             mapName: "Devias",
@@ -128,9 +186,26 @@ export const guideList: GuideType[] = [
         },
         drop: [
             {
-                itemName: "",
-                itemUrl: "",
-                size: "",
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 5
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
                 quantity: 1
             },
         ],
@@ -150,8 +225,8 @@ export const guideList: GuideType[] = [
         name: "Hydra",
         type: "invasions",
         info: {
-            infoBoss: "Tres (3) monstruos  Marinos Invades el reino marino de Atlans,  tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "1 Jewel random por mob.",
+            infoBoss: "Tras los experimentos realizas en la maquina chaos, una radiacion ocasiono que algunos bichos en atlans se transformaran y se volvieran malignos. Tu objectivo es matar a esos bichos malignos para que atlans vuelva a ser como antes.",
+            infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
             mapName: "atlans",
@@ -164,9 +239,26 @@ export const guideList: GuideType[] = [
         },
         drop: [
             {
-                itemName: "",
-                itemUrl: "",
-                size: "",
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 5
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
                 quantity: 1
             },
         ],
@@ -187,7 +279,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Los rabbis Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
-            infoDrop: "1 Jewel random por mob.",
+            infoDrop: "Un (1) Jewel random por mob y 1 GP.",
         },
         maps: {
             mapName: "devias",
@@ -200,9 +292,38 @@ export const guideList: GuideType[] = [
         },
         drop: [
             {
-                itemName: "",
-                itemUrl: "",
-                size: "",
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/chaos.png",
+                size: "24px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/creation.png",
+                size: "36px",
                 quantity: 1
             },
         ],
@@ -223,7 +344,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Los paraguas Invaden Lost Tower! Buscalos y derrota los diez (10) por todo el mapa!",
-            infoDrop: "Conseguiras un (1) Jewel random por mob.",
+            infoDrop: "Un (1) Jewel random por mob y 1 GP.",
         },
         maps: {
             mapName: "lost tower",
@@ -235,6 +356,12 @@ export const guideList: GuideType[] = [
             photoWidth: "210px",
         },
         drop: [
+            {
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 1
+            },
             {
                 itemName: "Jewel of Soul",
                 itemUrl: "/assets/images/drop/soul.png",
@@ -282,7 +409,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+            infoDrop: "Un (1) Jewel random por mob y 1 GP.",
         },
         maps: {
             mapName: "lorencia",
@@ -295,9 +422,38 @@ export const guideList: GuideType[] = [
         },
         drop: [
             {
-                itemName: "",
-                itemUrl: "",
-                size: "",
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                size: "33px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/soul.png",
+                size: "33px",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/bless.png",
+                size: "30px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/chaos.png",
+                size: "24px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/life.png",
+                size: "26px",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/creation.png",
+                size: "36px",
                 quantity: 1
             },
         ],
@@ -318,7 +474,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+            infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "noria",
@@ -354,7 +510,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+            infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "elbeland",
@@ -390,7 +546,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+            infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "devias",
@@ -426,7 +582,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+            infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "dungeon",
@@ -462,7 +618,7 @@ export const guideList: GuideType[] = [
         type: "invasions",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
-            infoDrop: "Conseguiras una (1) Box of Kundun por mob.",
+            infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "devias",

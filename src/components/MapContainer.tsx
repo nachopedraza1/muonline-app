@@ -1,10 +1,10 @@
 import { Grid } from "@mui/material";
 import { Maps } from "../interfaces/interfaces";
 
-export const SlideMaps: React.FC<{ maps: Maps }> = ({ maps }) => {
+export const MapContainer: React.FC<{ maps: Maps }> = ({ maps }) => {
 
     const { mapName, mapUrl, mapUrlTex } = maps;
-    
+
     return (
         <Grid key={mapName} container className='map-item'>
             <img

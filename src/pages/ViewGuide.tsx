@@ -7,7 +7,7 @@ import { useFindMob } from '../hooks/useFindMob';
 import { NextArrow, PrevArrow } from "../helpers/arrows";
 
 import { MainLayout } from '../layout/MainLayout';
-import { MobStats, SlideMaps, DropMob } from '../components';
+import { MobStats, MapContainer, DropMob } from '../components';
 import { Grid, Typography } from '@mui/material';
 
 
@@ -66,7 +66,7 @@ export const ViewGuide: React.FC = () => {
                             {info.infoBoss}
                         </Typography>
 
-                        <Grid container justifyContent="center" mt={3} gap={4}>
+                        <Grid container justifyContent="center" mt={3} mb={6} gap={4}>
 
                             <Grid item xs={4} gap={3} display="flex" flexDirection="column">
                                 <Grid display="flex" justifyContent="center" alignItems="center">
@@ -75,7 +75,7 @@ export const ViewGuide: React.FC = () => {
                                         Maps
                                     </Typography>
                                 </Grid>
-                                <SlideMaps maps={maps} />
+                                <MapContainer maps={maps} />
                             </Grid>
 
                             <Grid item xs={4} gap={3} display="flex" flexDirection="column">
