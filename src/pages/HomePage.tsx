@@ -12,7 +12,7 @@ export const HomePage: React.FC = () => {
             <Box textAlign="center">
                 <img src="/assets/images/scroll-icon.png" width="500px" />
             </Box>
-            <MainLayout>
+            <MainLayout className="bgGuides">
                 <Grid container justifyContent="space-between" spacing={5}>
                     <Grid item xs={4} className="middle-menu">
                         <Typography>DROP LIST</Typography>
