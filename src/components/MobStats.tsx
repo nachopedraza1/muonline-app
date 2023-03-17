@@ -20,15 +20,15 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
     const { photoUrl, photoWidth } = media;
 
     return (
-        <Grid container justifyContent="center" alignItems="center" mt={2}>
-            <Grid item mr={7}>
+        <Grid container mt={2}>
+            <Grid item xs={4} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
                 {statsBoss.slice(0, 4).map(({ id, text, iconUrl }) => (
-                    <Grid item display="flex" alignItems="center" gap={1.5} m={2} key={id}>
+                    <Grid item display="flex" alignItems="center" gap={1.5} m={1} key={id}>
                         <img src={iconUrl} width="40px" />
-                        <Typography variant='h5' fontFamily="Bebas Neue" >
+                        <Typography variant='h5' fontFamily="Bebas Neue" color="#603a3a">
                             {text}:
                         </Typography>
-                        <Typography variant='h6' fontSize={25}>
+                        <Typography variant='h6' fontSize={25} color="#603a3a">
                             {
                                 text == "hp" ? hp :
                                     text == "level" ? level :
@@ -42,28 +42,23 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
 
             <Grid
                 item
-                xs={2.2}
-                height="340px"
+                xs={4}
                 display="flex"
                 position="relative"
                 alignItems="center"
                 justifyContent="center"
+                className="bgStats"
             >
-                <Box >
-                    <div className="blue-light"></div>
-                    <div className="yellow-light"></div>
-                </Box>
                 <img src={photoUrl} key={photoUrl} alt={`${name} protocol mu`} width={photoWidth} className="animate__animated animate__fadeIn" />
             </Grid>
 
-            <Grid item ml={7} >
+            <Grid item xs={4} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
                 {statsBoss.slice(4, 8).map(({ id, text, iconUrl }) => (
-                    <Grid item display="flex" alignItems="center" gap={1.5} m={2} key={id}>
-                        <img src={iconUrl} width="40px" />
-                        <Typography variant='h5' fontFamily="Bebas Neue" >
+                    <Grid item display="flex" alignItems="center" justifyContent="end" gap={1.5} m={1} key={id}>
+                        <Typography variant='h5' fontFamily="Bebas Neue" color="#603a3a">
                             {text}:
                         </Typography>
-                        <Typography variant='h6' fontSize={25}>
+                        <Typography variant='h6' fontSize={25} color="#603a3a">
                             {
                                 text == "min Dmg" ? minDmg :
                                     text == "max Dmg" ? maxDmg :
@@ -71,6 +66,7 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
                                             text == "poison Resist" ? poisonResist : ""
                             }
                         </Typography>
+                        <img src={iconUrl} width="40px" />
                     </Grid>
                 ))}
             </Grid>

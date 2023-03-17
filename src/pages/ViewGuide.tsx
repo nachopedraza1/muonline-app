@@ -1,14 +1,12 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Slider from "react-slick";
 
 import { useFindMob } from '../hooks/useFindMob';
-import { NextArrow, PrevArrow } from "../helpers";
 
 import { MainLayout } from '../layout/MainLayout';
 import { MobStats, MapContainer, DropMob } from '../components';
-import { Grid, Typography, IconButton, InputAdornment, OutlinedInput, Container, Divider, Button } from '@mui/material';
+import { Grid, Typography, IconButton, InputAdornment, OutlinedInput, Divider } from '@mui/material';
 import { KeyboardArrowRight, Search, Share } from "@mui/icons-material";
 
 
@@ -18,16 +16,9 @@ export const ViewGuide: React.FC = () => {
 
     const { guides } = useFindMob();
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        prevArrow: <NextArrow />,
-        nextArrow: <PrevArrow />,
-    };
+    const mainInfo = guides[0];
+    const { name, type, info: { infoBoss } } = mainInfo
+
 
     return (
         <MainLayout className="bgGuides">
@@ -63,14 +54,14 @@ export const ViewGuide: React.FC = () => {
                     </form>
                 </Grid>
 
-                <Grid item xs={8.8} >
+                <Grid item xs={8.8}>
                     <Grid container alignItems="center" mb={1}>
                         <Typography variant="subtitle1" fontSize={15}>
-                            Invasiones
+                            {type}
                         </Typography>
                         <KeyboardArrowRight />
                         <Typography variant="subtitle1" fontSize={15}>
-                            Gorgon
+                            {name}
                         </Typography>
                     </Grid>
 
@@ -78,7 +69,7 @@ export const ViewGuide: React.FC = () => {
                         <Grid container justifyContent="space-between" alignItems="center">
                             <Grid item display="flex" alignItems="center">
                                 <img src="/assets/images/spr_etc.png" width="30px" />
-                                <Typography variant="subtitle1" color="#603a3a" fontSize={35} ml={1}> Gorgon invasion </Typography>
+                                <Typography variant="subtitle1" color="#603a3a" fontSize={35} ml={1}> Guía {name} </Typography>
                             </Grid>
                             <Grid item>
                                 <IconButton>
@@ -106,60 +97,60 @@ export const ViewGuide: React.FC = () => {
                                 color="#603a3a"
                                 mt={2}
                             >
-                                El poblado de DUNGEON  es invadido por 3 poderosos magos oscuros, su estrategia es el ataque dividido  en sectores claves del pueblo , tu deber es  proteger el poblado y sus habitantes, dependemos de ti y tu sabiduría guerrero.
+                                {infoBoss}
                             </Typography>
                         </Grid>
 
-                        <Slider {...settings} key={idEffect} className="animate__animated animate__fadeIn custom-slick">
-                            {guides.map(({ name, info, drop, maps, media, stats }) => (
-                                <Grid container direction="column" alignItems="center" key={name} >
-                                    <Grid
-                                        item
-                                        margin="auto"
-                                        sx={{
-                                            backgroundImage: "url(/assets/images/pvp-item-bg-def.png)",
-                                            backgroundSize: "100%",
-                                            backgroundRepeat: "no-repeat",
-                                            width: "400px",
-                                            height: "60px"
-                                        }}>
-                                        <Typography
-                                            variant='h4'
-                                            fontSize={28}
-                                            textAlign="center"
-                                            pt={2}
-                                        >
-                                            {name}
-                                        </Typography>
+
+                        {guides.map(({ name, info, drop, maps, media, stats }) => (
+                            <Grid container direction="column" alignItems="center" key={name} >
+                                <Grid
+                                    item
+                                    margin="auto"
+                                    sx={{
+                                        backgroundImage: "url(/assets/images/pvp-item-bg-def.png)",
+                                        backgroundSize: "100%",
+                                        backgroundRepeat: "no-repeat",
+                                        width: "400px",
+                                        height: "60px"
+                                    }}>
+                                    <Typography
+                                        variant='h4'
+                                        fontSize={28}
+                                        textAlign="center"
+                                        pt={2}
+                                    >
+                                        {name}
+                                    </Typography>
+                                </Grid>
+
+                                <MobStats stats={stats} media={media} />
+
+                                <Grid container justifyContent="center" mt={3} mb={6} >
+
+                                    <Grid item xs={6} gap={3} display="flex" flexDirection="column">
+                                        <Grid display="flex" justifyContent="center" alignItems="center">
+                                            <img src="/assets/images/icons/map.png" width="50px" />
+                                            <Typography variant='h4' ml={1} className="text-shadow" color="#603a3a">
+                                                Maps
+                                            </Typography>
+                                        </Grid>
+                                        <MapContainer maps={maps} />
                                     </Grid>
 
-                                    <MobStats stats={stats} media={media} />
-
-                                    <Grid container justifyContent="center" mt={3} mb={6} gap={4}>
-
-                                        <Grid item xs={4} gap={3} display="flex" flexDirection="column">
-                                            <Grid display="flex" justifyContent="center" alignItems="center">
-                                                <img src="/assets/images/icons/map.png" width="50px" />
-                                                <Typography variant='h4' ml={1} className="text-shadow">
-                                                    Maps
-                                                </Typography>
-                                            </Grid>
-                                            <MapContainer maps={maps} />
+                                    <Grid item xs={6} gap={3} display="flex" flexDirection="column">
+                                        <Grid display="flex" justifyContent="center" alignItems="center">
+                                            <img src="/assets/images/icons/drop.png" width="50px" />
+                                            <Typography variant='h4' ml={1} className="text-shadow" color="#603a3a">
+                                                Drop
+                                            </Typography>
                                         </Grid>
-
-                                        <Grid item xs={4} gap={3} display="flex" flexDirection="column">
-                                            <Grid display="flex" justifyContent="center" alignItems="center">
-                                                <img src="/assets/images/icons/drop.png" width="50px" />
-                                                <Typography variant='h4' ml={1} className="text-shadow">
-                                                    Drop
-                                                </Typography>
-                                            </Grid>
-                                            <DropMob drop={drop} info={info} />
-                                        </Grid>
+                                        <DropMob drop={drop} info={info} />
                                     </Grid>
                                 </Grid>
-                            ))}
-                        </Slider>
+                            </Grid>
+                        ))}
+
                     </Grid>
                 </Grid>
 
