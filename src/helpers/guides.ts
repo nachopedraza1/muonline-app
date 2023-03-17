@@ -42,7 +42,7 @@ export const guideList: GuideType[] = [
         name: "Gorgon",
         type: "invasions",
         info: {
-            infoBoss: "Tres (3) poderosos magos atacan el poblado de Dungeon, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoBoss: " El poblado de DUNGEON  es invadido por 3 poderosos magos oscuros, su estrategia es el ataque dividido  en sectores claves del pueblo , tu deber es  proteger el poblado y sus habitantes, dependemos de ti y tu sabiduría guerrero. ",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
@@ -107,7 +107,7 @@ export const guideList: GuideType[] = [
         name: "Totem Golem",
         type: "invasions",
         info: {
-            infoBoss: "Cuenta la leyenda que en el bosque de elbeland viven tres (3) guardianes con mas fuerza de lo que podrías imaginar, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoBoss: "El bosque de elbeland es conocido  por  sus grandes historias de tesoros  escondidos, muchos intentaron reclamar lo que el bosque esconde, pero ten cuidado guerrero...  se dice que   3 golem  poderosos resguardan las riqueza  del bosque. Dependemos de ti  para saber que esconde los secretos del bosque.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {

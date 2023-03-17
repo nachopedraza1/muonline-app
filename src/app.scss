@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
+@font-face {
+    font-family: 'StrongSword_New';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://s1.pearlcdn.com/global_static/font/web/web_pearl_original_new_bold.woff2?v=1') format('woff2'), url('https://s1.pearlcdn.com/global_static/font/web/web_pearl_original_new_bold.woff?v=1') format('woff'), url('https://s1.pearlcdn.com/global_static/font/web/web_pearl_original_new_bold.ttf?v=1') format('truetype');
+}
+
 ::-webkit-scrollbar {
     background: #040612;
     width: 4px;
@@ -428,7 +435,7 @@ button:hover {
 
     .slick-prev,
     .slick-next {
-        top: 20%;
+        top: 23%;
     }
 }
 
@@ -713,7 +720,7 @@ button:hover {
 .slider-characters:before {
     content: "";
     position: absolute;
-    background: url(/assets/images/hero-border.png) no-repeat;
+    /*    background: url(/assets/images/hero-border.png) no-repeat; */
     width: 1000px;
     height: 257px;
     left: 50%;
@@ -745,7 +752,7 @@ button:hover {
 
 .sliderImg img:hover {
     transform: scale(1.1);
-    box-shadow: 20px 0px 15px 1px rgba(0, 0, 0, 0.5), -20px 0px 15px 1px rgba(0, 0, 0, 0.5)
+    box-shadow: 20px 0px 15px 1px rgba(0, 0, 0, 0.5), -20px 0px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
 .line {
@@ -755,3 +762,27 @@ button:hover {
     overflow-x: hidden;
     height: 86px;
 }
+
+.bgGuides {
+    min-height: 100vh;
+    background: url(/assets/images/wiki_guide_bg.jpg) top center no-repeat #0f0b0a;
+    background-size: 100% auto;
+    box-sizing: border-box;
+}
+
+/* .tittle-guide {
+    position: relative;
+    padding-left: 20px;
+}
+
+.tittle-guide::before {
+    content: '';
+    background-image: url(/assets/images/spr_etc.png);
+    background-position: top center;
+    position: absolute;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 0px;
+} */

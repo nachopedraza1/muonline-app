@@ -14,6 +14,25 @@ export const MuTheme = createTheme({
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Rajdhani:wght@400;700&display=swap');
             `,
         },
+        MuiOutlinedInput: {
+            styleOverrides: {
+                root: {
+                    borderRadius: 0,
+                    color: "white",
+                    fontFamily: "StrongSword_New",
+                    "&.MuiOutlinedInput-root": {
+                        "& fieldset": {
+                            borderColor: "#6e5856"
+                        }, '&:hover fieldset': {
+                            borderColor: '#6e5856',
+                        },
+                        '&.Mui-focused fieldset': {
+                            borderColor: "#6e5856",
+                        },
+                    },
+                }
+            }
+        },
         MuiTypography: {
             styleOverrides: {
                 root: {
@@ -24,6 +43,8 @@ export const MuTheme = createTheme({
         MuiDivider: {
             styleOverrides: {
                 root: {
+                    width: "100%",
+                    backgroundColor: "#6e5856",
                     ":before": {
                         borderTop: "thin solid #8953C3"
                     },
@@ -102,6 +123,9 @@ export const MuTheme = createTheme({
         },
         h3: {
             fontFamily: "Bebas Neue",
+        },
+        subtitle1: {
+            fontFamily: "StrongSword_New"
         },
     },
 });
