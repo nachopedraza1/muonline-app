@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
+@font-face {
+    font-family: 'StrongSword_New';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://s1.pearlcdn.com/global_static/font/web/web_pearl_original_new_bold.woff2?v=1') format('woff2'), url('https://s1.pearlcdn.com/global_static/font/web/web_pearl_original_new_bold.woff?v=1') format('woff'), url('https://s1.pearlcdn.com/global_static/font/web/web_pearl_original_new_bold.ttf?v=1') format('truetype');
+}
+
 ::-webkit-scrollbar {
     background: #040612;
     width: 4px;
@@ -344,7 +351,7 @@ button:hover {
 
 .map-item {
     position: relative;
-    box-shadow: 0px 17px 33px rgba(10, 151, 254, 0.3);
+    box-shadow: 0px 5px 15px 5px #603a3a;
     max-height: 384px;
 
     .img-map {
@@ -357,78 +364,19 @@ button:hover {
         background-size: cover;
         background-position: center;
         position: absolute;
-        bottom: -8px;
+        bottom: -13px;
         z-index: 1;
         width: 100%;
         height: 10px
     }
 }
 
-.text-shadow {
-    text-shadow: 0px 5px 33px #0A97FE;
-}
-
-.blue-light {
-    background: url(../assets/images/blue-light.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 300px;
-    width: 300px;
-    height: 300px;
-    top: 10px;
-    left: 30px;
-    position: absolute;
-    animation: 12s p-next linear infinite;
-    opacity: 0.7
-}
-
-.yellow-light {
-    background: url(../assets/images/yellow-light.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 300px;
-    width: 300px;
-    height: 300px;
-    top: 10px;
-    left: 30px;
-    position: absolute;
-    animation: 12s p-prev linear infinite;
-    opacity: 0.7;
-}
-
-@keyframes p-next {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    50% {
-        transform: rotate(180deg)
-    }
-
-    100% {
-        transform: rotate(360deg)
-    }
-}
-
-@keyframes p-prev {
-    0% {
-        transform: rotate(0deg)
-    }
-
-    50% {
-        transform: rotate(-180deg)
-    }
-
-    100% {
-        transform: rotate(-360deg)
-    }
-}
 
 .custom-slick {
 
     .slick-prev,
     .slick-next {
-        top: 25%;
+        top: 23%;
     }
 }
 
@@ -713,7 +661,7 @@ button:hover {
 .slider-characters:before {
     content: "";
     position: absolute;
-    background: url(/assets/images/hero-border.png) no-repeat;
+    /*    background: url(/assets/images/hero-border.png) no-repeat; */
     width: 1000px;
     height: 257px;
     left: 50%;
@@ -745,7 +693,7 @@ button:hover {
 
 .sliderImg img:hover {
     transform: scale(1.1);
-    box-shadow: 20px 0px 15px 1px rgba(0, 0, 0, 0.5), -20px 0px 15px 1px rgba(0, 0, 0, 0.5)
+    box-shadow: 20px 0px 15px 1px rgba(0, 0, 0, 0.5), -20px 0px 15px 1px rgba(0, 0, 0, 0.5);
 }
 
 .line {
@@ -756,10 +704,9 @@ button:hover {
     height: 86px;
 }
 
-.bgStats {
-    background: url(/assets/images/block-top-bg.png) center top no-repeat, url(/assets/images/block-bottom-bg.png) center bottom no-repeat;
-    background-color: #12141f;
-    box-shadow: 0px 10px 15px 4px rgba(0, 0, 0, 0.3);
-    padding: 35px 35px;
-    height: 370px;
+.bgGuides {
+    min-height: 100vh;
+    background: url(/assets/images/wiki_guide_bg.jpg) top center no-repeat #0f0b0a;
+    background-size: 100% auto;
+    box-sizing: border-box;
 }

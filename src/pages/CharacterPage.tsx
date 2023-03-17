@@ -17,6 +17,7 @@ export const CharacterPage: React.FC = () => {
 
     return (
         <MainLayout>
+            <SliderCharacters handleTouchSlider={handleTouchSlider} />
             <div className="slider slider-for slick-initialized slick-slider">
                 <div className="slick-list draggable">
                     <div className="slick-track" style={{ opacity: 1, width: "100%" }}>
@@ -86,7 +87,6 @@ export const CharacterPage: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <SliderCharacters handleTouchSlider={handleTouchSlider} />
         </MainLayout >
     )
 }

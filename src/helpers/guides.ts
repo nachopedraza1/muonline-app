@@ -4,7 +4,7 @@ export const guideList: GuideType[] = [
     {
         id: "1",
         name: "Golden Budge Dragon",
-        type: "invasions",
+        type: "Golden Invasión",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -40,9 +40,9 @@ export const guideList: GuideType[] = [
     {
         id: "2",
         name: "Gorgon",
-        type: "invasions",
+        type: "Invasiones",
         info: {
-            infoBoss: "Tres (3) poderosos magos atacan el poblado de Dungeon, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoBoss: " El poblado de DUNGEON  es invadido por 3 poderosos magos oscuros, su estrategia es el ataque dividido  en sectores claves del pueblo , tu deber es  proteger el poblado y sus habitantes, dependemos de ti y tu sabiduría guerrero. ",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
@@ -105,9 +105,9 @@ export const guideList: GuideType[] = [
     {
         id: "3",
         name: "Totem Golem",
-        type: "invasions",
+        type: "Invasiones",
         info: {
-            infoBoss: "Cuenta la leyenda que en el bosque de elbeland viven tres (3) guardianes con mas fuerza de lo que podrías imaginar, tu deber es derrotarlos. Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
+            infoBoss: "El bosque de elbeland es conocido  por  sus grandes historias de tesoros  escondidos, muchos intentaron reclamar lo que el bosque esconde, pero ten cuidado guerrero...  se dice que   3 golem  poderosos resguardan las riqueza  del bosque. Dependemos de ti  para saber que esconde los secretos del bosque.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
@@ -170,7 +170,7 @@ export const guideList: GuideType[] = [
     {
         id: "4",
         name: "Ice Queen",
-        type: "invasions",
+        type: "Invasiones",
         info: {
             infoBoss: "La reina Rosalia, tras enterarse que su trono iba a ser destruido dicidio congelarse en alguna parte del continente Mu. Tras muchos años despues el hijo del guerrero que destruyo el trono dicidio despertarla para poder asesinarla. Pero lo que no sabia el hijo del guerrero era quela reina habia hecho un trato con un brujo, por si algun dia deciden asesinarla iba a reencarnar como una Ice Queen para poder vengarse.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
@@ -223,7 +223,7 @@ export const guideList: GuideType[] = [
     {
         id: "5",
         name: "Hydra",
-        type: "invasions",
+        type: "Invasiones",
         info: {
             infoBoss: "Tras los experimentos realizas en la maquina chaos, una radiacion ocasiono que algunos bichos en atlans se transformaran y se volvieran malignos. Tu objectivo es matar a esos bichos malignos para que atlans vuelva a ser como antes.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
@@ -276,7 +276,7 @@ export const guideList: GuideType[] = [
     {
         id: "6",
         name: "Rabbits",
-        type: "invasions",
+        type: "Invasiones",
         info: {
             infoBoss: "Los rabbis Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
@@ -341,7 +341,7 @@ export const guideList: GuideType[] = [
     {
         id: "7",
         name: "Summer",
-        type: "invasions",
+        type: "Invasiones",
         info: {
             infoBoss: "Los paraguas Invaden Lost Tower! Buscalos y derrota los diez (10) por todo el mapa!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
@@ -406,7 +406,7 @@ export const guideList: GuideType[] = [
     {
         id: "8",
         name: "New Year",
-        type: "invasions",
+        type: "Invasiones",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
@@ -471,7 +471,7 @@ export const guideList: GuideType[] = [
     {
         id: "1",
         name: "Golden Goblin",
-        type: "invasions",
+        type: "Golden Invasión",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -507,7 +507,7 @@ export const guideList: GuideType[] = [
     {
         id: "1",
         name: "Golden Rabbit",
-        type: "invasions",
+        type: "Golden Invasión",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -543,7 +543,7 @@ export const guideList: GuideType[] = [
     {
         id: "1",
         name: "Golden Solider",
-        type: "invasions",
+        type: "Golden Invasión",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -579,7 +579,7 @@ export const guideList: GuideType[] = [
     {
         id: "1",
         name: "Golden Dark Knight",
-        type: "invasions",
+        type: "Golden Invasión",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -615,7 +615,7 @@ export const guideList: GuideType[] = [
     {
         id: "1",
         name: "Golden Titan",
-        type: "invasions",
+        type: "Golden Invasión",
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
