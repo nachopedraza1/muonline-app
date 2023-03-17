@@ -9,7 +9,7 @@ const navItemsFooter = [
     { id: 4, text: "RANKINGS", path: "/" },
     { id: 5, text: "DESCARGAS", path: "/" },
     { id: 6, text: "CONTACTO", path: "/" },
-]
+];
 
 export const Footer: React.FC = () => {
     return (

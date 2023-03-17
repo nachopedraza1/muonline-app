@@ -21,9 +21,9 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
 
     return (
         <Grid container justifyContent="center" alignItems="center" mt={2}>
-            <Grid item mr={7}>
+            <Grid item xs={3.5} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
                 {statsBoss.slice(0, 4).map(({ id, text, iconUrl }) => (
-                    <Grid item display="flex" alignItems="center" gap={1.5} m={2} key={id}>
+                    <Grid item display="flex" alignItems="center" gap={1.5} m={1} key={id}>
                         <img src={iconUrl} width="40px" />
                         <Typography variant='h5' fontFamily="Bebas Neue" >
                             {text}:
@@ -42,12 +42,12 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
 
             <Grid
                 item
-                xs={2.2}
-                height="340px"
+                xs={3.5}
                 display="flex"
                 position="relative"
                 alignItems="center"
                 justifyContent="center"
+                className="bgStats"
             >
                 <Box >
                     <div className="blue-light"></div>
@@ -56,9 +56,9 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
                 <img src={photoUrl} key={photoUrl} alt={`${name} protocol mu`} width={photoWidth} className="animate__animated animate__fadeIn" />
             </Grid>
 
-            <Grid item ml={7} >
+            <Grid item xs={3.5} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
                 {statsBoss.slice(4, 8).map(({ id, text, iconUrl }) => (
-                    <Grid item display="flex" alignItems="center" gap={1.5} m={2} key={id}>
+                    <Grid item display="flex" alignItems="center" gap={1.5} m={1} key={id}>
                         <img src={iconUrl} width="40px" />
                         <Typography variant='h5' fontFamily="Bebas Neue" >
                             {text}:

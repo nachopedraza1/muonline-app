@@ -5,11 +5,7 @@ export const MuTheme = createTheme({
         MuiCssBaseline: {
             styleOverrides: `
             body{
-                background: #040612;
-                background-image: url(/assets/images/fon-bg-bottom.jpg);
-                background-position: bottom center;
-                background-size: clamp(1500px, 80%, 1500px) auto;
-                background-repeat: no-repeat;
+                background: #0a0d16;
             }
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Rajdhani:wght@400;700&display=swap');
             `,
@@ -105,3 +101,9 @@ export const MuTheme = createTheme({
         },
     },
 });
+
+/* background: #040612;
+                background-image: url(/assets/images/fon-bg-bottom.jpg);
+                background-position: bottom center;
+                background-size: clamp(1500px, 80%, 1500px) auto;
+                background-repeat: no-repeat; */

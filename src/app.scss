@@ -372,11 +372,11 @@ button:hover {
     background: url(../assets/images/blue-light.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 400px;
+    background-size: 300px;
     width: 300px;
     height: 300px;
-    top: -10px;
-    left: -50px;
+    top: 10px;
+    left: 30px;
     position: absolute;
     animation: 12s p-next linear infinite;
     opacity: 0.7
@@ -386,11 +386,11 @@ button:hover {
     background: url(../assets/images/yellow-light.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 400px;
+    background-size: 300px;
     width: 300px;
     height: 300px;
-    top: -10px;
-    left: -50px;
+    top: 10px;
+    left: 30px;
     position: absolute;
     animation: 12s p-prev linear infinite;
     opacity: 0.7;
@@ -428,7 +428,7 @@ button:hover {
 
     .slick-prev,
     .slick-next {
-        top: 20%;
+        top: 25%;
     }
 }
 
@@ -754,4 +754,12 @@ button:hover {
     width: 100%;
     overflow-x: hidden;
     height: 86px;
+}
+
+.bgStats {
+    background: url(/assets/images/block-top-bg.png) center top no-repeat, url(/assets/images/block-bottom-bg.png) center bottom no-repeat;
+    background-color: #12141f;
+    box-shadow: 0px 10px 15px 4px rgba(0, 0, 0, 0.3);
+    padding: 35px 35px;
+    height: 370px;
 }
