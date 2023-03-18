@@ -25,10 +25,10 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
                 {statsBoss.slice(0, 4).map(({ id, text, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" gap={1.5} m={1} key={id}>
                         <img src={iconUrl} width="40px" />
-                        <Typography variant='h5' fontFamily="Bebas Neue" color="#603a3a">
+                        <Typography variant='h5' fontFamily="Bebas Neue" >
                             {text}:
                         </Typography>
-                        <Typography variant='h6' fontSize={25} color="#603a3a">
+                        <Typography variant='h6' fontSize={25} >
                             {
                                 text == "hp" ? hp :
                                     text == "level" ? level :
@@ -55,10 +55,10 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
             <Grid item xs={4} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
                 {statsBoss.slice(4, 8).map(({ id, text, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" justifyContent="end" gap={1.5} m={1} key={id}>
-                        <Typography variant='h5' fontFamily="Bebas Neue" color="#603a3a">
+                        <Typography variant='h5' fontFamily="Bebas Neue" >
                             {text}:
                         </Typography>
-                        <Typography variant='h6' fontSize={25} color="#603a3a">
+                        <Typography variant='h6' fontSize={25} >
                             {
                                 text == "min Dmg" ? minDmg :
                                     text == "max Dmg" ? maxDmg :

@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom"
 import { Header } from "../ui/Header";
-import { Footer } from "../ui/Footer";
 import { HomePage, ViewGuide, CharacterPage } from "../pages";
 
 export const MainRoutes = () => {
@@ -13,7 +12,7 @@ export const MainRoutes = () => {
                 <Route path="/characters" element={<CharacterPage />} />
                 <Route path="/*" element={<Navigate to="/" replace={true} />} />
             </Routes>
-            <Footer />
+            {/*  <Footer /> */}
         </>
     )
 }

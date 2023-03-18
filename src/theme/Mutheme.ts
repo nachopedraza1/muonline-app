@@ -5,7 +5,7 @@ export const MuTheme = createTheme({
         MuiCssBaseline: {
             styleOverrides: `
             body{
-                background: #040612;
+                background-color: #040612;
             }
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&family=Rajdhani:wght@400;700&display=swap');
             `,
@@ -13,6 +13,7 @@ export const MuTheme = createTheme({
         MuiOutlinedInput: {
             styleOverrides: {
                 root: {
+                    backgroundColor: "#0f0b0a",
                     borderRadius: 0,
                     color: "white",
                     fontFamily: "StrongSword_New",

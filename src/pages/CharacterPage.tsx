@@ -16,7 +16,7 @@ export const CharacterPage: React.FC = () => {
     }
 
     return (
-        <MainLayout>
+        <MainLayout className="bgBottom">
             <SliderCharacters handleTouchSlider={handleTouchSlider} />
             <div className="slider slider-for slick-initialized slick-slider">
                 <div className="slick-list draggable">

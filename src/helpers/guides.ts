@@ -353,7 +353,7 @@ export const guideList: GuideType[] = [
         },
         media: {
             photoUrl: "/assets/images/invasions/fireflame.webp",
-            photoWidth: "210px",
+            photoWidth: "160px",
         },
         drop: [
             {
@@ -651,7 +651,7 @@ export const guideList: GuideType[] = [
     {
         id: "9",
         name: "Red Dragon",
-        type: "semiboss",
+        type: "Semiboss",
         info: {
             infoBoss: "El pueblo de Noria una vez mas se ve invadida por extrañas criaturas. En esta ocasión serán los dragones rojos los que aparecerán por toda Noria irrumpiendo con la tranquilidad y la paz. Durante esta invasión dos tipos de dragones rojos podrán ser vistos, y cada uno otorgará diferentes recompensas a quien logre derrotarlos.",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
@@ -716,7 +716,7 @@ export const guideList: GuideType[] = [
     {
         id: "10",
         name: "Skeleton",
-        type: "semiboss",
+        type: "Semiboss",
         info: {
             infoBoss: "El Rey Leoric, enloquecido por el Devil Kundum y muerto a manos de su más fiel caballero en una trágica batalla, vuelve al continente Mu. Su espíritu, maldito por los poderes malignos, vaga sin descanso en algún lugar de las catacumbas, hasta que deseoso de sed de venganza, invade la superficie del continente buscando a aquellos que lo traicionaron. Tu misión será proporcionarle el descanso eterno y traer paz a dicha alma perdida. El rey muerto o Skeleton King volverá en forma de esqueleto gigante e invadirá Lorencia a la vez acompañado de sus súbditos para asesinar a cualquier guerrero descuidado que ronde los alrededores.",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
@@ -781,7 +781,7 @@ export const guideList: GuideType[] = [
     {
         id: "11",
         name: "Zaikan",
-        type: "semiboss",
+        type: "Semiboss",
         info: {
             infoBoss: "Cuenta la leyenda que en lo mas profundo del desierto de tarkan  habita una bestia llamada Zaikan de mas de 500 años cuyo poderes son capaces de acabar con todo un ejercito de guerreros. Muchos intentaron  derrotarlo y muchos fallaron  ¿será por fin derrotada la bestia de 500 años ?",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
@@ -846,7 +846,7 @@ export const guideList: GuideType[] = [
     {
         id: "12",
         name: "White Wizard",
-        type: "semiboss",
+        type: "Semiboss",
         info: {
             infoBoss: "Tres veces por día, el White Wizard con su ejercito invade el continente de Mu Protocol! Ellos atacan constantemente en Devias, tratando de matar a nuestros viajeros de pocos reset y nivel bajo. Asesina al White Wizard y su ejercito para ayudar a mantener la zona mas segura para nuestros nuevos guerreros! Además de ser una manera fácil de conseguir Jewels y el anillo Wizard's Ring, que te dará un Buff extraordinario!",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
