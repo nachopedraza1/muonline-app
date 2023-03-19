@@ -50,7 +50,6 @@ export interface Maps {
 export interface Drop {
     itemUrl: string,
     itemName: string,
-    size: string,
     quantity: number,
 }
 

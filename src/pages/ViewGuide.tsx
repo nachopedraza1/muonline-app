@@ -13,7 +13,7 @@ export const ViewGuide: React.FC = () => {
     const { guides } = useFindMob();
 
     return (
-        <MainLayout className="bgGuides">
+        <MainLayout className="bgtest">
             <Grid container justifyContent="space-between">
 
                 <Grid item xs={12} textAlign="center">
@@ -27,7 +27,7 @@ export const ViewGuide: React.FC = () => {
                     </Typography>
                 </Grid>
 
-                <Grid item xs={3} mt={4.3}>
+                <Grid item xs={3} mt={3.4}>
                     <SidebarGuide />
                 </Grid>
 

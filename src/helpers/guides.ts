@@ -22,7 +22,6 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Box of Kundun",
                 itemUrl: "/assets/images/drop/kundun1.png",
-                size: "50px",
                 quantity: 1
             },
         ],
@@ -58,36 +57,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 5
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -123,36 +116,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 5
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -188,24 +175,20 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 5
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
         ],
@@ -241,24 +224,20 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 5
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
         ],
@@ -294,36 +273,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -359,36 +332,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -424,36 +391,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -489,7 +450,6 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Box of Kundun",
                 itemUrl: "/assets/images/drop/kundun1.png",
-                size: "50px",
                 quantity: 1
             },
         ],
@@ -525,7 +485,6 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Box of Kundun",
                 itemUrl: "/assets/images/drop/kundun1.png",
-                size: "50px",
                 quantity: 1
             },
         ],
@@ -561,7 +520,6 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Box of Kundun",
                 itemUrl: "/assets/images/drop/kundun1.png",
-                size: "50px",
                 quantity: 1
             },
         ],
@@ -597,7 +555,6 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Box of Kundun",
                 itemUrl: "/assets/images/drop/kundun1.png",
-                size: "50px",
                 quantity: 1
             },
         ],
@@ -633,7 +590,6 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Box of Kundun",
                 itemUrl: "/assets/images/drop/kundun1.png",
-                size: "50px",
                 quantity: 1
             },
         ],
@@ -669,36 +625,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 10
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -734,36 +684,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 10
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -799,36 +743,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 10
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -864,36 +802,30 @@ export const guideList: GuideType[] = [
             {
                 itemName: "Goblin Point",
                 itemUrl: "/assets/images/drop/coin.png",
-                size: "33px",
                 quantity: 10
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/soul.png",
-                size: "33px",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/bless.png",
-                size: "30px",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/chaos.png",
-                size: "24px",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/life.png",
-                size: "26px",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/creation.png",
-                size: "36px",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],

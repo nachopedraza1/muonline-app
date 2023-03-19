@@ -2,8 +2,8 @@ import { Divider, Grid, IconButton, Typography } from '@mui/material';
 import { KeyboardArrowRight, Share } from '@mui/icons-material';
 import { MobStats } from './MobStats';
 import { MapContainer } from './MapContainer';
-import { DropMob } from './DropMob';
 import { GuideType } from '../interfaces/interfaces';
+import { DropMob } from './DropMob';
 
 export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
 
@@ -52,7 +52,7 @@ export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
                         fontSize={18}
                         textAlign="start"
                         margin="auto"
-                       
+
                         mt={2}
                     >
                         {infoBoss}
@@ -84,27 +84,28 @@ export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
 
                         <MobStats stats={stats} media={media} />
 
-                        <Grid container justifyContent="center" mt={3} mb={6} >
+                        <Grid container justifyContent="center"  >
 
-                            <Grid item xs={6} gap={3} display="flex" flexDirection="column">
-                                <Grid display="flex" justifyContent="center" alignItems="center">
+                            <Grid container direction="column" >
+                                <Grid container justifyContent="center" alignItems="center">
                                     <img src="/assets/images/icons/map.png" width="50px" />
-                                    <Typography variant='h4' ml={1} className="text-shadow">
+                                    <Typography variant='h4' ml={1} >
                                         Maps
                                     </Typography>
                                 </Grid>
                                 <MapContainer maps={maps} />
                             </Grid>
 
-                            <Grid item xs={6} gap={3} display="flex" flexDirection="column">
+                            <Grid container direction="column" gap={2}>
                                 <Grid display="flex" justifyContent="center" alignItems="center">
                                     <img src="/assets/images/icons/drop.png" width="50px" />
-                                    <Typography variant='h4' ml={1} className="text-shadow">
+                                    <Typography variant='h4' ml={1} >
                                         Drop
                                     </Typography>
                                 </Grid>
                                 <DropMob drop={drop} info={info} />
                             </Grid>
+
                         </Grid>
                     </Grid>
                 ))}
