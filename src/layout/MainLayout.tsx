@@ -1,4 +1,5 @@
 import { Grid, Container } from '@mui/material';
+import { Footer } from '../ui/Footer';
 
 
 export const MainLayout: React.FC<{ children: JSX.Element | JSX.Element[], className?: string }> = ({ children, className }) => {
@@ -7,6 +8,7 @@ export const MainLayout: React.FC<{ children: JSX.Element | JSX.Element[], class
             <Container maxWidth="lg">
                 {children}
             </Container>
+            <Footer />
         </Grid >
     )
 }

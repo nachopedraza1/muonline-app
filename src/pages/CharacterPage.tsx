@@ -1,8 +1,10 @@
-import { SliderCharacters } from "../components";
-import { MainLayout } from "../layout/MainLayout";
 import { useState } from 'react';
-import { SliderHero } from '../interfaces/interfaces';
 import { characterStats } from "../helpers";
+
+import { MainLayout } from "../layout/MainLayout";
+import { SliderCharacters } from "../components";
+
+import { SliderHero } from '../interfaces/interfaces';
 
 export const CharacterPage: React.FC = () => {
 

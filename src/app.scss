@@ -248,18 +248,8 @@ button:hover {
     position: relative;
     justify-content: end;
     align-items: center;
-
-    /*  &::after {
-        content: '';
-        background: url(assets/images/scroll-icon.png) no-repeat;
-        background-size: 100%;
-        background-position: center;
-        position: absolute;
-        width: 100%;
-        height: 25px;
-        bottom: 0px;
-    } */
 }
+
 
 .middle-menu {
     transition: all 0.3s;
@@ -348,28 +338,6 @@ button:hover {
         width: 510px;
     }
 }
-
-/* .map-item {
-    position: relative;
-    max-height: 204px;
-
-    .img-map {
-        width: 100%;
-    }
-
-    /*    &::after {
-        content: '';
-        background: url(../assets/images/section_arrow_down.png) no-repeat;
-        background-size: cover;
-        background-position: center;
-        position: absolute;
-        bottom: -13px;
-        z-index: 1;
-        width: 100%;
-        height: 10px
-    } */
-
-
 
 .custom-slick {
 
@@ -660,7 +628,6 @@ button:hover {
 .slider-characters:before {
     content: "";
     position: absolute;
-    /*    background: url(/assets/images/hero-border.png) no-repeat; */
     width: 1000px;
     height: 257px;
     left: 50%;
@@ -703,23 +670,19 @@ button:hover {
     height: 86px;
 }
 
-.bgGuides {
-    background: url(/assets/images/wiki_guide_bg.jpg) top center no-repeat #040612;
-    background-size: 100% auto;
-    background-color: #0f0b0a;
-}
-
-
-.bgMain {
-    background: url(/assets/images/arriba.jpg) center top no-repeat;
-    background-size: contain;
-}
-
-.bgtest {
+/* .bgGuides {
     background: url(/assets/images/arribaguides.jpg) center top no-repeat,
         url(/assets/images/abajo.jpg) center bottom no-repeat;
     background-size: contain;
-    min-height: 1700px;
+    max-width: 1456px;
+    margin: auto;
+} */
+
+.bgGuides {
+    background: url(/assets/images/wiki_guide_bg.jpg) top center no-repeat #0f0b0a;
+    background-size: 100% auto;
+    min-height: 100vh;
+
 }
 
 .bgBottom {
@@ -735,4 +698,33 @@ button:hover {
     background-size: cover;
     min-height: 100vh;
     margin: auto;
+}
+
+.item-sidebar {
+    transition: 0.3s all;
+
+    &:hover {
+        margin-left: 10px;
+
+        h6 {
+            color: #6e5856;
+        }
+    }
+}
+
+.item-drop {
+
+    img {
+        transition: 0.3s all;
+        color: #ffc107;
+    }
+
+    &:hover {
+        transition: 0.3s all;
+
+        img {
+            transform: scale(120%);
+            -webkit-filter: brightness(130%);
+        }
+    }
 }

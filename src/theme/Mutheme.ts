@@ -13,8 +13,9 @@ export const MuTheme = createTheme({
         MuiOutlinedInput: {
             styleOverrides: {
                 root: {
-                    backgroundColor: "#0f0b0a",
+                    backgroundColor: "transparent",
                     borderRadius: 0,
+                    paddingRight: 0,
                     color: "white",
                     fontFamily: "StrongSword_New",
                     "&.MuiOutlinedInput-root": {
@@ -98,7 +99,19 @@ export const MuTheme = createTheme({
                     whiteSpace: "nowrap"
                 }
             }
-        }
+        },
+        MuiAccordion: {
+            styleOverrides: {
+                root: {
+                    width: "100%",
+                    background: "transparent",
+                    boxShadow: "none",
+                    "&.Mui-expanded": {
+                        margin: "0px"
+                    }
+                }
+            }
+        },
     },
     palette: {
         primary: {

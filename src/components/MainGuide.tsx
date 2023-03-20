@@ -1,9 +1,9 @@
+import { MobStats, DropMob, MapContainer } from './index';
+
 import { Divider, Grid, IconButton, Typography } from '@mui/material';
 import { KeyboardArrowRight, Share } from '@mui/icons-material';
-import { MobStats } from './MobStats';
-import { MapContainer } from './MapContainer';
+
 import { GuideType } from '../interfaces/interfaces';
-import { DropMob } from './DropMob';
 
 export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
 
@@ -23,11 +23,11 @@ export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
                 </Typography>
             </Grid>
 
-            <Grid container bgcolor="#1d1a1a" p={4}>
+            <Grid container bgcolor="white" p={4}>
                 <Grid container justifyContent="space-between" alignItems="center">
                     <Grid item display="flex" alignItems="center">
                         <img src="/assets/images/spr_etc.png" width="30px" />
-                        <Typography variant="subtitle1" fontSize={35} ml={1}> {name} </Typography>
+                        <Typography variant="subtitle1" fontSize={35} ml={1} color="#6e5856"> {name} </Typography>
                     </Grid>
                     <Grid item>
                         <IconButton>
@@ -46,19 +46,18 @@ export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
                     </IconButton>
                 </Grid>
 
-                <Grid item >
+                <Grid container>
                     <Typography
                         maxWidth="md"
                         fontSize={18}
                         textAlign="start"
                         margin="auto"
-
+                        color="#6e5856"
                         mt={2}
                     >
                         {infoBoss}
                     </Typography>
                 </Grid>
-
 
                 {guides.map(({ name, info, drop, maps, media, stats }) => (
                     <Grid container direction="column" alignItems="center" key={name} mt={3}>
@@ -84,31 +83,17 @@ export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
 
                         <MobStats stats={stats} media={media} />
 
-                        <Grid container justifyContent="center"  >
-
-                            <Grid container direction="column" >
-                                <Grid container justifyContent="center" alignItems="center">
-                                    <img src="/assets/images/icons/map.png" width="50px" />
-                                    <Typography variant='h4' ml={1} >
-                                        Maps
-                                    </Typography>
-                                </Grid>
-                                <MapContainer maps={maps} />
-                            </Grid>
-
-                            <Grid container direction="column" gap={2}>
-                                <Grid display="flex" justifyContent="center" alignItems="center">
-                                    <img src="/assets/images/icons/drop.png" width="50px" />
-                                    <Typography variant='h4' ml={1} >
-                                        Drop
-                                    </Typography>
-                                </Grid>
-                                <DropMob drop={drop} info={info} />
-                            </Grid>
-
+                        <Grid container justifyContent="center" alignItems="center">
+                            <MapContainer maps={maps} />
+                            <DropMob drop={drop} info={info} />
                         </Grid>
+
                     </Grid>
                 ))}
+
+                <Grid container >
+                    <iframe width="100%" height="430" src="https://www.youtube.com/embed/Gv1dY_5MXFo" title="SEMI BOOS WHITE WIZZAR PROTOCOL MU ONLINE" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                </Grid>
 
             </Grid>
         </>

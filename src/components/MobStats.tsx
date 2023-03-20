@@ -1,5 +1,5 @@
 
-import { Grid, Typography, Box } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { Media, Stats } from '../interfaces/interfaces';
 
 
@@ -25,10 +25,10 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
                 {statsBoss.slice(0, 4).map(({ id, text, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" gap={1.5} m={1} key={id}>
                         <img src={iconUrl} width="40px" />
-                        <Typography variant='h5' fontFamily="Bebas Neue" >
+                        <Typography variant='h5' fontFamily="Bebas Neue" color="#6e5856">
                             {text}:
                         </Typography>
-                        <Typography variant='h6' fontSize={25} >
+                        <Typography variant='h6' fontSize={25} color="#6e5856">
                             {
                                 text == "hp" ? hp :
                                     text == "level" ? level :
@@ -55,10 +55,10 @@ export const MobStats: React.FC<{ stats: Stats, media: Media }> = ({ stats, medi
             <Grid item xs={4} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
                 {statsBoss.slice(4, 8).map(({ id, text, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" justifyContent="end" gap={1.5} m={1} key={id}>
-                        <Typography variant='h5' fontFamily="Bebas Neue" >
+                        <Typography variant='h5' fontFamily="Bebas Neue" color="#6e5856">
                             {text}:
                         </Typography>
-                        <Typography variant='h6' fontSize={25} >
+                        <Typography variant='h6' fontSize={25} color="#6e5856">
                             {
                                 text == "min Dmg" ? minDmg :
                                     text == "max Dmg" ? maxDmg :
