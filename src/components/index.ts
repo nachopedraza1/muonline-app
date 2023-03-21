@@ -3,6 +3,7 @@ export * from "./DropMob";
 export * from "./MobStats";
 export * from "./MainGuide";
 export * from "./ServerInfo";
+export * from "./SearchGuide";
 export * from "./SidebarGuide";
 export * from "./MapContainer";
 export * from "./SliderCharacters";

@@ -25,16 +25,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "15",
-            defense: "25",
-            minDmg: "1120",
-            maxDmg: "1155",
-            hp: "19.740.000",
-            atkrate: "100%",
-            iceResist: "20%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "15", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "19.740.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "25", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "1120", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "1155", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "20%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "2",
@@ -84,16 +84,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "300",
-            defense: "100",
-            minDmg: "7750",
-            maxDmg: "8810",
-            hp: "58.000.000",
-            atkrate: "100%",
-            iceResist: "90%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "300", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "58.000.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "100", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "7750", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "8810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "90%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "3",
@@ -143,16 +143,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "300",
-            defense: "100",
-            minDmg: "7750",
-            maxDmg: "8810",
-            hp: "58.000.000",
-            atkrate: "100%",
-            iceResist: "90%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "300", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "58.000.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "100", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "7750", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "8810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "90%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "4",
@@ -192,16 +192,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "300",
-            defense: "100",
-            minDmg: "7750",
-            maxDmg: "8810",
-            hp: "58.000.000",
-            atkrate: "100%",
-            iceResist: "90%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "300", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "58.000.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "100", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "7750", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "8810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "90%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "5",
@@ -241,16 +241,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "300",
-            defense: "100",
-            minDmg: "7750",
-            maxDmg: "8810",
-            hp: "58.000.000",
-            atkrate: "100%",
-            iceResist: "90%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "300", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "58.000.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "100", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "7750", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "8810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "90%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "6",
@@ -300,16 +300,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "149",
-            defense: "100",
-            minDmg: "0",
-            maxDmg: "0",
-            hp: "50.000",
-            atkrate: "0%",
-            iceResist: "80%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "149", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "50.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "100", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "0%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "0", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "0", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "80%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "7",
@@ -359,16 +359,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "149",
-            defense: "100",
-            minDmg: "0",
-            maxDmg: "0",
-            hp: "50.000",
-            atkrate: "0%",
-            iceResist: "80%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "149", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "50.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "100", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "0%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "0", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "0", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "80%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "8",
@@ -418,16 +418,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "149",
-            defense: "100",
-            minDmg: "0",
-            maxDmg: "0",
-            hp: "50.000",
-            atkrate: "0%",
-            iceResist: "80%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "149", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "50.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "100", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "0%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "0", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "0", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "80%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "1",
@@ -453,16 +453,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "16",
-            defense: "26",
-            minDmg: "1120",
-            maxDmg: "1155",
-            hp: "19.780.000",
-            atkrate: "100%",
-            iceResist: "20%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "16", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "19.780.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "26", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "1120", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "1155", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "20%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "1",
@@ -488,16 +488,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "17",
-            defense: "27",
-            minDmg: "1120",
-            maxDmg: "1155",
-            hp: "19.820.000",
-            atkrate: "100%",
-            iceResist: "20%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "17", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "19.820.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "27", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "1120", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "1155", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "20%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "1",
@@ -523,16 +523,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "46",
-            defense: "32",
-            minDmg: "1320",
-            maxDmg: "1355",
-            hp: "19.996.000",
-            atkrate: "100%",
-            iceResist: "23%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "46", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "19.996.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "32", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "1320", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "1355", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "23%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "1",
@@ -558,16 +558,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "60",
-            defense: "50",
-            minDmg: "1320",
-            maxDmg: "1355",
-            hp: "21.800.000",
-            atkrate: "100%",
-            iceResist: "25%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "60", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "21.800.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "50", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "1320", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "1355", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "25%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "1",
@@ -593,16 +593,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "53",
-            defense: "75",
-            minDmg: "1775",
-            maxDmg: "1881",
-            hp: "25.996.000",
-            atkrate: "100%",
-            iceResist: "29%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "53", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "25.996.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "75", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "1775", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "1881", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "29%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "9",
@@ -652,16 +652,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "95",
-            defense: "200",
-            minDmg: "13750",
-            maxDmg: "14810",
-            hp: "90.000.000",
-            atkrate: "100%",
-            iceResist: "100%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "95", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "90.000.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "200", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "13750", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "14810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "100%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "10",
@@ -711,16 +711,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "95",
-            defense: "200",
-            minDmg: "13750",
-            maxDmg: "14810",
-            hp: "90.000.000",
-            atkrate: "100%",
-            iceResist: "100%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "95", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "90.000.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "200", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "13750", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "14810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "100%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "11",
@@ -770,16 +770,16 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "200",
-            defense: "200",
-            minDmg: "13750",
-            maxDmg: "14810",
-            hp: "90.000.000",
-            atkrate: "100%",
-            iceResist: "100%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "200", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "90.000.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "200", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "13750", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "14810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "100%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
     {
         id: "12",
@@ -829,15 +829,15 @@ export const guideList: GuideType[] = [
                 quantity: 1
             },
         ],
-        stats: {
-            level: "200",
-            defense: "200",
-            minDmg: "13750",
-            maxDmg: "14810",
-            hp: "90.000.000",
-            atkrate: "100%",
-            iceResist: "100%",
-            poisonResist: "100%",
-        },
+        stats: [
+            { id: 1, name: "level", value: "200", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "90.000.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "200", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "13750", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "14810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "100%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
     },
 ];

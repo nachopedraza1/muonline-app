@@ -27,18 +27,14 @@ export interface GuideType {
     maps: Maps,
     media: Media
     drop: Drop[],
-    stats: Stats,
+    stats: Stats[],
 }
 
 export interface Stats {
-    level: string,
-    defense: string,
-    minDmg: string,
-    maxDmg: string,
-    hp: string,
-    atkrate: string,
-    iceResist: string,
-    poisonResist: string,
+    id: number,
+    name: string,
+    value: string,
+    iconUrl: string,
 }
 
 export interface Maps {
