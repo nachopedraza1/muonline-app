@@ -112,6 +112,13 @@ export const MuTheme = createTheme({
                 }
             }
         },
+        MuiTooltip: {
+            styleOverrides: {
+                tooltip:{
+                    fontSize:"15px"
+                }
+            }
+        }
     },
     palette: {
         primary: {

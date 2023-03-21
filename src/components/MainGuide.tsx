@@ -1,6 +1,6 @@
 import { MobStats, DropMob, MapContainer } from './index';
 
-import { Divider, Grid, IconButton, Typography } from '@mui/material';
+import { Divider, Grid, IconButton, Typography, Tooltip } from '@mui/material';
 import { KeyboardArrowRight, Share } from '@mui/icons-material';
 
 import { GuideType } from '../interfaces/interfaces';
@@ -30,9 +30,11 @@ export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
                         <Typography variant="subtitle1" fontSize={35} ml={1} color="#6e5856"> {name} </Typography>
                     </Grid>
                     <Grid item>
-                        <IconButton>
-                            <img src="/assets/images/reg_update.svg" width="35px" />
-                        </IconButton>
+                        <Tooltip title="Solicitar correcion" arrow placement='top-start'>
+                            <IconButton>
+                                <img src="/assets/images/reg_update.svg" width="35px" />
+                            </IconButton>
+                        </Tooltip>
                     </Grid>
                 </Grid>
                 <Divider />
@@ -41,9 +43,11 @@ export const MainGuide: React.FC<{ guides: GuideType[] }> = ({ guides }) => {
                     <Typography variant="subtitle1" color="#a1a0a0" fontSize={14}>
                         Última modificación : 08 mar. 2023, 05:37 (UTC)
                     </Typography>
-                    <IconButton >
-                        <Share sx={{ color: "#a1a0a0" }} />
-                    </IconButton>
+                    <Tooltip title="Compartir Guia" arrow placement='bottom-start'>
+                        <IconButton >
+                            <Share sx={{ color: "#a1a0a0" }} />
+                        </IconButton>
+                    </Tooltip>
                 </Grid>
 
                 <Grid container>

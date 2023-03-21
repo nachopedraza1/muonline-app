@@ -28,6 +28,7 @@ export const HomePage: React.FC = () => {
                         <img src="/assets/images/img3.png" className="middle-menu__img" alt="" width="100%" />
                     </Grid>
                 </Grid>
+                <ServerInfo />
             </MainLayout >
         </>
     )

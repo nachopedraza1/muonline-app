@@ -298,14 +298,25 @@ button:hover {
 .server-info {
     position: relative;
     margin-top: 130px;
-    background-color: #0b182bc6;
-    box-shadow: 0px 17px 33px rgba(10, 151, 254, 0.3);
+    background: url(/assets/images/big-slider-bg.jpg);
     text-align: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(/assets/images/line.png) no-repeat;
+        width: 1148px;
+        height: 86px;
+        left: 50%;
+        margin-left: -574px;
+        top: -40px
+    }
 
     h3 {
         width: 100%;
         position: absolute;
-        top: -50px;
+        top: -70px;
+        font-size: 40px;
     }
 
     &__arrow-top {
@@ -338,6 +349,7 @@ button:hover {
         width: 510px;
     }
 }
+
 
 .custom-slick {
 
