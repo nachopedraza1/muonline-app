@@ -1,10 +1,11 @@
-
+import { useCustomSelector } from '../hooks/useRedux';
 import { Grid, Typography } from '@mui/material';
-import { Media, Stats } from '../interfaces/interfaces';
 
-export const MobStats: React.FC<{ stats: Stats[], media: Media }> = ({ stats, media }) => {
+export const MobStats: React.FC = () => {
 
-    const { photoUrl, photoWidth } = media;
+    const { guides } = useCustomSelector(state => state.guides);
+
+    const { stats, media: { photoUrl, photoWidth } } = guides;
 
     return (
         <Grid container mt={2}>

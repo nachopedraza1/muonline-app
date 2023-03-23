@@ -1,8 +1,9 @@
+import { useCustomSelector } from '../hooks/useRedux';
 import { Grid, Typography } from '@mui/material';
 
-import { Drop, Info } from '../interfaces/interfaces';
+export const DropMob: React.FC = () => {
 
-export const DropMob: React.FC<{ drop: Drop[], info: Info }> = ({ drop, info }) => {
+    const { guides: { info, drop } } = useCustomSelector(state => state.guides);
 
     const { infoDrop } = info;
 
@@ -24,11 +25,11 @@ export const DropMob: React.FC<{ drop: Drop[], info: Info }> = ({ drop, info }) 
             </Grid>
             {drop.map(({ itemName, itemUrl }) => (
                 <Grid
+                    key={itemName}
                     className="item-drop"
                     display="flex"
                     flexDirection="column"
                     alignItems="center"
-                    key={itemName}
                     p={2}
                 >
                     <img src={itemUrl} width="50px" alt={`${itemName} protocol mu`} />

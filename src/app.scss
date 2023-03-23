@@ -682,14 +682,6 @@ button:hover {
     height: 86px;
 }
 
-/* .bgGuides {
-    background: url(/assets/images/arribaguides.jpg) center top no-repeat,
-        url(/assets/images/abajo.jpg) center bottom no-repeat;
-    background-size: contain;
-    max-width: 1456px;
-    margin: auto;
-} */
-
 .bgGuides {
     background: url(/assets/images/wiki_guide_bg.jpg) top center no-repeat #0f0b0a;
     background-size: 100% auto;
@@ -698,7 +690,7 @@ button:hover {
 }
 
 .bgBottom {
-    background: url(/assets/images/abajo.jpg) center bottom no-repeat;
+    background: url(/assets/images/abajo.webp) center bottom no-repeat;
     background-size: cover;
     max-width: 1456px;
     min-height: 900px;
@@ -706,7 +698,7 @@ button:hover {
 }
 
 .bgCharacters {
-    background: url(/assets/images/arribaguides.jpg) center top no-repeat;
+    background: url(/assets/images/arribaguides.webp) center top no-repeat;
     background-size: cover;
     min-height: 100vh;
     margin: auto;

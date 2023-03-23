@@ -1,6 +1,6 @@
 import { GuideType } from "../interfaces/interfaces";
 
-export const guideList: GuideType[] = [
+export const guides: GuideType[] = [
     {
         id: "1",
         name: "Golden Budge Dragon",
@@ -430,7 +430,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "1",
+        id: "9",
         name: "Golden Goblin",
         type: "Golden Invasión",
         info: {
@@ -465,7 +465,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "1",
+        id: "10",
         name: "Golden Rabbit",
         type: "Golden Invasión",
         info: {
@@ -500,7 +500,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "1",
+        id: "11",
         name: "Golden Solider",
         type: "Golden Invasión",
         info: {
@@ -535,7 +535,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "1",
+        id: "12",
         name: "Golden Dark Knight",
         type: "Golden Invasión",
         info: {
@@ -570,7 +570,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "1",
+        id: "13",
         name: "Golden Titan",
         type: "Golden Invasión",
         info: {
@@ -605,7 +605,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "9",
+        id: "14",
         name: "Red Dragon",
         type: "Semiboss",
         info: {
@@ -664,7 +664,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "10",
+        id: "15",
         name: "Skeleton",
         type: "Semiboss",
         info: {
@@ -723,7 +723,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "11",
+        id: "16",
         name: "Zaikan",
         type: "Semiboss",
         info: {
@@ -782,7 +782,7 @@ export const guideList: GuideType[] = [
         ]
     },
     {
-        id: "12",
+        id: "17",
         name: "White Wizard",
         type: "Semiboss",
         info: {

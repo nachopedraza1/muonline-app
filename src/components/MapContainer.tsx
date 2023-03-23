@@ -1,7 +1,9 @@
+import { useCustomSelector } from '../hooks/useRedux';
 import { Grid } from "@mui/material";
-import { Maps } from "../interfaces/interfaces";
 
-export const MapContainer: React.FC<{ maps: Maps }> = ({ maps }) => {
+export const MapContainer: React.FC = () => {
+
+    const { guides: { maps } } = useCustomSelector(state => state.guides);
 
     const { mapName, mapUrl, mapUrlTex } = maps;
 

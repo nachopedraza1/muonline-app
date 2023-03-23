@@ -10,6 +10,8 @@ import { SubMenuProps } from '../../interfaces/interfaces';
 export const InvasionsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) => {
 
     const invasiones = guidesLinks.invasiones
+        .concat({ id: 1, text: "Golden Invasion", img: "/assets/images/invasions/goldengoblin.webp", width: "95px", path: "/guides/1", status: "active" })
+
 
     const typeMenu = openSubmenu === "invasions" ? "submenu-active" : "";
 

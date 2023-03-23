@@ -13,7 +13,7 @@ export const Banner = () => {
 
     return (
         <Grid container className='banner-home'>
-            <img src="assets/images/banner.png" alt="" width="100%" />
+            <img src="assets/images/banner.webp" alt="" width="100%" />
             <Typography
                 variant='h4'
                 fontFamily="Rajdhani"

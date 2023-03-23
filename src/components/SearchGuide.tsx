@@ -4,10 +4,10 @@ import { useSearch } from "../hooks/useSearch";
 
 export const SearchGuide = () => {
 
-    const { formData, onInputchange } = useSearch({ search: "" });
+    const { onInputchange, onSearch } = useSearch();
 
     return (
-        <form >
+        <form onSubmit={onSearch}>
             <OutlinedInput
                 fullWidth
                 placeholder="Busca una guía"
@@ -16,6 +16,7 @@ export const SearchGuide = () => {
                 endAdornment={
                     <InputAdornment position="end">
                         <IconButton
+                            type="submit"
                             sx={{
                                 height: "56px",
                                 width: "55px",

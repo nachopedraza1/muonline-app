@@ -1,20 +1,33 @@
-import { ChangeEvent, useState } from "react"
+import { ChangeEvent, useState, FormEvent } from 'react';
+import { guides } from '../helpers/guides';
+import { setGuides } from '../redux/slices';
+import { useCustomDispatch } from './useRedux';
 
-export const useSearch = <T extends Object>(initialState: T) => {
+export const useSearch = () => {
 
-    const [formData, setFormData] = useState(initialState);
+    const dispatch = useCustomDispatch();
+
+    const [searchValue, setSearchValue] = useState<string>("");
 
     const onInputchange = ({ target }: ChangeEvent<HTMLInputElement>) => {
 
-        const { name, value } = target
-        setFormData({
-            ...formData,
-            [name]: value,
-        })
+        const { value } = target;
+        setSearchValue(value);
+    }
+
+    const onSearch = (event: FormEvent) => {
+        event.preventDefault();
+        const guide = guides.filter(guide => guide.name.toLowerCase().includes(searchValue));
+        if (guide.length >= 1) {
+            dispatch(setGuides(guide[0]))
+        } else {
+            console.log("no hay guias");
+        }
     }
 
     return {
         onInputchange,
-        formData
+        searchValue,
+        onSearch,
     }
 }

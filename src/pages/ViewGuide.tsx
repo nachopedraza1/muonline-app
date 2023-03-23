@@ -1,16 +1,16 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { useFindMob } from '../hooks/useFindMob';
 
 import { MainLayout } from '../layout/MainLayout';
 import { SidebarGuide, MainGuide } from '../components';
 import { Grid, Typography } from '@mui/material';
+import { updateGuides } from '../helpers/updateGuides';
 
 
 export const ViewGuide: React.FC = () => {
 
-    const { guides } = useFindMob();
+    updateGuides();
 
     return (
         <MainLayout className="bgGuides">
@@ -32,7 +32,7 @@ export const ViewGuide: React.FC = () => {
                 </Grid>
 
                 <Grid item xs={8.8}>
-                    <MainGuide guides={guides} />
+                    <MainGuide />
                 </Grid>
 
             </Grid>
