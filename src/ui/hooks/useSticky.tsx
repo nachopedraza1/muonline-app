@@ -37,6 +37,5 @@ export const useSticky = () => {
         stickyNavbar,
         stickySubMenu,
         offSetNavbar
-        
     }
 }
