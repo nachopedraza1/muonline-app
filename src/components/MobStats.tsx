@@ -3,12 +3,10 @@ import { Grid, Typography } from '@mui/material';
 
 export const MobStats: React.FC = () => {
 
-    const { guides } = useCustomSelector(state => state.guides);
-
-    const { stats, media: { photoUrl, photoWidth } } = guides;
+    const { stats, media: { photoUrl, photoWidth } } = useCustomSelector(state => state.guideList.monsters);
 
     return (
-        <Grid container mt={2}>
+        <>
             <Grid item xs={4} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
                 {stats.slice(0, 4).map(({ id, name, value, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" gap={1.5} m={1} key={id}>
@@ -48,6 +46,6 @@ export const MobStats: React.FC = () => {
                     </Grid>
                 ))}
             </Grid>
-        </Grid>
+        </>
     )
 }

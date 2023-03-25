@@ -3,9 +3,7 @@ import { Grid } from "@mui/material";
 
 export const MapContainer: React.FC = () => {
 
-    const { guides: { maps } } = useCustomSelector(state => state.guides);
-
-    const { mapName, mapUrl, mapUrlTex } = maps;
+    const { maps: { mapName, mapUrl, mapUrlTex } } = useCustomSelector(state => state.guideList.monsters);
 
     return (
         <Grid item xs={6} position="relative" mt={2}>

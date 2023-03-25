@@ -1,6 +1,7 @@
 import { ChangeEvent, useState, FormEvent } from 'react';
+
 import { guides } from '../helpers/guides';
-import { setGuides } from '../redux/slices';
+import { setMonsterGuide } from '../redux/slices';
 import { useCustomDispatch } from './useRedux';
 
 export const useSearch = () => {
@@ -19,7 +20,7 @@ export const useSearch = () => {
         event.preventDefault();
         const guide = guides.filter(guide => guide.name.toLowerCase().includes(searchValue));
         if (guide.length >= 1) {
-            dispatch(setGuides(guide[0]))
+            dispatch(setMonsterGuide(guide[0]))
         } else {
             console.log("no hay guias");
         }

@@ -2,10 +2,10 @@ export const guidesLinks = {
     golden: [
         { id: 1, text: "Golden Budge Dragon", img: "/assets/images/invasions/golden.webp", width: "100px", path: "/guides/1", status: "active" },
         { id: 2, text: "Golden Goblin", img: "/assets/images/invasions/goldengoblin.webp", width: "100px", path: "/guides/9", status: "active" },
-        { id: 1, text: "Golden Rabbit", img: "/assets/images/invasions/goldenrabbit.webp", width: "100px", path: "/guides/10", status: "active" },
-        { id: 1, text: "Golden Solider", img: "/assets/images/invasions/goldensolider.webp", width: "100px", path: "/guides/11", status: "active" },
-        { id: 1, text: "Golden Dark Knight", img: "/assets/images/invasions/goldendarkking.webp", width: "100px", path: "/guides/12", status: "active" },
-        { id: 1, text: "Golden Titan", img: "/assets/images/invasions/gioldentitan.webp", width: "100px", path: "/guides/13", status: "active" },
+        { id: 3, text: "Golden Rabbit", img: "/assets/images/invasions/goldenrabbit.webp", width: "100px", path: "/guides/10", status: "active" },
+        { id: 4, text: "Golden Solider", img: "/assets/images/invasions/goldensolider.webp", width: "100px", path: "/guides/11", status: "active" },
+        { id: 5, text: "Golden Dark Knight", img: "/assets/images/invasions/goldendarkking.webp", width: "100px", path: "/guides/12", status: "active" },
+        { id: 6, text: "Golden Titan", img: "/assets/images/invasions/gioldentitan.webp", width: "100px", path: "/guides/13", status: "active" },
     ],
     invasiones: [
         { id: 1, text: "Gorgon", img: "/assets/images/invasions/gorgon.webp", width: "110px", path: "/guides/2", status: "active" },
@@ -37,7 +37,7 @@ export const guidesLinks = {
         { id: 10, text: "Brickster", img: "/assets/images/boss/boss3.webp", width: "150px", path: "/", status: "inactive" },
     ],
     eventos: [
-        { id: 1, text: "Blood Castle", img: "/assets/images/eventos/bloodcastle.png", width: "140px", path: "/", status: "active" },
+        { id: 1, text: "Blood Castle", img: "/assets/images/eventos/bloodcastle.png", width: "140px", path: "/guides/18", status: "active" },
         { id: 2, text: "Chaos Castle", img: "/assets/images/eventos/chaoscastle.png", width: "140px", path: "/", status: "active" },
         { id: 3, text: "Devil Square", img: "/assets/images/eventos/devil.png", width: "130px", path: "/", status: "active" },
         { id: 4, text: "Mirror Dimensions", img: "/assets/images/eventos/mirror.png", width: "140px", path: "/", status: "active" },

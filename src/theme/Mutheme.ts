@@ -118,7 +118,15 @@ export const MuTheme = createTheme({
                     fontSize: "15px"
                 }
             }
-        }
+        },
+        MuiTableCell: {
+            styleOverrides: {
+                root: {
+                    fontSize: 18,
+                    color: "#6e5856"
+                }
+            }
+        },
     },
     palette: {
         primary: {

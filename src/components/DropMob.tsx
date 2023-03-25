@@ -3,7 +3,7 @@ import { Grid, Typography } from '@mui/material';
 
 export const DropMob: React.FC = () => {
 
-    const { guides: { info, drop } } = useCustomSelector(state => state.guides);
+    const { info, drop } = useCustomSelector(state => state.guideList.monsters);
 
     const { infoDrop } = info;
 

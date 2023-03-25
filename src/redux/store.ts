@@ -3,7 +3,7 @@ import { guidesSlice } from './slices';
 
 export const store = configureStore({
     reducer: {
-        guides: guidesSlice.reducer
+        guideList: guidesSlice.reducer
     },
 })
 

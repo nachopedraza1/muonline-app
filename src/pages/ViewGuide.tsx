@@ -3,12 +3,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 import { MainLayout } from '../layout/MainLayout';
-import { SidebarGuide, MainGuide } from '../components';
+import { SidebarGuide, GuideMonster } from '../components';
 import { Grid, Typography } from '@mui/material';
 import { updateGuides } from '../helpers/updateGuides';
+import { useCustomSelector } from '../hooks/useRedux';
+import { GuideEvent } from "../components/GuideEvent";
 
 
 export const ViewGuide: React.FC = () => {
+
+    const { type } = useCustomSelector(state => state.guideList.events);
 
     updateGuides();
 
@@ -32,7 +36,10 @@ export const ViewGuide: React.FC = () => {
                 </Grid>
 
                 <Grid item xs={8.8}>
-                    <MainGuide />
+                    {type != "Events"
+                        ? <GuideMonster />
+                        : <GuideEvent />
+                    }
                 </Grid>
 
             </Grid>

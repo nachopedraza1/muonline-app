@@ -12,7 +12,6 @@ export const EventsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose })
 
     const eventos = guidesLinks.eventos;
 
-
     return (
         <SubMenuLayout openSubmenu={openSubmenu} typeMenu={typeMenu} handleClose={handleClose}>
             {eventos.map(({ id, text, img, width, path, status }) => (

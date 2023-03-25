@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { setGuides } from '../redux/slices';
+import { setEventGuide, setMonsterGuide } from '../redux/slices';
 import { useCustomDispatch } from '../hooks/useRedux';
 
-import { guides } from './guides';
-
+import { guides, events } from '../helpers';
 
 export const updateGuides = () => {
 
@@ -14,8 +13,13 @@ export const updateGuides = () => {
     const { guideId } = useParams();
 
     const guide = guides.find(guide => guide.id === guideId) || guides[0];
+    const eventGuide = events.find(event => event.id === guideId) || events[0];
 
     useEffect(() => {
-        dispatch(setGuides(guide))
+        if (guide.type != "Events") {
+            dispatch(setMonsterGuide(guide))
+        } else {
+            dispatch(setEventGuide(eventGuide));
+        }
     }, [guideId])
 }
