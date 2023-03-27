@@ -19,7 +19,7 @@ export interface SubMenuProps {
     handleClose?: () => void,
 }
 
-export interface GuideType {
+export interface Monster {
     id: string,
     name: string,
     type: string,
@@ -59,6 +59,26 @@ export interface Info {
     infoDrop: string,
 }
 
+export interface Events {
+    id: string,
+    type: string,
+    name: string,
+    infoItems?: string[],
+    entryTittle?: string,
+    imgEntryName?: string,
+    urlEntryImg?: string,
+    entryItems?: string[]
+    rulesTitle?: string,
+    rulesItems?: string[],
+    rooms?: room[]
+}
+
+export interface room {
+    level: number,
+    reward: string,
+    entryLevel: string,
+}
+
 export interface SliderHero {
     id: number,
     name: string,
@@ -76,24 +96,4 @@ export interface Stat {
 
 export interface SetDisplayHero {
     handleTouchSlider: (value: number) => void,
-}
-
-export interface Events {
-    id: string,
-    type: string,
-    name: string,
-    infoItems: string[],
-    entryTittle: string,
-    imgEntryName: string,
-    urlEntryImg: string,
-    entryItems: string[]
-    rulesTitle: string,
-    rulesItems: string[],
-    rooms: room[]
-}
-
-export interface room {
-    level: number,
-    reward: string,
-    entryLevel: string,
 }

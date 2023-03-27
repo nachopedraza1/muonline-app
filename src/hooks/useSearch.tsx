@@ -1,8 +1,8 @@
 import { ChangeEvent, useState, FormEvent } from 'react';
+import { monsters, events } from '../helpers';
 
-import { guides } from '../helpers/guides';
-import { setMonsterGuide } from '../redux/slices';
 import { useCustomDispatch } from './useRedux';
+import { setEventGuide, setMonsterGuide } from '../redux/slices';
 
 export const useSearch = () => {
 
@@ -18,11 +18,12 @@ export const useSearch = () => {
 
     const onSearch = (event: FormEvent) => {
         event.preventDefault();
-        const guide = guides.filter(guide => guide.name.toLowerCase().includes(searchValue));
-        if (guide.length >= 1) {
-            dispatch(setMonsterGuide(guide[0]))
-        } else {
-            console.log("no hay guias");
+        const monsterGuide = monsters.filter(guide => guide.name.toLowerCase().includes(searchValue));
+        const eventGuide = events.filter(event => event.name.toLocaleLowerCase().includes(searchValue));
+        if (monsterGuide.length >= 1) {
+            dispatch(setMonsterGuide(monsterGuide[0]));
+        } else if (eventGuide.length >= 1) {
+            dispatch(setEventGuide(eventGuide[0]));
         }
     }
 

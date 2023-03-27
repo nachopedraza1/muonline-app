@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { GuideType, Events } from '../interfaces/interfaces';
+import { Events, Monster } from '../interfaces/interfaces';
 
 
 const initialState = {
@@ -31,26 +31,14 @@ const initialState = {
             { id: 1, name: "", value: "", iconUrl: "" },
         ],
     },
-    events: {
-        id: "",
-        type: "",
-        name: "",
-        infoItems: [""],
-        entryTittle: "",
-        entryItems: [""],
-        urlEntryImg: "",
-        imgEntryName: "",
-        rulesTitle: "",
-        rulesItems: [""],
-        rooms: [{ level: 1, reward: "", entryLevel: "" }]
-    }
+    events: {} as Events
 }
 
 export const guidesSlice = createSlice({
     name: 'guideList',
     initialState,
     reducers: {
-        setMonsterGuide: (state, { payload }: PayloadAction<GuideType>) => {
+        setMonsterGuide: (state, { payload }: PayloadAction<Monster>) => {
             state.events = initialState.events;
             state.monsters = payload;
         },

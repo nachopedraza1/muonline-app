@@ -2,7 +2,54 @@ import { Events } from "../interfaces/interfaces";
 
 export const events: Events[] = [
     {
-        id: "1",
+        id: "18",
+        name: "Blood Castle",
+        type: "Events",
+        infoItems: [
+            '- El evento consiste en atravesar el puente colmado de mobs que invaden el evento, cuando lleguen al final del puente te encontraras con una puerta que deberas de romper y matar los mobs que te pida , asi podras romper la estatua que tirara el arma archangel.',
+            '- No hay pérdida de experiencia cuando un jugador no consigue matar en el Blood Castle.',
+            '- No hay pérdida de Zen cuando un jugador muere en el Blood Castle.',
+            '- El lider que obtenga el arma archangel debera entregarlo al NPC que se encuentra en la zona segura, todos los miembros del party ganaran premio.',
+            '- Apertura del Blood Castle 6 veces al dia.',
+            '- Para mayor informacion, apretar la letra H ingame.',
+            '- Duracion del Blood Castle  8 minutos.',
+        ],
+        entryTittle: "Como ingresar al Blood Castle",
+        entryItems: [
+            '- El Spirit of Archangel está ubicado dentro y fuera de la iglesia en Devias.',
+            '- Para los primeros 15 jugadores que muestren el [Cloak Invisibility] al NPC Spirit of Archangel podran ingresar al blood castle.',
+            '- El party puede ser establecido dentro y fuera del Blood Castle.',
+            '- El nivel correspondiente del "Cloak Invisibility" para el blood castle en todas las razas será eliminado cuando entres al castillo.',
+        ],
+        urlEntryImg: "/assets/images/eventos/bloodcastle.png",
+        imgEntryName: "Armor of Guardsman",
+        rulesTitle: "Reglas del Blood Castle",
+        rulesItems: [
+            '- El Comando Warp puede ser usado despues de entrar al  Blood Castle.',
+            '- Una vez alcanzado el limite de participantes(15), usted no podra ingresar.',
+            '- El jugador que use "Town portal scroll" en el Blood Castle sera transportado a Devias.',
+            '- Cuando un personaje muere en el Blood Castle sera trasportado a Devias.',
+            '- El personaje que se encuentre en estado PK no podra entrar al  Blood Castle.',
+            '- El jugador no puede irse más allá de la zona de segura después de entrar al Blood Castle antes de que el evento empiece.',
+            '- Los Personajes que se quedan en el Blood Castle después del evento serán retornados a Devias.',
+            '- Si el evento terminada antes de los (15 minutos) entonces  todos los monstruos desaparecerán y Blood Castle estará cerrado,',
+            '- después de 1 minuto todos los personajes seran retornados a Devias.',
+            '- Limite de entradas Blood Castle al dia son 2 veces por personaje.',
+            '- Podras usar buff skills en la zona segura antes que inicie el evento.',
+            '- El Trade no es admitido en Blood Castle.'
+        ],
+        rooms: [
+            { level: 1, entryLevel: "15 ~ 29", reward: "1 Chaos, 5 GP" },
+            { level: 2, entryLevel: "30 ~ 99", reward: "1 Chaos, 5 GP" },
+            { level: 3, entryLevel: "100 ~ 159", reward: "2 Chaos, 10 GP" },
+            { level: 4, entryLevel: "160 ~ 219", reward: "2 Chaos, 10 GP" },
+            { level: 5, entryLevel: "220 ~ 279", reward: "3 Chaos, 15 GP" },
+            { level: 6, entryLevel: "280 ~ 400", reward: "3 Chaos, 20 GP" },
+            { level: 7, entryLevel: "1 ~ 400 ML", reward: "5 Chaos, 30 GP" },
+        ]
+    },
+    {
+        id: "19",
         name: "Chaos Castle",
         type: "Events",
         infoItems: [
@@ -49,5 +96,5 @@ export const events: Events[] = [
             { level: 6, entryLevel: "280 ~ 400", reward: "3 Chaos, 20 GP" },
             { level: 7, entryLevel: "1 ~ 400 ML", reward: "5 Chaos, 30 GP" },
         ]
-    }
+    },
 ]

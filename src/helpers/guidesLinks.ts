@@ -38,7 +38,7 @@ export const guidesLinks = {
     ],
     eventos: [
         { id: 1, text: "Blood Castle", img: "/assets/images/eventos/bloodcastle.png", width: "140px", path: "/guides/18", status: "active" },
-        { id: 2, text: "Chaos Castle", img: "/assets/images/eventos/chaoscastle.png", width: "140px", path: "/", status: "active" },
+        { id: 2, text: "Chaos Castle", img: "/assets/images/eventos/chaoscastle.png", width: "140px", path: "/guides/19", status: "active" },
         { id: 3, text: "Devil Square", img: "/assets/images/eventos/devil.png", width: "130px", path: "/", status: "active" },
         { id: 4, text: "Mirror Dimensions", img: "/assets/images/eventos/mirror.png", width: "140px", path: "/", status: "active" },
         { id: 5, text: "Rey del Mu", img: "/assets/images/eventos/reydelmu.png", width: "140px", path: "/", status: "active" },
