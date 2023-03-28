@@ -7,6 +7,7 @@ const initialState = {
         id: "",
         name: "",
         type: "",
+        quantity: 1,
         info: {
             infoBoss: "",
             infoDrop: "",

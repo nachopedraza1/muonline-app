@@ -23,32 +23,30 @@ export const SemiBossMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose 
                     onClick={handleClose}
                     className={status != "active" ? 'submenu-item-gray' : 'submenu-item'}
                 >
-                    <Link
-                        fontFamily="Bebas Neue"
-                        component={RouterLink}
-                        to={path}
-                        variant='h5'
-                    >
-                        <Box width={width}>
-                            <img
-                                src={img}
-                                alt={`Protocol Mu ${text}`}
-                                width="100%"
-                                className='mob-img'
-                            />
-                        </Box>
-                        {text}
-                        <Tooltip title={status.toUpperCase()} arrow placement="top">
-                            <IconButton>
-                                <Circle sx={{ fontSize: "10px", color: status != "active" ? "red" : "green" }} />
-                            </IconButton>
-                        </Tooltip>
-                    </Link>
+                    <Tooltip title={status != "active" ? "INACTIVE" : ""} arrow placement="top">
+                        <Link
+                            fontFamily="Bebas Neue"
+                            component={RouterLink}
+                            to={path}
+                            variant='h5'
+                        >
+                            <Box width={width}>
+                                <img
+                                    src={img}
+                                    alt={`Protocol Mu ${text}`}
+                                    width="100%"
+                                    className='mob-img'
+                                />
+                            </Box>
+                            {text}
+                        </Link>
+                    </Tooltip>
                 </Grid>
-            ))}
+            ))
+            }
             <IconButton onClick={handleClose} sx={{ position: "absolute", top: 10, right: 10 }}>
                 <CloseOutlined />
             </IconButton>
-        </SubMenuLayout>
+        </SubMenuLayout >
     )
 }

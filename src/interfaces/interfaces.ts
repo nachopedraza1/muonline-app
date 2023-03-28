@@ -23,6 +23,7 @@ export interface Monster {
     id: string,
     name: string,
     type: string,
+    quantity: number,
     info: Info,
     maps: Maps,
     media: Media
@@ -75,9 +76,10 @@ export interface Events {
 }
 
 export interface room {
-    level: number,
-    reward: string,
-    entryLevel: string,
+    level?: number | string,
+    reward?: string,
+    rewardList?: string[],
+    entryLevel?: string,
     entryLevel2?: string,
 }
 

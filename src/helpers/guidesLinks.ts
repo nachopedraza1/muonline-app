@@ -17,12 +17,12 @@ export const guidesLinks = {
         { id: 7, text: "Hydra", img: "/assets/images/invasions/hydra.webp", width: "150px", path: "/guides/5", status: "active" },
     ],
     semibosses: [
-        { id: 1, text: "Red Dragon", img: "/assets/images/semiboss/red-dragon.png", width: "130px", path: "/guides/14", status: "active" },
-        { id: 2, text: "Skeleton", img: "/assets/images/semiboss/skeleton.png", width: "90px", path: "/guides/15", status: "active" },
-        { id: 3, text: "Zaikan", img: "/assets/images/semiboss/santa.png", width: "165px", path: "/guides/16", status: "active" },
-        { id: 4, text: "White Wizard", img: "/assets/images/semiboss/white-wizard.png", width: "105px", path: "/guides/17", status: "active" },
-        { id: 5, text: "Metal Balrog", img: "/assets/images/semiboss/metal.png", width: "130px", path: "/", status: "inactive" },
-        { id: 6, text: "Erohim", img: "/assets/images/semiboss/herohim.png", width: "100px", path: "/", status: "inactive" },
+        { id: 1, text: "Skeleton", img: "/assets/images/semiboss/skeleton.webp", width: "90px", path: "/guides/15", status: "active" },
+        { id: 2, text: "White Wizard", img: "/assets/images/semiboss/white-wizard.webp", width: "105px", path: "/guides/17", status: "active" },
+        { id: 3, text: "Red Dragon", img: "/assets/images/semiboss/red-dragon.webp", width: "130px", path: "/guides/14", status: "active" },
+        { id: 4, text: "Zaikan", img: "/assets/images/semiboss/zaikan.webp", width: "135px", path: "/guides/16", status: "active" },
+        { id: 5, text: "Metal Balrog", img: "/assets/images/semiboss/metal.webp", width: "130px", path: "/guides/21", status: "active" },
+        { id: 6, text: "Erohim", img: "/assets/images/semiboss/herohim.webp", width: "100px", path: "/", status: "inactive" },
     ],
     bosses: [
         { id: 1, text: "Selupan", img: "/assets/images/boss/selupan.webp", width: "170px", path: "/", status: "inactive" },
@@ -39,9 +39,10 @@ export const guidesLinks = {
     eventos: [
         { id: 1, text: "Blood Castle", img: "/assets/images/eventos/bloodcastle.png", width: "140px", path: "/guides/18", status: "active" },
         { id: 2, text: "Chaos Castle", img: "/assets/images/eventos/chaoscastle.png", width: "140px", path: "/guides/19", status: "active" },
-        { id: 3, text: "Devil Square", img: "/assets/images/eventos/devil.png", width: "130px", path: "/", status: "active" },
-        { id: 4, text: "Mirror Dimensions", img: "/assets/images/eventos/mirror.png", width: "140px", path: "/", status: "active" },
-        { id: 5, text: "Rey del Mu", img: "/assets/images/eventos/reydelmu.png", width: "140px", path: "/", status: "active" },
-        { id: 6, text: "Castle Siege", img: "/assets/images/eventos/cscs.png", width: "140px", path: "/", status: "active" },
+        { id: 3, text: "Devil Square", img: "/assets/images/eventos/devil.png", width: "130px", path: "/guides/20", status: "active" },
+        { id: 4, text: "Mirror Dimensions", img: "/assets/images/eventos/mirror.png", width: "140px", path: "/", status: "inactive" },
+        { id: 5, text: "Imperial Guardian", img: "/assets/images/eventos/gaion.png", width: "140px", path: "/", status: "inactive" },
+        { id: 5, text: "Rey del Mu", img: "/assets/images/eventos/reydelmu.png", width: "140px", path: "/", status: "inactive" },
+        { id: 6, text: "Castle Siege", img: "/assets/images/eventos/cscs.png", width: "140px", path: "/", status: "inactive" },
     ]
 }

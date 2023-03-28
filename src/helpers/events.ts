@@ -23,7 +23,7 @@ export const events: Events[] = [
         ],
         urlEntryImg: "/assets/images/eventos/bloodcastle.png",
         urlMapImg: "/assets/images/maps/bloodcastle.jpg",
-        imgEntryName: "Armor of Guardsman",
+        imgEntryName: "Invisibility Cloak",
         rulesTitle: "Reglas del Blood Castle",
         rulesItems: [
             '- El Comando Warp puede ser usado despues de entrar al  Blood Castle.',
@@ -98,6 +98,48 @@ export const events: Events[] = [
             { level: 5, entryLevel: "220 ~ 279", reward: "3 Chaos, 15 GP" },
             { level: 6, entryLevel: "280 ~ 400", reward: "3 Chaos, 20 GP" },
             { level: 7, entryLevel: "1 ~ 400 ML", reward: "5 Chaos, 30 GP" },
+        ]
+    },
+    {
+        id: "20",
+        name: "Devil's Square",
+        type: "Events",
+        infoItems: [
+            "- Deberás de eliminar la mayor cantidad de mobs posibles para lograr el mayor puntaje y asi poder ganar el 1°er puesto .",
+            "- Para los primeros 15 jugadores que traiga una invitación al NPC Charon le será consendido la entrada al Devil's Square.",
+            "- El party puede ser establecido dentro y fuera del Devil's Square.",
+            "- No hay pérdida de experiencia cuando un jugador no consigue matar en el Devil Square.",
+            "- No hay pérdida de Zen cuando un jugador muere en el Devil Square.",
+            "- Apertura del Devil's Square 6 veces al dia.",
+            "- Para mayor informacion, apretar la letra H ingame.",
+            "- Duracion del Devil's Square 5 minutos.",
+        ],
+        entryTittle: "Como ingresar al Devil's Square",
+        entryItems: [
+            "Necesitas la entrada  que puedes crearla dropeando los siguientes objetos : ",
+            "Devil's Key + Devil's Eye + Jewel of Chaos, cuando tengas estos 3 requisitos ve a la maquina del chaos en Noria y combínalos  así obtendrás la entrada. También puedes conseguir  la entrada comprando a través de la x Shop in game (X)",
+            "- El NPC de ingreso Charon esta ubicado en el poblado de Noria ",
+            "- Utilizando el comando /ds puedes llegar al lado del npc ",
+        ],
+        urlEntryImg: "/assets/images/eventos/devil.png",
+        urlMapImg: "/assets/images/maps/devilsquare.jpg",
+        imgEntryName: "Ticket Devil's Square",
+        rulesTitle: "Reglas del Devil's Square",
+        rulesItems: [
+            "- El Comando Warp puede ser usado despues de entrar al  Devil's Square.",
+            "- PK no es Admitido en el Devil's Square.",
+            "- Personajes que se queda en el Devil's Square después de la búsqueda serán retornado a Noria automaticamente.",
+            "- Limite de entradas al Devil's Square al dia son 2 veces por personaje.",
+            "- Solo los 5 primeros personajes que hallan matado mas mobs ganaran una recompenza de zen.",
+        ],
+        rooms: [
+            { level: "1 | Excellent drop: 5% ", entryLevel: "15 ~ 130", entryLevel2: "10 ~ 110", rewardList: ["3,500,000 Zen", "2,000,000 Zen", "2,000,000 Zen", "1,000,000 Zen", "500,000 Zen",] },
+            { level: "2 | Excellent drop: 5%", entryLevel: "131 ~ 180", entryLevel2: "111 ~ 160", rewardList: ["5,500,000 Zen", "3,000,000 Zen", "3,000,000 Zen", "2,000,000 Zen", "1,000,000 Zen",] },
+            { level: "3 | Excellent drop: 5%", entryLevel: "181 ~ 230", entryLevel2: "161 ~ 210", rewardList: ["7,500,000 Zen", "5,000,000 Zen", "5,000,000 Zen", "3,000,000 Zen", "1,500,000 Zen",] },
+            { level: "4 | Excellent drop: 5%", entryLevel: "231 ~ 280", entryLevel2: "211 ~ 260", rewardList: ["9,500,000 Zen", "7,000,000 Zen", "7,000,000 Zen", "4,000,000 Zen", "2,000,000 Zen",] },
+            { level: "5 | Excellent drop: 8%", entryLevel: "281 ~ 330", entryLevel2: "261 ~ 310", rewardList: ["11,500,000 Zen", "9,000,000 Zen", "9,000,000 Zen", "5,000,000 Zen", "2,500,000 Zen",] },
+            { level: "6 | Excellent drop: 8%", entryLevel: "331 ~ 400", entryLevel2: "311 ~ 400", rewardList: ["13,500,000 Zen", "11,000,000 Zen", "11,000,000 Zen", "6,000,000 Zen", "3,000,000 Zen",] },
+            { level: "7 | Excellent drop: 8%", entryLevel: "1 ~ 400 ML", entryLevel2: "1 ~ 400 ML", rewardList: ["15,500,000 Zen", "13,000,000 Zen", "13,000,000 Zen", "7,000,000 Zen", "3,500,000 Zen",] },
         ]
     },
 ]

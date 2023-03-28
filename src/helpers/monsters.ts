@@ -5,6 +5,7 @@ export const monsters: Monster[] = [
         id: "1",
         name: "Golden Budge Dragon",
         type: "Golden Invasión",
+        quantity: 3,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -40,6 +41,7 @@ export const monsters: Monster[] = [
         id: "2",
         name: "Gorgon",
         type: "Invasiones",
+        quantity: 3,
         info: {
             infoBoss: " El poblado de DUNGEON  es invadido por 3 poderosos magos oscuros, su estrategia es el ataque dividido  en sectores claves del pueblo , tu deber es  proteger el poblado y sus habitantes, dependemos de ti y tu sabiduría guerrero. ",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
@@ -99,6 +101,7 @@ export const monsters: Monster[] = [
         id: "3",
         name: "Totem Golem",
         type: "Invasiones",
+        quantity: 3,
         info: {
             infoBoss: "El bosque de elbeland es conocido  por  sus grandes historias de tesoros  escondidos, muchos intentaron reclamar lo que el bosque esconde, pero ten cuidado guerrero...  se dice que   3 golem  poderosos resguardan las riqueza  del bosque. Dependemos de ti  para saber que esconde los secretos del bosque.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
@@ -158,6 +161,7 @@ export const monsters: Monster[] = [
         id: "4",
         name: "Ice Queen",
         type: "Invasiones",
+        quantity: 3,
         info: {
             infoBoss: "La reina Rosalia, tras enterarse que su trono iba a ser destruido dicidio congelarse en alguna parte del continente Mu. Tras muchos años despues el hijo del guerrero que destruyo el trono dicidio despertarla para poder asesinarla. Pero lo que no sabia el hijo del guerrero era quela reina habia hecho un trato con un brujo, por si algun dia deciden asesinarla iba a reencarnar como una Ice Queen para poder vengarse.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
@@ -207,6 +211,7 @@ export const monsters: Monster[] = [
         id: "5",
         name: "Hydra",
         type: "Invasiones",
+        quantity: 3,
         info: {
             infoBoss: "Tras los experimentos realizas en la maquina chaos, una radiacion ocasiono que algunos bichos en atlans se transformaran y se volvieran malignos. Tu objectivo es matar a esos bichos malignos para que atlans vuelva a ser como antes.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
@@ -256,6 +261,7 @@ export const monsters: Monster[] = [
         id: "6",
         name: "Rabbits",
         type: "Invasiones",
+        quantity: 10,
         info: {
             infoBoss: "Los rabbis Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
@@ -315,6 +321,7 @@ export const monsters: Monster[] = [
         id: "7",
         name: "Summer",
         type: "Invasiones",
+        quantity: 10,
         info: {
             infoBoss: "Los paraguas Invaden Lost Tower! Buscalos y derrota los diez (10) por todo el mapa!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
@@ -374,6 +381,7 @@ export const monsters: Monster[] = [
         id: "8",
         name: "New Year",
         type: "Invasiones",
+        quantity: 10,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
@@ -433,6 +441,7 @@ export const monsters: Monster[] = [
         id: "9",
         name: "Golden Goblin",
         type: "Golden Invasión",
+        quantity: 3,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -468,6 +477,7 @@ export const monsters: Monster[] = [
         id: "10",
         name: "Golden Rabbit",
         type: "Golden Invasión",
+        quantity: 3,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -503,6 +513,7 @@ export const monsters: Monster[] = [
         id: "11",
         name: "Golden Solider",
         type: "Golden Invasión",
+        quantity: 3,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -538,6 +549,7 @@ export const monsters: Monster[] = [
         id: "12",
         name: "Golden Dark Knight",
         type: "Golden Invasión",
+        quantity: 3,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -573,6 +585,7 @@ export const monsters: Monster[] = [
         id: "13",
         name: "Golden Titan",
         type: "Golden Invasión",
+        quantity: 3,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
@@ -608,6 +621,7 @@ export const monsters: Monster[] = [
         id: "14",
         name: "Red Dragon",
         type: "Semiboss",
+        quantity: 1,
         info: {
             infoBoss: "El pueblo de Noria una vez mas se ve invadida por extrañas criaturas. En esta ocasión serán los dragones rojos los que aparecerán por toda Noria irrumpiendo con la tranquilidad y la paz. Durante esta invasión dos tipos de dragones rojos podrán ser vistos, y cada uno otorgará diferentes recompensas a quien logre derrotarlos.",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
@@ -618,7 +632,7 @@ export const monsters: Monster[] = [
             mapUrl: "/assets/images/maps/noria-map.webp"
         },
         media: {
-            photoUrl: "/assets/images/semiboss/red-dragon.png",
+            photoUrl: "/assets/images/semiboss/red-dragon.webp",
             photoWidth: "230px",
         },
         drop: [
@@ -667,6 +681,7 @@ export const monsters: Monster[] = [
         id: "15",
         name: "Skeleton",
         type: "Semiboss",
+        quantity: 1,
         info: {
             infoBoss: "El Rey Leoric, enloquecido por el Devil Kundum y muerto a manos de su más fiel caballero en una trágica batalla, vuelve al continente Mu. Su espíritu, maldito por los poderes malignos, vaga sin descanso en algún lugar de las catacumbas, hasta que deseoso de sed de venganza, invade la superficie del continente buscando a aquellos que lo traicionaron. Tu misión será proporcionarle el descanso eterno y traer paz a dicha alma perdida. El rey muerto o Skeleton King volverá en forma de esqueleto gigante e invadirá Lorencia a la vez acompañado de sus súbditos para asesinar a cualquier guerrero descuidado que ronde los alrededores.",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
@@ -677,7 +692,7 @@ export const monsters: Monster[] = [
             mapUrl: "/assets/images/maps/lorencia-map.webp"
         },
         media: {
-            photoUrl: "/assets/images/semiboss/skeleton.png",
+            photoUrl: "/assets/images/semiboss/skeleton.webp",
             photoWidth: "170px",
         },
         drop: [
@@ -726,9 +741,10 @@ export const monsters: Monster[] = [
         id: "16",
         name: "Zaikan",
         type: "Semiboss",
+        quantity: 3,
         info: {
-            infoBoss: "Cuenta la leyenda que en lo mas profundo del desierto de tarkan  habita una bestia llamada Zaikan de mas de 500 años cuyo poderes son capaces de acabar con todo un ejercito de guerreros. Muchos intentaron  derrotarlo y muchos fallaron  ¿será por fin derrotada la bestia de 500 años ?",
-            infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
+            infoBoss: "Cuenta la leyenda que en lo mas profundo del desierto de tarkan  habita una bestia llamada Zaikan de mas de 500 años cuyo poderes son capaces de acabar con todo un ejercito de guerreros. Muchos intentaron  derrotarlo y fallaron en el intento.  ¿Podras tu ser capaz de aniquilar a la bestia?",
+            infoDrop: "Items Tier 5 no excellent +2 a +13",
         },
         maps: {
             mapName: "tarkan",
@@ -736,8 +752,40 @@ export const monsters: Monster[] = [
             mapUrl: "/assets/images/maps/tarkan-map.webp"
         },
         media: {
-            photoUrl: "/assets/images/semiboss/skeleton.png",
-            photoWidth: "170px",
+            photoUrl: "/assets/images/semiboss/zaikan.webp",
+            photoWidth: "210px",
+        },
+        drop: [
+
+        ],
+        stats: [
+            { id: 1, name: "level", value: "10", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "14.600.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "50", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "2650", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "2810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "100%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
+    },
+    {
+        id: "17",
+        name: "White Wizard",
+        type: "Semiboss",
+        quantity: 1,
+        info: {
+            infoBoss: "Tres veces por día, el White Wizard con su ejercito invade el continente de Mu Protocol! Ellos atacan constantemente en Devias, tratando de matar a nuestros viajeros de pocos reset y nivel bajo. Asesina al White Wizard y su ejercito para ayudar a mantener la zona mas segura para nuestros nuevos guerreros! Además de ser una manera fácil de conseguir Jewels y el anillo Wizard's Ring, que te dará un Buff extraordinario!",
+            infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
+        },
+        maps: {
+            mapName: "devias",
+            mapUrlTex: "/assets/images/maps/devias-text.webp",
+            mapUrl: "/assets/images/maps/devias-map.webp"
+        },
+        media: {
+            photoUrl: "/assets/images/semiboss/white-wizard.webp",
+            photoWidth: "190px",
         },
         drop: [
             {
@@ -782,60 +830,33 @@ export const monsters: Monster[] = [
         ]
     },
     {
-        id: "17",
-        name: "White Wizard",
+        id: "21",
+        name: "Metal Balrog",
         type: "Semiboss",
+        quantity: 3,
         info: {
-            infoBoss: "Tres veces por día, el White Wizard con su ejercito invade el continente de Mu Protocol! Ellos atacan constantemente en Devias, tratando de matar a nuestros viajeros de pocos reset y nivel bajo. Asesina al White Wizard y su ejercito para ayudar a mantener la zona mas segura para nuestros nuevos guerreros! Además de ser una manera fácil de conseguir Jewels y el anillo Wizard's Ring, que te dará un Buff extraordinario!",
-            infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
+            infoBoss: "Cuenta la leyenda que hace muchos años el jefe de Lost tower Balrog fue a las torres perdidas donde se encontraba su hoz legendaria.Tras buscarla ciegamente callo de la torre hacia un rio lleno de metal liquido donde logro escapar pero segun transcurrian los años,el metal se iba esparciendo por todo su caparazon hasta que lo cubrio por completo. Muchos intentaron matarlo pero tras su coraza metalica,muchos fallaron. ¿Seras tu el legendario guerrero que podra matarlo?",
+            infoDrop: "Items Tier 5 no excellent +2 a +13",
         },
         maps: {
             mapName: "devias",
-            mapUrlTex: "/assets/images/maps/devias-text.webp",
-            mapUrl: "/assets/images/maps/devias-map.webp"
+            mapUrlTex: "/assets/images/maps/losttower-text.webp",
+            mapUrl: "/assets/images/maps/losttower-map.webp"
         },
         media: {
-            photoUrl: "/assets/images/semiboss/white-wizard.png",
+            photoUrl: "/assets/images/semiboss/metal.webp",
             photoWidth: "190px",
         },
         drop: [
-            {
-                itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
-                quantity: 10
-            },
-            {
-                itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
-                quantity: 1
-            }, {
-                itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
-                quantity: 1
-            },
-            {
-                itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
-                quantity: 1
-            },
-            {
-                itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
-                quantity: 1
-            },
-            {
-                itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
-                quantity: 1
-            },
+
         ],
         stats: [
-            { id: 1, name: "level", value: "200", iconUrl: "/assets/images/icons/level.png" },
-            { id: 2, name: "hp", value: "90.000.000", iconUrl: "/assets/images/icons/hp.png" },
-            { id: 3, name: "defense", value: "200", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 1, name: "level", value: "10", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "14.600.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "50", iconUrl: "/assets/images/icons/defense.png" },
             { id: 4, name: "atk rate", value: "100%", iconUrl: "/assets/images/icons/atkrate.png" },
-            { id: 5, name: "min dmg", value: "13750", iconUrl: "/assets/images/icons/mindmg.png" },
-            { id: 6, name: "max dmg", value: "14810", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 5, name: "min dmg", value: "2650", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "2810", iconUrl: "/assets/images/icons/maxdmg.png" },
             { id: 7, name: "ice resist", value: "100%", iconUrl: "/assets/images/icons/iceresist.png" },
             { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
         ]
