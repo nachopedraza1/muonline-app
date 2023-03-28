@@ -3,7 +3,7 @@ import { Typography, Grid, TableContainer, Table, TableHead, TableRow, TableCell
 
 
 export const ChaosCastle: React.FC = () => {
-    const { infoItems, entryTittle, entryItems, rulesTitle, rulesItems, urlEntryImg, imgEntryName, rooms } = useCustomSelector(state => state.guideList.events);
+    const { name, infoItems, entryTittle, entryItems, rulesTitle, rulesItems, urlEntryImg, urlMapImg, imgEntryName, rooms } = useCustomSelector(state => state.guideList.events);
 
     return (
         <>
@@ -48,8 +48,8 @@ export const ChaosCastle: React.FC = () => {
                     <Typography variant="subtitle1" color="#6e5856"> {imgEntryName} </Typography>
                 </Grid>
                 <Grid item textAlign="center">
-                    <Typography variant="subtitle1" color="#6e5856"> Mapa Chaos Castle </Typography>
-                    <img src="/assets/images/maps/chaoscastle.jpg" alt="" width="350px" />
+                    <Typography variant="subtitle1" color="#6e5856"> Mapa {name}</Typography>
+                    <img src={urlMapImg} alt="" width="350px" />
                 </Grid>
             </Grid>
 
@@ -79,7 +79,7 @@ export const ChaosCastle: React.FC = () => {
                 <Table>
                     <TableHead>
                         <TableRow>
-                            <TableCell sx={{ fontWeight: 600 }}>Chaos Castle Level</TableCell>
+                            <TableCell sx={{ fontWeight: 600 }}>{name} Level</TableCell>
                             <TableCell sx={{ fontWeight: 600 }} align="center">Entry Level</TableCell>
                             <TableCell sx={{ fontWeight: 600 }} align="center">Premios</TableCell>
                         </TableRow>

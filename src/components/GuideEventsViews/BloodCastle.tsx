@@ -4,7 +4,7 @@ import { Typography, Grid, TableContainer, Table, TableHead, TableRow, TableCell
 
 export const BloodCastle: React.FC = () => {
 
-    const { infoItems, entryTittle, entryItems, rulesTitle, rulesItems, urlEntryImg, imgEntryName, rooms } = useCustomSelector(state => state.guideList.events);
+    const { name, infoItems, entryTittle, entryItems, rulesTitle, rulesItems, urlEntryImg, urlMapImg, imgEntryName, rooms } = useCustomSelector(state => state.guideList.events);
 
     return (
         <>
@@ -49,8 +49,8 @@ export const BloodCastle: React.FC = () => {
                     <Typography variant="subtitle1" color="#6e5856"> {imgEntryName} </Typography>
                 </Grid>
                 <Grid item textAlign="center">
-                    <Typography variant="subtitle1" color="#6e5856"> Mapa Chaos Castle </Typography>
-                    <img src="/assets/images/maps/chaoscastle.jpg" alt="" width="350px" />
+                    <Typography variant="subtitle1" color="#6e5856"> Mapa {name} </Typography>
+                    <img src={urlMapImg} alt="" width="350px" />
                 </Grid>
             </Grid>
 
@@ -77,21 +77,29 @@ export const BloodCastle: React.FC = () => {
             </Grid>
 
             <TableContainer sx={{ mt: 2 }}>
+                <Typography variant="subtitle1" color="red">Dark Knight, Fairy Elf, Dark Wizard</Typography>
+                <Typography variant="subtitle1" color="green"> Dark Lord, Magic Gladiator, Rage Fighter</Typography>
                 <Table>
                     <TableHead>
                         <TableRow>
-                            <TableCell sx={{ fontWeight: 600 }}>Chaos Castle Level</TableCell>
+                            <TableCell sx={{ fontWeight: 600 }}> {name} Level</TableCell>
                             <TableCell sx={{ fontWeight: 600 }} align="center">Entry Level</TableCell>
                             <TableCell sx={{ fontWeight: 600 }} align="center">Premios</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {rooms?.map(({ level, entryLevel, reward }) => (
+                        {rooms?.map(({ level, entryLevel, entryLevel2, reward }) => (
                             <TableRow key={level}>
                                 <TableCell component="th" scope="row">
                                     {level}
                                 </TableCell>
-                                <TableCell align="center"> {entryLevel} </TableCell>
+
+                                <TableCell align="center">
+                                    <span style={{ color: "red" }}>{entryLevel}</span>
+                                    <span style={{ margin: "5px" }}>|</span>
+                                    <span style={{ color: "green" }}>{entryLevel2}</span>
+                                </TableCell>
+
                                 <TableCell align="center"> {reward} </TableCell>
                             </TableRow>
                         ))}

@@ -67,6 +67,7 @@ export interface Events {
     entryTittle?: string,
     imgEntryName?: string,
     urlEntryImg?: string,
+    urlMapImg?: string,
     entryItems?: string[]
     rulesTitle?: string,
     rulesItems?: string[],
@@ -77,6 +78,7 @@ export interface room {
     level: number,
     reward: string,
     entryLevel: string,
+    entryLevel2?: string,
 }
 
 export interface SliderHero {

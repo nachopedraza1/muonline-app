@@ -22,6 +22,7 @@ export const events: Events[] = [
             '- El nivel correspondiente del "Cloak Invisibility" para el blood castle en todas las razas será eliminado cuando entres al castillo.',
         ],
         urlEntryImg: "/assets/images/eventos/bloodcastle.png",
+        urlMapImg: "/assets/images/maps/bloodcastle.jpg",
         imgEntryName: "Armor of Guardsman",
         rulesTitle: "Reglas del Blood Castle",
         rulesItems: [
@@ -39,13 +40,14 @@ export const events: Events[] = [
             '- El Trade no es admitido en Blood Castle.'
         ],
         rooms: [
-            { level: 1, entryLevel: "15 ~ 29", reward: "1 Chaos, 5 GP" },
-            { level: 2, entryLevel: "30 ~ 99", reward: "1 Chaos, 5 GP" },
-            { level: 3, entryLevel: "100 ~ 159", reward: "2 Chaos, 10 GP" },
-            { level: 4, entryLevel: "160 ~ 219", reward: "2 Chaos, 10 GP" },
-            { level: 5, entryLevel: "220 ~ 279", reward: "3 Chaos, 15 GP" },
-            { level: 6, entryLevel: "280 ~ 400", reward: "3 Chaos, 20 GP" },
-            { level: 7, entryLevel: "1 ~ 400 ML", reward: "5 Chaos, 30 GP" },
+            { level: 1, entryLevel: "15 ~ 80", entryLevel2: "10 ~ 60", reward: "Zen 5M / 5 GP / 1 Jewel Bless o Soul" },
+            { level: 2, entryLevel: "81 ~ 130", entryLevel2: "61 ~ 110", reward: "Zen 6M / 5 GP / 1 Jewel Bless o Soul" },
+            { level: 3, entryLevel: "131 ~ 180", entryLevel2: "111 ~ 160", reward: "Zen 8M / 10 GP / 1 Jewel Bless o Soul" },
+            { level: 4, entryLevel: "181 ~ 230", entryLevel2: "161 ~ 210", reward: "Zen 10M / 10 GP / 1 Jewel Bless o Soul" },
+            { level: 5, entryLevel: "231 ~ 280", entryLevel2: "211 ~ 260", reward: "Zen 12M / 15 GP / 2 Jewel Bless o Soul" },
+            { level: 6, entryLevel: "281 ~ 330", entryLevel2: "261 ~ 310", reward: "Zen 15M / 15 GP / 2 Jewel Bless o Soul" },
+            { level: 7, entryLevel: "331 ~ 400", entryLevel2: "331 ~ 400", reward: "Zen 20M / 20 GP / 2 Jewel Bless o Soul" },
+            { level: 8, entryLevel: "1 ~ 400 ML", entryLevel2: "1 ~ 400 ML", reward: "Zen 50M / 30 GP / 3 Jewel Bless o Soul" },
         ]
     },
     {
@@ -77,6 +79,7 @@ export const events: Events[] = [
             '- Para Entrar al Chaos Castle debe hacer click derecho en el "Armor of Guardsman" cuando veo el anuncio de la apertura.',
         ],
         urlEntryImg: "/assets/images/eventos/chaoscastle.png",
+        urlMapImg: "/assets/images/maps/chaoscastle.jpg",
         imgEntryName: "Armor of Guardsman",
         rulesTitle: "Reglas del Chaos Castle",
         rulesItems: [
