@@ -13,7 +13,7 @@ export const GuidesLayout: React.FC<{ children: JSX.Element | JSX.Element[] }> =
         <>
             <CustomBreadcrumb />
 
-            <Grid container bgcolor="white" p={4}>
+            <Grid container bgcolor="white" className="paper-guide" p={4}>
                 <Grid className="animate__animated animate__fadeIn" key={guideName}>
                     <Grid container justifyContent="space-between" alignItems="center">
 

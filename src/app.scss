@@ -755,3 +755,21 @@ button:hover {
 .active {
     z-index: -1;
 }
+
+
+.paper-guide {
+    position: relative;
+}
+
+.paper-guide::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background-image: url(/assets/images/wiki-before.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

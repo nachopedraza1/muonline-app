@@ -1,14 +1,13 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-import { MainLayout } from '../layout/MainLayout';
-import { SidebarGuide, GuideMonster } from '../components';
-import { Grid, Typography } from '@mui/material';
-import { updateGuides } from '../helpers/updateGuides';
 import { useCustomSelector } from '../hooks/useRedux';
-import { GuideEvent } from "../components/GuideEvent";
+import { updateGuides } from '../helpers/updateGuides';
 
+import { SidebarGuide, GuideMonster, GuideEvent } from '../components';
+import { MainLayout } from '../layout/MainLayout';
+
+import { Grid, Typography } from '@mui/material';
 
 export const ViewGuide: React.FC = () => {
 

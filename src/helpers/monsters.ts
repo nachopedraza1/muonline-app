@@ -861,4 +861,64 @@ export const monsters: Monster[] = [
             { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
         ]
     },
+    {
+        id: "22",
+        name: "Cursed Goblin",
+        type: "Invasiones",
+        quantity: 10,
+        info: {
+            infoBoss: "Los Cursed Goblin Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
+            infoDrop: "Un (1) Jewel random por mob y 1 GP.",
+        },
+        maps: {
+            mapName: "devias",
+            mapUrlTex: "/assets/images/maps/devias-text.webp",
+            mapUrl: "/assets/images/maps/devias-map.webp"
+        },
+        media: {
+            photoWidth: "140px",
+            photoUrl: "/assets/images/invasions/cursedgoblin.webp",
+        },
+        drop: [
+            {
+                itemName: "Goblin Point",
+                itemUrl: "/assets/images/drop/coin.png",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Soul",
+                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                quantity: 1
+            }, {
+                itemName: "Jewel of Bless",
+                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Chaos",
+                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Life",
+                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                quantity: 1
+            },
+            {
+                itemName: "Jewel of Creation",
+                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                quantity: 1
+            },
+        ],
+        stats: [
+            { id: 1, name: "level", value: "149", iconUrl: "/assets/images/icons/level.png" },
+            { id: 2, name: "hp", value: "50.000", iconUrl: "/assets/images/icons/hp.png" },
+            { id: 3, name: "defense", value: "100", iconUrl: "/assets/images/icons/defense.png" },
+            { id: 4, name: "atk rate", value: "0%", iconUrl: "/assets/images/icons/atkrate.png" },
+            { id: 5, name: "min dmg", value: "0", iconUrl: "/assets/images/icons/mindmg.png" },
+            { id: 6, name: "max dmg", value: "0", iconUrl: "/assets/images/icons/maxdmg.png" },
+            { id: 7, name: "ice resist", value: "80%", iconUrl: "/assets/images/icons/iceresist.png" },
+            { id: 8, name: "poison resist", value: "100%", iconUrl: "/assets/images/icons/poisonresist.png" },
+        ]
+    },
 ];

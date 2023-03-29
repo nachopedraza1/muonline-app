@@ -10,7 +10,7 @@ import { SubMenuProps } from '../../interfaces/interfaces';
 export const InvasionsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) => {
 
     const invasiones = guidesLinks.invasiones
-        .concat({ id: 8, text: "Golden Invasion", img: "/assets/images/invasions/goldengoblin.webp", width: "95px", path: "/guides/1", status: "active" })
+        .concat({ id: 8, text: "Golden Invasion", img: "/assets/images/invasions/golden.webp", width: "95px", path: "/guides/1", status: "active" })
 
 
     const typeMenu = openSubmenu === "invasions" ? "submenu-active" : "";
@@ -25,7 +25,7 @@ export const InvasionsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose
                     onClick={handleClose}
                     className={status != "active" ? 'submenu-item-gray' : 'submenu-item'}
                 >
-                     <Tooltip title={status != "active" ? "INACTIVE" : ""} arrow placement="top">
+                    <Tooltip title={status != "active" ? "INACTIVE" : ""} arrow placement="top">
                         <Link
                             fontFamily="Bebas Neue"
                             component={RouterLink}
