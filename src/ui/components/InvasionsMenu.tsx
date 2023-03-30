@@ -2,7 +2,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 import { SubMenuLayout } from '../layout/SubMenuLayout';
 import { Grid, Box, Link, IconButton, Tooltip } from '@mui/material';
-import { Circle, CloseOutlined } from '@mui/icons-material';
+import { CloseOutlined } from '@mui/icons-material';
 
 import { guidesLinks } from '../../helpers';
 import { SubMenuProps } from '../../interfaces/interfaces';
@@ -10,7 +10,7 @@ import { SubMenuProps } from '../../interfaces/interfaces';
 export const InvasionsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) => {
 
     const invasiones = guidesLinks.invasiones
-        .concat({ id: 8, text: "Golden Invasion", img: "/assets/images/invasions/golden.webp", width: "95px", path: "/guides/1", status: "active" })
+        .concat({ id: 9, text: "Golden Invasion", img: "/assets/images/invasions/golden.webp", width: "95px", path: "/guides/1", status: "active" })
 
 
     const typeMenu = openSubmenu === "invasions" ? "submenu-active" : "";

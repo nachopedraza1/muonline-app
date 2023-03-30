@@ -8,11 +8,11 @@ import { Container, Grid, List, ListItem, Link, Button } from '@mui/material';
 import { ExpandMore } from "@mui/icons-material";
 
 const navLinks = [
-    { id: 1, text: "INVASIONES", type: "invasions" },
-    { id: 2, text: "SEMIBOSSES", type: "semiboss" },
-    { id: 3, text: "BOSSES", type: "boss" },
-    { id: 4, text: "EVENTOS", type: "events" },
-    { id: 5, text: "DROPLIST", type: "droplist" },
+    { id: 1, text: "INVASIONES", type: "invasions", path: "" },
+    { id: 2, text: "SEMIBOSSES", type: "semiboss", path: "" },
+    { id: 3, text: "BOSSES", type: "boss", path: "" },
+    { id: 4, text: "EVENTOS", type: "events", path: "" },
+    { id: 5, text: "DROPLIST", type: "droplist", path: "/guides/droplist" },
 ];
 
 
@@ -37,13 +37,15 @@ export const Navbar: React.FC = () => {
 
                         <Grid item>
                             <List component="nav" className="navlinks" disablePadding sx={{ display: "flex" }}>
-                                {navLinks.map(({ id, text, type }) => (
-                                    <ListItem key={id} onMouseEnter={() => handleOpen(type)} className={openSubmenu === type ? "active" : ""} >
-                                        <Link component={type !== "droplist" ? "a" : RouterLink} to="/" fontSize={18}>
-                                            {text}
-                                        </Link>
-                                        {type != "droplist" ? <ExpandMore /> : null}
-                                    </ListItem>
+                                {navLinks.map(({ id, text, type, path }) => (
+                                    <Link key={id} component={RouterLink} to={path} >
+                                        <ListItem onMouseEnter={() => handleOpen(type)} className={openSubmenu === type ? "active" : ""} >
+                                            <Link fontSize={18}>
+                                                {text}
+                                            </Link>
+                                            {type != "droplist" ? <ExpandMore /> : null}
+                                        </ListItem>
+                                    </Link>
                                 ))}
                             </List>
                         </Grid>

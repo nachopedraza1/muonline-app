@@ -102,7 +102,7 @@ export const DevilSquare: React.FC = () => {
 
                                 <TableCell align="center">
                                     {rewardList.map((reward, index) => (
-                                        <Typography color="#6e5856" fontWeight={600}> Puesto {index + 1}: {reward} </Typography>
+                                        <Typography key={index} color="#6e5856" fontWeight={600}> Puesto {index + 1}: {reward} </Typography>
                                     ))}
                                 </TableCell>
                             </TableRow>

@@ -43,7 +43,7 @@ export const guidesLinks = {
         { id: 3, text: "Devil Square", img: "/assets/images/eventos/devil.png", width: "130px", path: "/guides/20", status: "active" },
         { id: 4, text: "Mirror Dimensions", img: "/assets/images/eventos/mirror.png", width: "140px", path: "/", status: "inactive" },
         { id: 5, text: "Imperial Guardian", img: "/assets/images/eventos/gaion.png", width: "140px", path: "/", status: "inactive" },
-        { id: 5, text: "Rey del Mu", img: "/assets/images/eventos/reydelmu.png", width: "140px", path: "/", status: "inactive" },
-        { id: 6, text: "Castle Siege", img: "/assets/images/eventos/cscs.png", width: "140px", path: "/", status: "inactive" },
+        { id: 6, text: "Rey del Mu", img: "/assets/images/eventos/reydelmu.png", width: "140px", path: "/", status: "inactive" },
+        { id: 7, text: "Castle Siege", img: "/assets/images/eventos/cscs.png", width: "140px", path: "/", status: "inactive" },
     ]
 }

@@ -8,10 +8,13 @@ import { SidebarGuide, GuideMonster, GuideEvent } from '../components';
 import { MainLayout } from '../layout/MainLayout';
 
 import { Grid, Typography } from '@mui/material';
+import { useParams } from 'react-router-dom';
 
 export const ViewGuide: React.FC = () => {
 
     const { type } = useCustomSelector(state => state.guideList.events);
+
+    const { guideId } = useParams(); //  => droplist
 
     updateGuides();
 
@@ -35,10 +38,12 @@ export const ViewGuide: React.FC = () => {
                 </Grid>
 
                 <Grid item xs={8.8}>
-                    {type != "Events"
-                        ? <GuideMonster />
-                        : <GuideEvent />
-                    }
+                    <>
+                        {type != "Events"
+                            ? <GuideMonster />
+                            : <GuideEvent />
+                        }
+                    </>
                 </Grid>
 
             </Grid>

@@ -101,3 +101,7 @@ export interface Stat {
 export interface SetDisplayHero {
     handleTouchSlider: (value: number) => void,
 }
+
+export interface Drop {
+    id: number,
+}

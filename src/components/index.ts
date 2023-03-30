@@ -2,6 +2,7 @@ export * from "./Banner";
 export * from "./DropMob";
 export * from "./TitleMob";
 export * from "./MobStats";
+export * from "./GuideDrop";
 export * from "./GuideEvent";
 export * from "./ShareGuide";
 export * from "./ServerInfo";
