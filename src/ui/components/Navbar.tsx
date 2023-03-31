@@ -12,7 +12,7 @@ const navLinks = [
     { id: 2, text: "SEMIBOSSES", type: "semiboss", path: "" },
     { id: 3, text: "BOSSES", type: "boss", path: "" },
     { id: 4, text: "EVENTOS", type: "events", path: "" },
-    { id: 5, text: "DROPLIST", type: "droplist", path: "/guides/droplist" },
+    { id: 5, text: "DROPLIST", type: "droplist", path: "/guides/23" },
 ];
 
 

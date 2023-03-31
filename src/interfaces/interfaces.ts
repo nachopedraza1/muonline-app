@@ -102,6 +102,14 @@ export interface SetDisplayHero {
     handleTouchSlider: (value: number) => void,
 }
 
-export interface Drop {
-    id: number,
+export interface DropList {
+    id: string,
+    name: string,
+    type: string,
+    maps: DropMap[]
+}
+
+export interface DropMap {
+    name: string,
+    mapUrl: string,
 }

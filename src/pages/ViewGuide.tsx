@@ -4,17 +4,16 @@ import "slick-carousel/slick/slick-theme.css";
 import { useCustomSelector } from '../hooks/useRedux';
 import { updateGuides } from '../helpers/updateGuides';
 
-import { SidebarGuide, GuideMonster, GuideEvent } from '../components';
+import { SidebarGuide, GuideMonster, GuideEvent, GuideDrop } from '../components';
 import { MainLayout } from '../layout/MainLayout';
 
 import { Grid, Typography } from '@mui/material';
-import { useParams } from 'react-router-dom';
 
 export const ViewGuide: React.FC = () => {
 
-    const { type } = useCustomSelector(state => state.guideList.events);
-
-    const { guideId } = useParams(); //  => droplist
+    const { type: typeEvent } = useCustomSelector(state => state.guideList.events);
+    const { type: typeMonster } = useCustomSelector(state => state.guideList.monsters);
+    const { type: typeDropList } = useCustomSelector(state => state.guideList.dropList);
 
     updateGuides();
 
@@ -39,10 +38,9 @@ export const ViewGuide: React.FC = () => {
 
                 <Grid item xs={8.8}>
                     <>
-                        {type != "Events"
-                            ? <GuideMonster />
-                            : <GuideEvent />
-                        }
+                        {typeMonster && <GuideMonster />}
+                        {typeDropList && <GuideDrop />}
+                        {typeEvent && <GuideEvent />}
                     </>
                 </Grid>
 

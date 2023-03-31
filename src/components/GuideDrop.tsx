@@ -1,6 +1,9 @@
+import { GuidesLayout } from "../layout/GuidesLayout"
 
 export const GuideDrop = () => {
     return (
-        <div>GuideDrop</div>
+        <GuidesLayout>
+            
+        </GuidesLayout>
     )
 }

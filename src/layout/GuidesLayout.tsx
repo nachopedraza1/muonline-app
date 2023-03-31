@@ -4,10 +4,11 @@ import { Grid, Typography, Divider } from '@mui/material';
 
 export const GuidesLayout: React.FC<{ children: JSX.Element | JSX.Element[] }> = ({ children }) => {
 
-    const { name: nameMonster } = useCustomSelector(state => state.guideList.monsters)
-    const { name: nameEvent, type } = useCustomSelector(state => state.guideList.events);
+    const { name: nameEvent, type: typeEvent } = useCustomSelector(state => state.guideList.events);
+    const { name: nameDrop, type: typeDrop } = useCustomSelector(state => state.guideList.dropList);
+    const { name: nameMonster } = useCustomSelector(state => state.guideList.monsters);
 
-    const guideName = type != "Events" ? nameMonster : nameEvent;
+    const guideName = typeEvent == "Events" ? nameEvent : typeDrop == "Droplist" ? nameDrop : nameMonster
 
     return (
         <>

@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Events, Monster } from '../interfaces/interfaces';
+import { DropList, Events, Monster } from '../interfaces/interfaces';
 
 
 const initialState = {
@@ -32,7 +32,8 @@ const initialState = {
             { id: 1, name: "", value: "", iconUrl: "" },
         ],
     },
-    events: {} as Events
+    events: {} as Events,
+    dropList: {} as DropList,
 }
 
 export const guidesSlice = createSlice({
@@ -40,14 +41,21 @@ export const guidesSlice = createSlice({
     initialState,
     reducers: {
         setMonsterGuide: (state, { payload }: PayloadAction<Monster>) => {
+            state.dropList = initialState.dropList;
             state.events = initialState.events;
             state.monsters = payload;
         },
         setEventGuide: (state, { payload }: PayloadAction<Events>) => {
+            state.dropList = initialState.dropList;
             state.monsters = initialState.monsters;
             state.events = payload;
+        },
+        setDropGuide: (state, { payload }: PayloadAction<DropList>) => {
+            state.monsters = initialState.monsters;
+            state.events = initialState.events;
+            state.dropList = payload;
         }
     },
 })
 
-export const { setMonsterGuide, setEventGuide } = guidesSlice.actions;
+export const { setMonsterGuide, setEventGuide, setDropGuide } = guidesSlice.actions;
