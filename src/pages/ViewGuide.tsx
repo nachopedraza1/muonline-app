@@ -11,9 +11,8 @@ import { Grid, Typography } from '@mui/material';
 
 export const ViewGuide: React.FC = () => {
 
-    const { type: typeEvent } = useCustomSelector(state => state.guideList.events);
-    const { type: typeMonster } = useCustomSelector(state => state.guideList.monsters);
-    const { type: typeDropList } = useCustomSelector(state => state.guideList.dropList);
+    const { type } = useCustomSelector(state => state.guideList.guide);
+    console.log(type);
 
     updateGuides();
 
@@ -38,9 +37,9 @@ export const ViewGuide: React.FC = () => {
 
                 <Grid item xs={8.8}>
                     <>
-                        {typeDropList && <GuideDrop />}
-                        {typeMonster && <GuideMonster />}
-                        {typeEvent && <GuideEvent />}
+                        {type === "Droplist" ? <GuideDrop />
+                            : type === "Events" ? <GuideEvent />
+                                : <GuideMonster />}
                     </>
                 </Grid>
 

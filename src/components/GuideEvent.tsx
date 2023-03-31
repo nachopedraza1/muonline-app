@@ -5,7 +5,7 @@ import { Grid } from '@mui/material';
 
 export const GuideEvent: React.FC = () => {
 
-    const { id } = useCustomSelector(state => state.guideList.events);
+    const { id } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <GuidesLayout>

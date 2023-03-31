@@ -38,14 +38,14 @@ export const Navbar: React.FC = () => {
                         <Grid item>
                             <List component="nav" className="navlinks" disablePadding sx={{ display: "flex" }}>
                                 {navLinks.map(({ id, text, type, path }) => (
-                                    <Link key={id} component={RouterLink} to={path} >
-                                        <ListItem onMouseEnter={() => handleOpen(type)} className={openSubmenu === type ? "active" : ""} >
-                                            <Link fontSize={18}>
-                                                {text}
-                                            </Link>
-                                            {type != "droplist" ? <ExpandMore /> : null}
-                                        </ListItem>
-                                    </Link>
+                                    /*  <Link key={id} component={RouterLink} to={path} > */
+                                    <ListItem key={id} onMouseEnter={() => handleOpen(type)} className={openSubmenu === type ? "active" : ""} >
+                                        <Link fontSize={18}>
+                                            {text}
+                                        </Link>
+                                        {type != "droplist" ? <ExpandMore /> : null}
+                                    </ListItem>
+                                    /*    </Link> */
                                 ))}
                             </List>
                         </Grid>

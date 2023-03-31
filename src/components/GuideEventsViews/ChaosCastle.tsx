@@ -3,7 +3,7 @@ import { Typography, Grid, TableContainer, Table, TableHead, TableRow, TableCell
 
 
 export const ChaosCastle: React.FC = () => {
-    const { name, infoItems, entryTittle, entryItems, rulesTitle, rulesItems, urlEntryImg, urlMapImg, imgEntryName, rooms } = useCustomSelector(state => state.guideList.events);
+    const { name, infoItems, entryTittle, entryItems, rulesTitle, rulesItems, urlEntryImg, urlMapImg, imgEntryName, rooms } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <>

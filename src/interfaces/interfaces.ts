@@ -19,16 +19,46 @@ export interface SubMenuProps {
     handleClose?: () => void,
 }
 
-export interface Monster {
+
+export interface SliderHero {
+    id: number,
+    name: string,
+    heroUrl: string,
+    heroClass: string,
+    info: string,
+    stats: StatCharacter[]
+}
+
+export interface SetDisplayHero {
+    handleTouchSlider: (value: number) => void,
+}
+
+
+export interface Guide {
     id: string,
     name: string,
     type: string,
-    quantity: number,
-    info: Info,
-    maps: Maps,
-    media: Media
-    drop: Drop[],
-    stats: Stats[],
+    quantity?: number,
+    info?: Info,
+    maps?: Maps | Maps[],
+    media?: Media
+    drop?: Drop[],
+    stats?: Stats[],
+    infoItems?: string[],
+    entryTittle?: string,
+    imgEntryName?: string,
+    urlEntryImg?: string,
+    urlMapImg?: string,
+    entryItems?: string[]
+    rulesTitle?: string,
+    rulesItems?: string[],
+    rooms?: room[]
+}
+
+export interface StatCharacter {
+    tittle: string,
+    value: number,
+    color: string,
 }
 
 export interface Stats {
@@ -40,7 +70,7 @@ export interface Stats {
 
 export interface Maps {
     mapName: string,
-    mapUrlTex: string,
+    mapUrlTex?: string,
     mapUrl: string,
 }
 
@@ -60,56 +90,10 @@ export interface Info {
     infoDrop: string,
 }
 
-export interface Events {
-    id: string,
-    type: string,
-    name: string,
-    infoItems?: string[],
-    entryTittle?: string,
-    imgEntryName?: string,
-    urlEntryImg?: string,
-    urlMapImg?: string,
-    entryItems?: string[]
-    rulesTitle?: string,
-    rulesItems?: string[],
-    rooms?: room[]
-}
-
 export interface room {
     level?: number | string,
     reward?: string,
     rewardList?: string[],
     entryLevel?: string,
     entryLevel2?: string,
-}
-
-export interface SliderHero {
-    id: number,
-    name: string,
-    heroUrl: string,
-    heroClass: string,
-    info: string,
-    stats: Stat[]
-}
-
-export interface Stat {
-    tittle: string,
-    value: number,
-    color: string,
-}
-
-export interface SetDisplayHero {
-    handleTouchSlider: (value: number) => void,
-}
-
-export interface DropList {
-    id: string,
-    name: string,
-    type: string,
-    maps: DropMap[]
-}
-
-export interface DropMap {
-    name: string,
-    mapUrl: string,
 }

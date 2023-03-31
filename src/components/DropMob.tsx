@@ -3,9 +3,7 @@ import { Grid, Typography } from '@mui/material';
 
 export const DropMob: React.FC = () => {
 
-    const { info, drop } = useCustomSelector(state => state.guideList.monsters);
-
-    const { infoDrop } = info;
+    const { info, drop } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <Grid container justifyContent="center" m={2}>
@@ -20,10 +18,10 @@ export const DropMob: React.FC = () => {
                     color="#6e5856"
                     mb={2}
                 >
-                    {infoDrop}
+                    {info?.infoDrop}
                 </Typography>
             </Grid>
-            {drop.map(({ itemName, itemUrl }) => (
+            {drop?.map(({ itemName, itemUrl }) => (
                 <Grid
                     key={itemName}
                     className="item-drop"

@@ -3,7 +3,7 @@ import { useCustomSelector } from '../hooks/useRedux';
 
 export const TitleMob: React.FC = () => {
 
-    const { name } = useCustomSelector(state => state.guideList.monsters);
+    const { name } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <Grid
