@@ -17,14 +17,14 @@ export const useSearch = () => {
     }
 
     const onSearch = (event: FormEvent) => {
-        event.preventDefault();
+       /*  event.preventDefault();
         const monsterGuide = monsters.filter(guide => guide.name.toLowerCase().includes(searchValue));
         const eventGuide = events.filter(event => event.name.toLocaleLowerCase().includes(searchValue));
         if (monsterGuide.length >= 1) {
             dispatch(setMonsterGuide(monsterGuide[0]));
         } else if (eventGuide.length >= 1) {
             dispatch(setEventGuide(eventGuide[0]));
-        }
+        } */
     }
 
     return {

@@ -38,8 +38,8 @@ export const ViewGuide: React.FC = () => {
 
                 <Grid item xs={8.8}>
                     <>
-                        {typeMonster && <GuideMonster />}
                         {typeDropList && <GuideDrop />}
+                        {typeMonster && <GuideMonster />}
                         {typeEvent && <GuideEvent />}
                     </>
                 </Grid>

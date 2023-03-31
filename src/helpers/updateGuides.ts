@@ -1,11 +1,10 @@
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { setDropGuide, setEventGuide, setMonsterGuide } from '../redux/slices';
+import { setGuide } from '../redux/slices';
 import { useCustomDispatch } from '../hooks/useRedux';
 
 import { monsters, events, droplist } from '../helpers';
-import { DropList, Events, Monster } from '../interfaces/interfaces';
 
 export const updateGuides = () => {
 
@@ -15,16 +14,10 @@ export const updateGuides = () => {
 
     const guides = [...monsters, ...events, droplist];
 
-    const guide = guides.find(guide => guide.id === guideId) || guides[0];
+    const guide = guides.find(guide => guide.id === guideId) || {};
 
 
     useEffect(() => {
-        if (guide.type == "Droplist") {
-            dispatch(setDropGuide(guide as DropList))
-        } else if (guide.type == "Events") {
-            dispatch(setEventGuide(guide as Events));
-        } else {
-            dispatch(setMonsterGuide(guide as Monster))
-        }
+        dispatch(setGuide(guide))
     }, [guideId])
 }
