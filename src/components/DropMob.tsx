@@ -21,7 +21,7 @@ export const DropMob: React.FC = () => {
                     {info?.infoDrop}
                 </Typography>
             </Grid>
-            {drop?.map(({ itemName, itemUrl }) => (
+            {drop?.map(({ itemName, photoUrl }) => (
                 <Grid
                     key={itemName}
                     className="item-drop"
@@ -30,7 +30,7 @@ export const DropMob: React.FC = () => {
                     alignItems="center"
                     p={2}
                 >
-                    <img src={itemUrl} width="50px" alt={`${itemName} protocol mu`} />
+                    <img src={photoUrl} width="50px" alt={`${itemName} protocol mu`} />
                     <Typography variant='h6' color="#6e5856" fontWeight={600}>{itemName.toUpperCase()} </Typography>
                 </Grid>
             ))}

@@ -5,13 +5,13 @@ import { Grid } from "@mui/material"
 
 export const SelectMapDrop = () => {
 
-    const { mapsDrop } = useCustomSelector(state => state.guideList.guide);
+    const { mapsList } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <GuidesLayout>
             <Grid container justifyContent="center" gap={3}>
                 {
-                    mapsDrop?.map(({ mapName, mapUrl, mapUrlTex }) => (
+                    mapsList?.map(({ mapName, logoUrl, photoUrl }) => (
                         <>
                             <Grid
                                 item
@@ -21,8 +21,8 @@ export const SelectMapDrop = () => {
                                 textAlign="center"
                                 className="map-item"
                             >
-                                <img src={mapUrlTex} alt={`${mapName} Protocol MU`} className="map-logo" />
-                                <img src={mapUrl} width="100%" alt={`${mapName} Protocol MU`} className="map-img" />
+                                <img src={logoUrl} alt={`${mapName} Protocol MU`} className="map-logo" />
+                                <img src={photoUrl} width="100%" alt={`${mapName} Protocol MU`} className="map-img" />
                             </Grid>
                         </>
                     ))

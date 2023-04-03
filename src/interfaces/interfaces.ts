@@ -38,20 +38,14 @@ export interface Guide {
     id: string,
     name: string,
     type: string,
-    quantity?: number,
-    info?: Info,
     maps?: Maps,
-    mapsDrop?: Maps[],
+    info?: Info,
     drop?: Drop[],
-    media?: Media
     stats?: Stats[],
+    monster?: Monster,
+    mapsList?: Maps[],
     infoItems?: string[],
-    entryTittle?: string,
-    imgEntryName?: string,
-    urlEntryImg?: string,
-    urlMapImg?: string,
     entryItems?: string[]
-    rulesTitle?: string,
     rulesItems?: string[],
     rooms?: room[]
 }
@@ -70,19 +64,19 @@ export interface Stats {
 }
 
 export interface Maps {
-    mapName: string,
-    mapUrlTex?: string,
-    mapUrl: string,
-    info?: string,
+    mapName?: string,
+    photoUrl?: string,
+    logoUrl?: string,
 }
 
 export interface Drop {
-    itemUrl: string,
     itemName: string,
+    photoUrl: string,
     quantity: number,
 }
 
-export interface Media {
+export interface Monster {
+    quantity?: number,
     photoUrl?: string,
     photoWidth?: string,
 }

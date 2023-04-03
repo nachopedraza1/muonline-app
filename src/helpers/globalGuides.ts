@@ -5,24 +5,24 @@ export const globalGuides: Guide[] = [
         id: "1",
         name: "Golden Budge Dragon",
         type: "Golden Invasión",
-        quantity: 3,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "Lorencia",
-            mapUrlTex: "/assets/images/maps/lorencia-text.webp",
-            mapUrl: "/assets/images/maps/lorencia-map.webp"
+            logoUrl: "/assets/images/maps/lorencia-text.webp",
+            photoUrl: "/assets/images/maps/lorencia-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/goldendragon.webp",
             photoWidth: "160px",
         },
         drop: [
             {
                 itemName: "Box of Kundun",
-                itemUrl: "/assets/images/drop/kundun1.png",
+                photoUrl: "/assets/images/drop/kundun1.png",
                 quantity: 1
             },
         ],
@@ -41,48 +41,48 @@ export const globalGuides: Guide[] = [
         id: "2",
         name: "Gorgon",
         type: "Invasiones",
-        quantity: 3,
         info: {
             infoBoss: " El poblado de DUNGEON  es invadido por 3 poderosos magos oscuros, su estrategia es el ataque dividido  en sectores claves del pueblo , tu deber es  proteger el poblado y sus habitantes, dependemos de ti y tu sabiduría guerrero. ",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
             mapName: "Dungeon",
-            mapUrlTex: "/assets/images/maps/dungeon-text.webp",
-            mapUrl: "/assets/images/maps/dungeon-map.webp"
+            logoUrl: "/assets/images/maps/dungeon-text.webp",
+            photoUrl: "/assets/images/maps/dungeon-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/gorgon.webp",
             photoWidth: "210px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 5
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -101,48 +101,48 @@ export const globalGuides: Guide[] = [
         id: "3",
         name: "Totem Golem",
         type: "Invasiones",
-        quantity: 3,
         info: {
             infoBoss: "El bosque de elbeland es conocido  por  sus grandes historias de tesoros  escondidos, muchos intentaron reclamar lo que el bosque esconde, pero ten cuidado guerrero...  se dice que   3 golem  poderosos resguardan las riqueza  del bosque. Dependemos de ti  para saber que esconde los secretos del bosque.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
             mapName: "Elbeland",
-            mapUrlTex: "/assets/images/maps/elbeland-text.webp",
-            mapUrl: "/assets/images/maps/elbeland-map.webp"
+            logoUrl: "/assets/images/maps/elbeland-text.webp",
+            photoUrl: "/assets/images/maps/elbeland-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/golem-totem.webp",
             photoWidth: "220px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 5
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -161,38 +161,39 @@ export const globalGuides: Guide[] = [
         id: "4",
         name: "Ice Queen",
         type: "Invasiones",
-        quantity: 3,
+
         info: {
             infoBoss: "La reina Rosalia, tras enterarse que su trono iba a ser destruido dicidio congelarse en alguna parte del continente Mu. Tras muchos años despues el hijo del guerrero que destruyo el trono dicidio despertarla para poder asesinarla. Pero lo que no sabia el hijo del guerrero era quela reina habia hecho un trato con un brujo, por si algun dia deciden asesinarla iba a reencarnar como una Ice Queen para poder vengarse.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
             mapName: "Devias",
-            mapUrlTex: "/assets/images/maps/devias-text.webp",
-            mapUrl: "/assets/images/maps/devias-map.webp"
+            logoUrl: "/assets/images/maps/devias-text.webp",
+            photoUrl: "/assets/images/maps/devias-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/ice-queen.webp",
             photoWidth: "210px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 5
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
         ],
@@ -211,38 +212,39 @@ export const globalGuides: Guide[] = [
         id: "5",
         name: "Hydra",
         type: "Invasiones",
-        quantity: 3,
+
         info: {
             infoBoss: "Tras los experimentos realizas en la maquina chaos, una radiacion ocasiono que algunos bichos en atlans se transformaran y se volvieran malignos. Tu objectivo es matar a esos bichos malignos para que atlans vuelva a ser como antes.",
             infoDrop: "Tres (3) Jewel random por mob y 5 GP.",
         },
         maps: {
             mapName: "atlans",
-            mapUrlTex: "/assets/images/maps/atlans-text.webp",
-            mapUrl: "/assets/images/maps/atlans-map.webp"
+            logoUrl: "/assets/images/maps/atlans-text.webp",
+            photoUrl: "/assets/images/maps/atlans-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/hydra.webp",
             photoWidth: "210px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 5
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
         ],
@@ -261,48 +263,48 @@ export const globalGuides: Guide[] = [
         id: "6",
         name: "Rabbits",
         type: "Invasiones",
-        quantity: 10,
         info: {
             infoBoss: "Los rabbis Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
         },
         maps: {
             mapName: "devias",
-            mapUrlTex: "/assets/images/maps/devias-text.webp",
-            mapUrl: "/assets/images/maps/devias-map.webp"
+            logoUrl: "/assets/images/maps/devias-text.webp",
+            photoUrl: "/assets/images/maps/devias-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 10,
             photoWidth: "140px",
             photoUrl: "/assets/images/invasions/rabit.webp",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -321,48 +323,48 @@ export const globalGuides: Guide[] = [
         id: "7",
         name: "Summer",
         type: "Invasiones",
-        quantity: 10,
         info: {
             infoBoss: "Los paraguas Invaden Lost Tower! Buscalos y derrota los diez (10) por todo el mapa!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
         },
         maps: {
             mapName: "lost tower",
-            mapUrlTex: "/assets/images/maps/losttower-text.webp",
-            mapUrl: "/assets/images/maps/losttower-map.webp"
+            logoUrl: "/assets/images/maps/losttower-text.webp",
+            photoUrl: "/assets/images/maps/losttower-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 10,
             photoUrl: "/assets/images/invasions/fireflame.webp",
             photoWidth: "160px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -381,48 +383,48 @@ export const globalGuides: Guide[] = [
         id: "8",
         name: "New Year",
         type: "Invasiones",
-        quantity: 10,
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
         },
         maps: {
             mapName: "lorencia",
-            mapUrlTex: "/assets/images/maps/lorencia-text.webp",
-            mapUrl: "/assets/images/maps/lorencia-map.webp"
+            logoUrl: "/assets/images/maps/lorencia-text.webp",
+            photoUrl: "/assets/images/maps/lorencia-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 10,
             photoUrl: "/assets/images/invasions/puch.webp",
             photoWidth: "210px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -441,24 +443,25 @@ export const globalGuides: Guide[] = [
         id: "9",
         name: "Golden Goblin",
         type: "Golden Invasión",
-        quantity: 3,
+
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "noria",
-            mapUrlTex: "/assets/images/maps/noria-text.webp",
-            mapUrl: "/assets/images/maps/noria-map.webp"
+            logoUrl: "/assets/images/maps/noria-text.webp",
+            photoUrl: "/assets/images/maps/noria-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/goldengoblin.webp",
             photoWidth: "160px",
         },
         drop: [
             {
                 itemName: "Box of Kundun",
-                itemUrl: "/assets/images/drop/kundun1.png",
+                photoUrl: "/assets/images/drop/kundun1.png",
                 quantity: 1
             },
         ],
@@ -477,24 +480,25 @@ export const globalGuides: Guide[] = [
         id: "10",
         name: "Golden Rabbit",
         type: "Golden Invasión",
-        quantity: 3,
+
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "elbeland",
-            mapUrlTex: "/assets/images/maps/elbeland-text.webp",
-            mapUrl: "/assets/images/maps/elbeland-map.webp"
+            logoUrl: "/assets/images/maps/elbeland-text.webp",
+            photoUrl: "/assets/images/maps/elbeland-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/goldenrabbit.webp",
             photoWidth: "160px",
         },
         drop: [
             {
                 itemName: "Box of Kundun",
-                itemUrl: "/assets/images/drop/kundun1.png",
+                photoUrl: "/assets/images/drop/kundun1.png",
                 quantity: 1
             },
         ],
@@ -513,24 +517,25 @@ export const globalGuides: Guide[] = [
         id: "11",
         name: "Golden Solider",
         type: "Golden Invasión",
-        quantity: 3,
+
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "devias",
-            mapUrlTex: "/assets/images/maps/devias-text.webp",
-            mapUrl: "/assets/images/maps/devias-map.webp"
+            logoUrl: "/assets/images/maps/devias-text.webp",
+            photoUrl: "/assets/images/maps/devias-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/goldensolider.webp",
             photoWidth: "160px",
         },
         drop: [
             {
                 itemName: "Box of Kundun",
-                itemUrl: "/assets/images/drop/kundun1.png",
+                photoUrl: "/assets/images/drop/kundun1.png",
                 quantity: 1
             },
         ],
@@ -549,24 +554,25 @@ export const globalGuides: Guide[] = [
         id: "12",
         name: "Golden Dark Knight",
         type: "Golden Invasión",
-        quantity: 3,
+
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "dungeon",
-            mapUrlTex: "/assets/images/maps/dungeon-text.webp",
-            mapUrl: "/assets/images/maps/dungeon-map.webp"
+            logoUrl: "/assets/images/maps/dungeon-text.webp",
+            photoUrl: "/assets/images/maps/dungeon-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/goldendarkking.webp",
             photoWidth: "160px",
         },
         drop: [
             {
                 itemName: "Box of Kundun",
-                itemUrl: "/assets/images/drop/kundun1.png",
+                photoUrl: "/assets/images/drop/kundun1.png",
                 quantity: 1
             },
         ],
@@ -585,24 +591,25 @@ export const globalGuides: Guide[] = [
         id: "13",
         name: "Golden Titan",
         type: "Golden Invasión",
-        quantity: 3,
+
         info: {
             infoBoss: "Un evento donde Monstruos Dorados invaden el continente Mu, tu misión será eliminarlos y como premio recibiras una Box of Kundun !Revisa los horarios del la invasión Ingame o desde nuestra pagina web!",
             infoDrop: "Una (1) Box of Kundun por mob.",
         },
         maps: {
             mapName: "devias",
-            mapUrlTex: "/assets/images/maps/devias-text.webp",
-            mapUrl: "/assets/images/maps/devias-map.webp"
+            logoUrl: "/assets/images/maps/devias-text.webp",
+            photoUrl: "/assets/images/maps/devias-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/invasions/gioldentitan.webp",
             photoWidth: "160px",
         },
         drop: [
             {
                 itemName: "Box of Kundun",
-                itemUrl: "/assets/images/drop/kundun1.png",
+                photoUrl: "/assets/images/drop/kundun1.png",
                 quantity: 1
             },
         ],
@@ -621,48 +628,47 @@ export const globalGuides: Guide[] = [
         id: "14",
         name: "Red Dragon",
         type: "Semiboss",
-        quantity: 1,
         info: {
             infoBoss: "El pueblo de Noria una vez mas se ve invadida por extrañas criaturas. En esta ocasión serán los dragones rojos los que aparecerán por toda Noria irrumpiendo con la tranquilidad y la paz. Durante esta invasión dos tipos de dragones rojos podrán ser vistos, y cada uno otorgará diferentes recompensas a quien logre derrotarlos.",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
         },
         maps: {
             mapName: "noria",
-            mapUrlTex: "/assets/images/maps/noria-text.webp",
-            mapUrl: "/assets/images/maps/noria-map.webp"
+            logoUrl: "/assets/images/maps/noria-text.webp",
+            photoUrl: "/assets/images/maps/noria-map.webp"
         },
-        media: {
+        monster: {
             photoUrl: "/assets/images/semiboss/red-dragon.webp",
             photoWidth: "230px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 10
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -681,48 +687,47 @@ export const globalGuides: Guide[] = [
         id: "15",
         name: "Skeleton",
         type: "Semiboss",
-        quantity: 1,
         info: {
             infoBoss: "El Rey Leoric, enloquecido por el Devil Kundum y muerto a manos de su más fiel caballero en una trágica batalla, vuelve al continente Mu. Su espíritu, maldito por los poderes malignos, vaga sin descanso en algún lugar de las catacumbas, hasta que deseoso de sed de venganza, invade la superficie del continente buscando a aquellos que lo traicionaron. Tu misión será proporcionarle el descanso eterno y traer paz a dicha alma perdida. El rey muerto o Skeleton King volverá en forma de esqueleto gigante e invadirá Lorencia a la vez acompañado de sus súbditos para asesinar a cualquier guerrero descuidado que ronde los alrededores.",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
         },
         maps: {
             mapName: "lorencia",
-            mapUrlTex: "/assets/images/maps/lorencia-text.webp",
-            mapUrl: "/assets/images/maps/lorencia-map.webp"
+            logoUrl: "/assets/images/maps/lorencia-text.webp",
+            photoUrl: "/assets/images/maps/lorencia-map.webp"
         },
-        media: {
+        monster: {
             photoUrl: "/assets/images/semiboss/skeleton.webp",
             photoWidth: "170px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 10
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -741,17 +746,18 @@ export const globalGuides: Guide[] = [
         id: "16",
         name: "Zaikan",
         type: "Semiboss",
-        quantity: 3,
+
         info: {
             infoBoss: "Cuenta la leyenda que en lo mas profundo del desierto de tarkan  habita una bestia llamada Zaikan de mas de 500 años cuyo poderes son capaces de acabar con todo un ejercito de guerreros. Muchos intentaron  derrotarlo y fallaron en el intento.  ¿Podras tu ser capaz de aniquilar a la bestia?",
             infoDrop: "Items Tier 5 no excellent +2 a +13",
         },
         maps: {
             mapName: "tarkan",
-            mapUrlTex: "/assets/images/maps/tarkan-text.webp",
-            mapUrl: "/assets/images/maps/tarkan-map.webp"
+            logoUrl: "/assets/images/maps/tarkan-text.webp",
+            photoUrl: "/assets/images/maps/tarkan-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/semiboss/zaikan.webp",
             photoWidth: "210px",
         },
@@ -773,48 +779,47 @@ export const globalGuides: Guide[] = [
         id: "17",
         name: "White Wizard",
         type: "Semiboss",
-        quantity: 1,
         info: {
             infoBoss: "Tres veces por día, el White Wizard con su ejercito invade el continente de Mu Protocol! Ellos atacan constantemente en Devias, tratando de matar a nuestros viajeros de pocos reset y nivel bajo. Asesina al White Wizard y su ejercito para ayudar a mantener la zona mas segura para nuestros nuevos guerreros! Además de ser una manera fácil de conseguir Jewels y el anillo Wizard's Ring, que te dará un Buff extraordinario!",
             infoDrop: "Cinco (5) Jewel random por mob y 10 GP.",
         },
         maps: {
             mapName: "devias",
-            mapUrlTex: "/assets/images/maps/devias-text.webp",
-            mapUrl: "/assets/images/maps/devias-map.webp"
+            logoUrl: "/assets/images/maps/devias-text.webp",
+            photoUrl: "/assets/images/maps/devias-map.webp"
         },
-        media: {
+        monster: {
             photoUrl: "/assets/images/semiboss/white-wizard.webp",
             photoWidth: "190px",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 10
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -833,17 +838,18 @@ export const globalGuides: Guide[] = [
         id: "21",
         name: "Metal Balrog",
         type: "Semiboss",
-        quantity: 3,
+
         info: {
             infoBoss: "Cuenta la leyenda que hace muchos años el jefe de Lost tower Balrog fue a las torres perdidas donde se encontraba su hoz legendaria.Tras buscarla ciegamente callo de la torre hacia un rio lleno de metal liquido donde logro escapar pero segun transcurrian los años,el metal se iba esparciendo por todo su caparazon hasta que lo cubrio por completo. Muchos intentaron matarlo pero tras su coraza metalica,muchos fallaron. ¿Seras tu el legendario guerrero que podra matarlo?",
             infoDrop: "Items Tier 5 no excellent +2 a +13",
         },
         maps: {
             mapName: "devias",
-            mapUrlTex: "/assets/images/maps/losttower-text.webp",
-            mapUrl: "/assets/images/maps/losttower-map.webp"
+            logoUrl: "/assets/images/maps/losttower-text.webp",
+            photoUrl: "/assets/images/maps/losttower-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 3,
             photoUrl: "/assets/images/semiboss/metal.webp",
             photoWidth: "190px",
         },
@@ -865,48 +871,48 @@ export const globalGuides: Guide[] = [
         id: "22",
         name: "Cursed Goblin",
         type: "Invasiones",
-        quantity: 10,
         info: {
             infoBoss: "Los Cursed Goblin Invaden Devias! Buscalos y derrota los diez (10) por todo el mapa!",
             infoDrop: "Un (1) Jewel random por mob y 1 GP.",
         },
         maps: {
             mapName: "devias",
-            mapUrlTex: "/assets/images/maps/devias-text.webp",
-            mapUrl: "/assets/images/maps/devias-map.webp"
+            logoUrl: "/assets/images/maps/devias-text.webp",
+            photoUrl: "/assets/images/maps/devias-map.webp"
         },
-        media: {
+        monster: {
+            quantity: 10,
             photoWidth: "140px",
             photoUrl: "/assets/images/invasions/cursedgoblin.webp",
         },
         drop: [
             {
                 itemName: "Goblin Point",
-                itemUrl: "/assets/images/drop/coin.png",
+                photoUrl: "/assets/images/drop/coin.png",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Soul",
-                itemUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                itemUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/JewelOfBless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                itemUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                itemUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/JewelOfLife.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                itemUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
                 quantity: 1
             },
         ],
@@ -925,6 +931,10 @@ export const globalGuides: Guide[] = [
         id: "18",
         name: "Blood Castle",
         type: "Events",
+        maps: {
+            photoUrl: "/assets/images/maps/bloodcastle.jpg",
+            logoUrl: "/assets/images/eventos/bloodcastle.png"
+        },
         infoItems: [
             '- El evento consiste en atravesar el puente colmado de mobs que invaden el evento, cuando lleguen al final del puente te encontraras con una puerta que deberas de romper y matar los mobs que te pida , asi podras romper la estatua que tirara el arma archangel.',
             '- No hay pérdida de experiencia cuando un jugador no consigue matar en el Blood Castle.',
@@ -934,17 +944,12 @@ export const globalGuides: Guide[] = [
             '- Para mayor informacion, apretar la letra H ingame.',
             '- Duracion del Blood Castle  8 minutos.',
         ],
-        entryTittle: "Como ingresar al Blood Castle",
         entryItems: [
             '- El Spirit of Archangel está ubicado dentro y fuera de la iglesia en Devias.',
             '- Para los primeros 15 jugadores que muestren el [Cloak Invisibility] al NPC Spirit of Archangel podran ingresar al blood castle.',
             '- El party puede ser establecido dentro y fuera del Blood Castle.',
             '- El nivel correspondiente del "Cloak Invisibility" para el blood castle en todas las razas será eliminado cuando entres al castillo.',
         ],
-        urlEntryImg: "/assets/images/eventos/bloodcastle.png",
-        urlMapImg: "/assets/images/maps/bloodcastle.jpg",
-        imgEntryName: "Invisibility Cloak",
-        rulesTitle: "Reglas del Blood Castle",
         rulesItems: [
             '- El Comando Warp puede ser usado despues de entrar al  Blood Castle.',
             '- Una vez alcanzado el limite de participantes(15), usted no podra ingresar.',
@@ -974,6 +979,10 @@ export const globalGuides: Guide[] = [
         id: "19",
         name: "Chaos Castle",
         type: "Events",
+        maps: {
+            photoUrl: "/assets/images/maps/chaoscastle.jpg",
+            logoUrl: "/assets/images/eventos/chaoscastle.png"
+        },
         infoItems: [
             '- La cantidad total de participantes admitida en el Chaos Castle  es 100 descompuesto en lo siguiente:',
             '- Numero Maximo de Jugadores = 70',
@@ -988,7 +997,6 @@ export const globalGuides: Guide[] = [
             '- Apertura del Chaos Castle 12 veces al dia. (Horarios en H ingame)',
             '- Duracion del Evento: 10 Minutos.'
         ],
-        entryTittle: "Como ingresar al Chaos Castle",
         entryItems: [
             '- El "Armor of Guardsman" es vendido en las tiendas de cada pueblo.',
             '- Jugadores que esten en estado PK no podran entrar al Chaos Castle.',
@@ -998,10 +1006,6 @@ export const globalGuides: Guide[] = [
             '- Los montruos tendran un 70% de probabilidad de explotar al morir.',
             '- Para Entrar al Chaos Castle debe hacer click derecho en el "Armor of Guardsman" cuando veo el anuncio de la apertura.',
         ],
-        urlEntryImg: "/assets/images/eventos/chaoscastle.png",
-        urlMapImg: "/assets/images/maps/chaoscastle.jpg",
-        imgEntryName: "Armor of Guardsman",
-        rulesTitle: "Reglas del Chaos Castle",
         rulesItems: [
             '- Todas las razas en el Chaos Castle son consideradas como enemigos así que no es necesario cambiar ninguna funcion por PVP.',
             '- Los jugadores no pueden atacarse durante el tiempo de espera pero podran moverse.',
@@ -1024,6 +1028,10 @@ export const globalGuides: Guide[] = [
         id: "20",
         name: "Devil's Square",
         type: "Events",
+        maps: {
+            photoUrl: "/assets/images/maps/devilsquare.jpg",
+            logoUrl: "/assets/images/eventos/devil.png"
+        },
         infoItems: [
             "- Deberás de eliminar la mayor cantidad de mobs posibles para lograr el mayor puntaje y asi poder ganar el 1°er puesto .",
             "- Para los primeros 15 jugadores que traiga una invitación al NPC Charon le será consendido la entrada al Devil's Square.",
@@ -1034,17 +1042,12 @@ export const globalGuides: Guide[] = [
             "- Para mayor informacion, apretar la letra H ingame.",
             "- Duracion del Devil's Square 5 minutos.",
         ],
-        entryTittle: "Como ingresar al Devil's Square",
         entryItems: [
             "Necesitas la entrada  que puedes crearla dropeando los siguientes objetos : ",
             "Devil's Key + Devil's Eye + Jewel of Chaos, cuando tengas estos 3 requisitos ve a la maquina del chaos en Noria y combínalos  así obtendrás la entrada. También puedes conseguir  la entrada comprando a través de la x Shop in game (X)",
             "- El NPC de ingreso Charon esta ubicado en el poblado de Noria ",
             "- Utilizando el comando /ds puedes llegar al lado del npc ",
         ],
-        urlEntryImg: "/assets/images/eventos/devil.png",
-        urlMapImg: "/assets/images/maps/devilsquare.jpg",
-        imgEntryName: "Ticket Devil's Square",
-        rulesTitle: "Reglas del Devil's Square",
         rulesItems: [
             "- El Comando Warp puede ser usado despues de entrar al  Devil's Square.",
             "- PK no es Admitido en el Devil's Square.",
@@ -1066,46 +1069,46 @@ export const globalGuides: Guide[] = [
         id: "23",
         name: "Mapas",
         type: "Droplist",
-        mapsDrop: [
+        mapsList: [
             {
                 mapName: "lorencia",
-                mapUrl: "/assets/images/maps/lorencia-map.webp",
-                mapUrlTex: "/assets/images/maps/lorencia-text.webp",
+                photoUrl: "/assets/images/maps/lorencia-map.webp",
+                logoUrl: "/assets/images/maps/lorencia-text.webp",
             },
             {
                 mapName: "noria",
-                mapUrl: "/assets/images/maps/noria-map.webp",
-                mapUrlTex: "/assets/images/maps/noria-text.webp",
+                photoUrl: "/assets/images/maps/noria-map.webp",
+                logoUrl: "/assets/images/maps/noria-text.webp",
             },
             {
                 mapName: "devias",
-                mapUrl: "/assets/images/maps/devias-map.webp",
-                mapUrlTex: "/assets/images/maps/devias-text.webp",
+                photoUrl: "/assets/images/maps/devias-map.webp",
+                logoUrl: "/assets/images/maps/devias-text.webp",
             },
             {
                 mapName: "dungeon",
-                mapUrl: "/assets/images/maps/dungeon-map.webp",
-                mapUrlTex: "/assets/images/maps/dungeon-text.webp",
+                photoUrl: "/assets/images/maps/dungeon-map.webp",
+                logoUrl: "/assets/images/maps/dungeon-text.webp",
             },
             {
                 mapName: "elbeland",
-                mapUrl: "/assets/images/maps/elbeland-map.webp",
-                mapUrlTex: "/assets/images/maps/elbeland-text.webp",
+                photoUrl: "/assets/images/maps/elbeland-map.webp",
+                logoUrl: "/assets/images/maps/elbeland-text.webp",
             },
             {
                 mapName: "atlans",
-                mapUrl: "/assets/images/maps/atlans-map.webp",
-                mapUrlTex: "/assets/images/maps/atlans-text.webp",
+                photoUrl: "/assets/images/maps/atlans-map.webp",
+                logoUrl: "/assets/images/maps/atlans-text.webp",
             },
             {
                 mapName: "tarkan",
-                mapUrl: "/assets/images/maps/tarkan-map.webp",
-                mapUrlTex: "/assets/images/maps/tarkan-text.webp",
+                photoUrl: "/assets/images/maps/tarkan-map.webp",
+                logoUrl: "/assets/images/maps/tarkan-text.webp",
             },
             {
                 mapName: "aida",
-                mapUrl: "/assets/images/maps/aida-map.webp",
-                mapUrlTex: "/assets/images/maps/aida-text.webp",
+                photoUrl: "/assets/images/maps/aida-map.webp",
+                logoUrl: "/assets/images/maps/aida-text.webp",
             }
         ],
     },
@@ -1113,22 +1116,93 @@ export const globalGuides: Guide[] = [
         id: "24",
         name: "Lorencia",
         type: "MapDrop",
-        media: {
+        maps: {
             photoUrl: "/assets/images/maps/lorencia-map.webp",
+            logoUrl: "/assets/images/maps/lorencia-text.webp",
         },
         info: {
-            infoMap: "La reina Rosalia, tras enterarse que su trono iba a ser destruido dicidio congelarse en alguna parte del continente Mu. Tras muchos años despues el hijo del guerrero que destruyo el trono dicidio despertarla para poder asesinarla. Pero lo que no sabia el hijo del guerrero era quela reina habia hecho un trato con un brujo, por si algun dia deciden asesinarla iba a reencarnar como una Ice Queen para poder vengarse.",
+            infoMap: "Lorencia es una amplia planicie ubicada en el centro de MU. Los Caballeros Oscuros y los Hechiceros Oscuros comienzan sus carreras aquí. Debido a las fuertes lluvias, abundan los árboles altos y la hierba. Es un lugar de caza adecuado para aventureros de bajo nivel (1-20).",
         },
     },
     {
         id: "25",
         name: "Noria",
         type: "MapDrop",
-        media: {
+        maps: {
             photoUrl: "/assets/images/maps/noria-map.webp",
+            logoUrl: "/assets/images/maps/noria-text.webp",
         },
         info: {
-            infoMap: "La reina Rosalia, tras enterarse que su trono iba a ser destruido dicidio congelarse en alguna parte del continente Mu. Tras muchos años despues el hijo del guerrero que destruyo el trono dicidio despertarla para poder asesinarla. Pero lo que no sabia el hijo del guerrero era quela reina habia hecho un trato con un brujo, por si algun dia deciden asesinarla iba a reencarnar como una Ice Queen para poder vengarse.",
+            infoMap: "Noria, el mundo natal del reino de las Hadas, es un enorme bosque ubicado en el extremo oriental del Continente MU. Originalmente, Noria estuvo poblada una vez solo por las hadas, pero después de la invasión de MU por parte de Kundun, el intercambio entre humanos se hizo más frecuente y los asentamientos humanos en la región se hicieron más pronunciados. Todos los personajes de hadas comienzan sus carreras dentro de Noria. La ubicación de la región puede parecer trivial, pero como punto de acceso al Mar del Este y la ciudad submarina de Atlans, juega un papel importante. El Duende del Caos que crea objetos y alas del Caos a través del exclusivo Sistema del Caos también reside aquí.",
+        },
+    },
+    {
+        id: "26",
+        name: "Devias",
+        type: "MapDrop",
+        maps: {
+            photoUrl: "/assets/images/maps/devias-map.webp",
+            logoUrl: "/assets/images/maps/devias-text.webp",
+        },
+        info: {
+            infoMap: "Devias es un ventisquero situado al norte de Lorencia y está cubierto de nieves perpetuas. Los monstruos aquí son más poderosos que los de Lorencia o Noria, por lo que solo los aventureros de más de nivel 15 pueden ingresar a Devias. El maestro del gremio que crea y administra los gremios también se encuentra en Devias.",
+        },
+    }, {
+        id: "27",
+        name: "Dungeon",
+        type: "MapDrop",
+        maps: {
+            photoUrl: "/assets/images/maps/dungeon-map.webp",
+            logoUrl: "/assets/images/maps/dungeon-text.webp",
+        },
+        info: {
+            infoMap: "Dungeon es una formidable cueva situada en el norte de Lorencia Antaño fue una prisión subterránea, ¡pero ahora es una guarida para el Ejército de Kundun! La feroz Gorgona espera a cualquiera que se atreva a desafiarle, al final de esta traicionera cámara. Antaño gestionada por la Iglesia de Devias, esta cueva se utilizaba como prisión del imperio. Se podían encontrar aquí guardias, en número, que prestaban servicio de justicia a los criminales. En su mayor parte, ya no entran MUtizens en la Mazmorra, salvo guerreros experimentados en busca de algún botín. Este lugar ha sido saqueado y está en ruinas. Ha habido muchos cuentos sobre grandes tesoros escondidos en la Mazmorra, sin embargo ningún guerrero, que haya vuelto con vida, ha regresado nunca con mucho más que el típico botín. Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator",
+        },
+    },
+    {
+        id: "28",
+        name: "Elbeland",
+        type: "MapDrop",
+        maps: {
+            photoUrl: "/assets/images/maps/elbeland-map.webp",
+            logoUrl: "/assets/images/maps/elbeland-text.webp",
+        },
+        info: {
+            infoMap: "Elbeland es la ciudad natal del reino de los Invocadores. El linaje de los Invocadores se ha conservado desde la antigüedad y ha tenido poco contacto con los humanos durante mucho tiempo. Sin embargo, debido a la resurrección de Kundun, se produjo una gran confusión y los Invocadores decidieron hacer las paces con los humanos para intentar salvar el continente. Los Invocadores poseen dones naturales como manipular poderes mágicos, comunicarse con otra dimensión e invocar monstruos misteriosos para que luchen por ellos. A través de sus constantes oraciones y meditaciones, los Invocadores pueden incapacitar a sus enemigos comprometiendo sus debilidades.",
         },
     }
-]
+    ,
+    {
+        id: "29",
+        name: "Atlans",
+        type: "MapDrop",
+        maps: {
+            photoUrl: "/assets/images/maps/atlans-map.webp",
+            logoUrl: "/assets/images/maps/atlans-text.webp",
+        },
+    },
+    {
+        id: "30",
+        name: "Tarkan",
+        type: "MapDrop",
+        maps: {
+            photoUrl: "/assets/images/maps/tarkan-map.webp",
+            logoUrl: "/assets/images/maps/tarkan-text.webp",
+        },
+        info: {
+            infoMap: "Tarkan es un desierto traicionero, ahora abrumado por temibles monstruos. En el noreste del desierto, el feroz Zaikan espera a cualquiera que se atreva a desafiarlo. El desierto de MU alberga algunos monstruos muy fuertes. Sólo unos pocos se adentran en Tarkan en busca de los tesoros que esconde el gran monstruo Zaikan. Este gran desierto siempre ha sido un lugar traicionero para explorar. Los restos de muchos guerreros que se atrevieron a viajar hasta aquí aún pueden verse yaciendo en este páramo.",
+        },
+    },
+    {
+        id: "31",
+        name: "Aida",
+        type: "MapDrop",
+        maps: {
+            photoUrl: "/assets/images/maps/aida-map.webp",
+            logoUrl: "/assets/images/maps/aida-text.webp",
+        },
+        info: {
+            infoMap: 'Las criaturas de este bosque están gobernadas por el gran Maine Infernal. Muchos guerreros intentarán matar al Maine Infernal por sus valiosos cuernos. Aunque peligrosos, hay dos goblins que prestan sus servicios en la zona segura del mapa. Estos goblins pueden añadir o eliminar "Opciones de la Joya de la Armonía" en los objetos de equipo.',
+        },
+    },
+];

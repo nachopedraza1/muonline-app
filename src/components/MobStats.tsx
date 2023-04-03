@@ -3,7 +3,7 @@ import { Grid, Typography } from '@mui/material';
 
 export const MobStats: React.FC = () => {
 
-    const { stats, media } = useCustomSelector(state => state.guideList.guide);
+    const { stats, monster } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <>
@@ -30,7 +30,7 @@ export const MobStats: React.FC = () => {
                 justifyContent="center"
                 className="bgStats"
             >
-                <img src={media?.photoUrl} alt={`${name} protocol mu`} width={media?.photoWidth} />
+                <img src={monster?.photoUrl} alt={`${name} protocol mu`} width={monster?.photoWidth} />
             </Grid>
 
             <Grid item xs={4} display="flex" flexDirection="column" justifyContent="center" className="bgStats">

@@ -3,12 +3,12 @@ import { Grid } from "@mui/material";
 
 export const MapContainer: React.FC = () => {
 
-    const { maps } = useCustomSelector(state => state.guideList.guide);
+    const { name, maps } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <Grid item xs={6} position="relative" mt={2}>
             <img
-                src={maps?.mapUrlTex}
+                src={maps?.photoUrl}
                 width="120px"
                 alt={`${maps?.mapName} protocol mu`}
                 style={{
@@ -19,7 +19,7 @@ export const MapContainer: React.FC = () => {
                     margin: "auto"
                 }}
             />
-            <img src={maps?.mapUrl} alt={`${maps?.mapName} protocol mu`} width="100%" />
+            <img src={maps?.photoUrl} alt={`${name} protocol mu`} width="100%" />
         </Grid>
     );
 }

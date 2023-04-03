@@ -6,7 +6,7 @@ import { Grid, Typography } from '@mui/material';
 
 export const GuideMonster: React.FC = () => {
 
-    const { name, quantity, info } = useCustomSelector(state => state.guideList.guide);
+    const { name, monster, info } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <GuidesLayout>
@@ -21,7 +21,7 @@ export const GuideMonster: React.FC = () => {
                 >
                     {info?.infoBoss}
                 </Typography>
-                <Typography fontSize={18} color="#6e5856" width="100%" fontWeight={600}> -Cantidad: {quantity} </Typography>
+                <Typography fontSize={18} color="#6e5856" width="100%" fontWeight={600}> -Cantidad: {monster?.quantity} </Typography>
             </Grid>
 
             <Grid container direction="column" alignItems="center" key={name} mt={3}>

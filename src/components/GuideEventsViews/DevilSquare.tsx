@@ -4,7 +4,7 @@ import { Typography, Grid, TableContainer, Table, TableHead, TableRow, TableCell
 
 export const DevilSquare: React.FC = () => {
 
-    const { name, infoItems, entryTittle, entryItems, rulesTitle, rulesItems, urlEntryImg, urlMapImg, imgEntryName, rooms } = useCustomSelector(state => state.guideList.guide);
+    const { name, maps, infoItems, entryItems, rulesItems, rooms } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <>
@@ -27,7 +27,7 @@ export const DevilSquare: React.FC = () => {
                 fontSize={25}
                 color="#6e5856"
             >
-                {entryTittle}
+                Como ingresar al Devil's Square
             </Typography>
 
             <Grid container mt={1}>
@@ -45,12 +45,12 @@ export const DevilSquare: React.FC = () => {
 
             <Grid container alignItems="center" justifyContent="space-around">
                 <Grid item textAlign="center">
-                    <img src={urlEntryImg} alt="" width="200px" />
-                    <Typography variant="subtitle1" color="#6e5856"> {imgEntryName} </Typography>
+                    <img src={maps?.logoUrl} alt="" width="200px" />
+                    <Typography variant="subtitle1" color="#6e5856"> Ticket Devil's Square</Typography>
                 </Grid>
                 <Grid item textAlign="center">
                     <Typography variant="subtitle1" color="#6e5856"> Mapa {name} </Typography>
-                    <img src={urlMapImg} alt="" width="350px" />
+                    <img src={maps?.photoUrl} alt="" width="350px" />
                 </Grid>
             </Grid>
 
@@ -60,7 +60,7 @@ export const DevilSquare: React.FC = () => {
                 fontSize={25}
                 color="#6e5856"
             >
-                {rulesTitle}
+                Reglas del Devil's Square
             </Typography>
 
             <Grid container>

@@ -4,14 +4,14 @@ import { GuidesLayout } from '../layout/GuidesLayout';
 
 export const GuideMapDrop: React.FC = () => {
 
-    const { name, media, info } = useCustomSelector(state => state.guideList.guide);
+    const { name, maps, info } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <GuidesLayout>
             <Grid container>
 
                 <Grid item xs={5}>
-                    <img src={media?.photoUrl} width="100%" alt={`${name} Mapa protocol mu`} />
+                    <img src={maps?.photoUrl} width="100%" alt={`${name} Mapa protocol mu`} />
                 </Grid>
 
                 <Grid item xs={7}>
