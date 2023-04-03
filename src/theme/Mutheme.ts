@@ -154,9 +154,3 @@ export const MuTheme = createTheme({
         },
     },
 });
-
-/* background: #040612;
-                background-image: url(/assets/images/fon-bg-bottom.jpg);
-                background-position: bottom center;
-                background-size: clamp(1500px, 80%, 1500px) auto;
-                background-repeat: no-repeat; */

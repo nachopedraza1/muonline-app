@@ -40,9 +40,10 @@ export interface Guide {
     type: string,
     quantity?: number,
     info?: Info,
-    maps?: Maps | Maps[],
-    media?: Media
+    maps?: Maps,
+    mapsDrop?: Maps[],
     drop?: Drop[],
+    media?: Media
     stats?: Stats[],
     infoItems?: string[],
     entryTittle?: string,
@@ -72,6 +73,7 @@ export interface Maps {
     mapName: string,
     mapUrlTex?: string,
     mapUrl: string,
+    info?: string,
 }
 
 export interface Drop {
@@ -81,13 +83,14 @@ export interface Drop {
 }
 
 export interface Media {
-    photoUrl: string,
-    photoWidth: string,
+    photoUrl?: string,
+    photoWidth?: string,
 }
 
 export interface Info {
-    infoBoss: string,
-    infoDrop: string,
+    infoMap?: string,
+    infoBoss?: string,
+    infoDrop?: string,
 }
 
 export interface room {

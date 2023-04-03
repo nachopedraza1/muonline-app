@@ -1066,8 +1066,69 @@ export const globalGuides: Guide[] = [
         id: "23",
         name: "Mapas",
         type: "Droplist",
-        maps: [
-            { mapName: "lorencia", mapUrl: "" }
+        mapsDrop: [
+            {
+                mapName: "lorencia",
+                mapUrl: "/assets/images/maps/lorencia-map.webp",
+                mapUrlTex: "/assets/images/maps/lorencia-text.webp",
+            },
+            {
+                mapName: "noria",
+                mapUrl: "/assets/images/maps/noria-map.webp",
+                mapUrlTex: "/assets/images/maps/noria-text.webp",
+            },
+            {
+                mapName: "devias",
+                mapUrl: "/assets/images/maps/devias-map.webp",
+                mapUrlTex: "/assets/images/maps/devias-text.webp",
+            },
+            {
+                mapName: "dungeon",
+                mapUrl: "/assets/images/maps/dungeon-map.webp",
+                mapUrlTex: "/assets/images/maps/dungeon-text.webp",
+            },
+            {
+                mapName: "elbeland",
+                mapUrl: "/assets/images/maps/elbeland-map.webp",
+                mapUrlTex: "/assets/images/maps/elbeland-text.webp",
+            },
+            {
+                mapName: "atlans",
+                mapUrl: "/assets/images/maps/atlans-map.webp",
+                mapUrlTex: "/assets/images/maps/atlans-text.webp",
+            },
+            {
+                mapName: "tarkan",
+                mapUrl: "/assets/images/maps/tarkan-map.webp",
+                mapUrlTex: "/assets/images/maps/tarkan-text.webp",
+            },
+            {
+                mapName: "aida",
+                mapUrl: "/assets/images/maps/aida-map.webp",
+                mapUrlTex: "/assets/images/maps/aida-text.webp",
+            }
         ],
+    },
+    {
+        id: "24",
+        name: "Lorencia",
+        type: "MapDrop",
+        media: {
+            photoUrl: "/assets/images/maps/lorencia-map.webp",
+        },
+        info: {
+            infoMap: "La reina Rosalia, tras enterarse que su trono iba a ser destruido dicidio congelarse en alguna parte del continente Mu. Tras muchos años despues el hijo del guerrero que destruyo el trono dicidio despertarla para poder asesinarla. Pero lo que no sabia el hijo del guerrero era quela reina habia hecho un trato con un brujo, por si algun dia deciden asesinarla iba a reencarnar como una Ice Queen para poder vengarse.",
+        },
+    },
+    {
+        id: "25",
+        name: "Noria",
+        type: "MapDrop",
+        media: {
+            photoUrl: "/assets/images/maps/noria-map.webp",
+        },
+        info: {
+            infoMap: "La reina Rosalia, tras enterarse que su trono iba a ser destruido dicidio congelarse en alguna parte del continente Mu. Tras muchos años despues el hijo del guerrero que destruyo el trono dicidio despertarla para poder asesinarla. Pero lo que no sabia el hijo del guerrero era quela reina habia hecho un trato con un brujo, por si algun dia deciden asesinarla iba a reencarnar como una Ice Queen para poder vengarse.",
+        },
     }
 ]

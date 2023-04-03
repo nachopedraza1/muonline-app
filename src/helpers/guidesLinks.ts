@@ -45,5 +45,15 @@ export const guidesLinks = {
         { id: 5, text: "Imperial Guardian", img: "/assets/images/eventos/gaion.png", width: "140px", path: "/", status: "inactive" },
         { id: 6, text: "Rey del Mu", img: "/assets/images/eventos/reydelmu.png", width: "140px", path: "/", status: "inactive" },
         { id: 7, text: "Castle Siege", img: "/assets/images/eventos/cscs.png", width: "140px", path: "/", status: "inactive" },
+    ],
+    maps: [
+        { id: 1, text: "Lorencia", path: "/guides/24", status: "active" },
+        { id: 2, text: "Noria", path: "/guides/25", status: "active" },
+        { id: 3, text: "Devias", path: "/guides/26", status: "active" },
+        { id: 4, text: "Dungeon", path: "/guides/27", status: "active" },
+        { id: 5, text: "Elbeland", path: "/guides/28", status: "active" },
+        { id: 6, text: "Atlans", path: "/guides/29", status: "active" },
+        { id: 7, text: "Tarkan", path: "/guides/30", status: "active" },
+        { id: 8, text: "Aida", path: "/guides/31", status: "active" },
     ]
 }
