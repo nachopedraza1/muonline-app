@@ -12,7 +12,7 @@ const navLinks = [
     { id: 2, text: "SEMIBOSSES", type: "semiboss", path: "" },
     { id: 3, text: "BOSSES", type: "boss", path: "" },
     { id: 4, text: "EVENTOS", type: "events", path: "" },
-    { id: 5, text: "DROPLIST", type: "droplist", path: "/guides/23" },
+    { id: 5, text: "MAPAS", type: "mapas", path: "/guides/23" },
 ];
 
 
@@ -41,12 +41,12 @@ export const Navbar: React.FC = () => {
                                     <ListItem
                                         key={id}
                                         onMouseEnter={() => handleOpen(type)}
-                                        className={type != "droplist" ? openSubmenu === type ? "active" : "" : ""}
+                                        className={type != "mapas" ? openSubmenu === type ? "active" : "" : ""}
                                     >
                                         <Link component={RouterLink} to={path} fontSize={18}>
                                             {text}
                                         </Link>
-                                        {type != "droplist" ? <ExpandMore /> : null}
+                                        {type != "mapas" ? <ExpandMore /> : null}
                                     </ListItem>
                                 ))}
                             </List>

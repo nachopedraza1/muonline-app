@@ -1248,7 +1248,7 @@ export const globalGuides: Guide[] = [
     {
         id: "23",
         name: "Mapas",
-        type: "Droplist",
+        type: "Guias",
         mapsList: [
             {
                 mapName: "lorencia",
@@ -1303,7 +1303,7 @@ export const globalGuides: Guide[] = [
     {
         id: "24",
         name: "Lorencia",
-        type: "MapDrop",
+        type: "Mapas",
         maps: {
             photoUrl: "/assets/images/maps/lorencia-map.webp",
             logoUrl: "/assets/images/maps/lorencia-text.webp",
@@ -1319,7 +1319,7 @@ export const globalGuides: Guide[] = [
     {
         id: "25",
         name: "Noria",
-        type: "MapDrop",
+        type: "Mapas",
         maps: {
             photoUrl: "/assets/images/maps/noria-map.webp",
             logoUrl: "/assets/images/maps/noria-text.webp",
@@ -1331,7 +1331,7 @@ export const globalGuides: Guide[] = [
     {
         id: "26",
         name: "Devias",
-        type: "MapDrop",
+        type: "Mapas",
         maps: {
             photoUrl: "/assets/images/maps/devias-map.webp",
             logoUrl: "/assets/images/maps/devias-text.webp",
@@ -1342,7 +1342,7 @@ export const globalGuides: Guide[] = [
     }, {
         id: "27",
         name: "Dungeon",
-        type: "MapDrop",
+        type: "Mapas",
         maps: {
             photoUrl: "/assets/images/maps/dungeon-map.webp",
             logoUrl: "/assets/images/maps/dungeon-text.webp",
@@ -1354,7 +1354,7 @@ export const globalGuides: Guide[] = [
     {
         id: "28",
         name: "Elbeland",
-        type: "MapDrop",
+        type: "Mapas",
         maps: {
             photoUrl: "/assets/images/maps/elbeland-map.webp",
             logoUrl: "/assets/images/maps/elbeland-text.webp",
@@ -1367,7 +1367,7 @@ export const globalGuides: Guide[] = [
     {
         id: "29",
         name: "Atlans",
-        type: "MapDrop",
+        type: "Mapas",
         maps: {
             photoUrl: "/assets/images/maps/atlans-map.webp",
             logoUrl: "/assets/images/maps/atlans-text.webp",
@@ -1379,7 +1379,7 @@ export const globalGuides: Guide[] = [
     {
         id: "30",
         name: "Tarkan",
-        type: "MapDrop",
+        type: "Mapas",
         maps: {
             photoUrl: "/assets/images/maps/tarkan-map.webp",
             logoUrl: "/assets/images/maps/tarkan-text.webp",
@@ -1391,7 +1391,7 @@ export const globalGuides: Guide[] = [
     {
         id: "31",
         name: "Aida",
-        type: "MapDrop",
+        type: "Mapas",
         maps: {
             photoUrl: "/assets/images/maps/aida-map.webp",
             logoUrl: "/assets/images/maps/aida-text.webp",

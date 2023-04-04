@@ -14,11 +14,11 @@ export const ViewGuide: React.FC = () => {
     const { type } = useCustomSelector(state => state.guideList.guide);
 
     const diplayTypeGuide = () => {
-        if (type === "Droplist") {
+        if (type === "Guias") {
             return <SelectMapDrop />
         } else if (type === "Events") {
             return <GuideEvent />
-        } else if (type === "MapDrop") {
+        } else if (type === "Mapas") {
             return <GuideMapDrop />
         } else {
             return <GuideMonster />
