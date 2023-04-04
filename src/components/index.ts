@@ -10,6 +10,7 @@ export * from "./GuideMonster";
 export * from "./SidebarGuide";
 export * from "./MapContainer";
 export * from "./GuideMapDrop";
+export * from "./TooltipKundun";
 export * from "./SelectMapDrop";
 export * from "./SliderCharacters";
 export * from "./DailyTimmerEvent";

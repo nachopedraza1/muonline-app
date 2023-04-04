@@ -13,6 +13,6 @@ export const guidesSlice = createSlice({
             state.guide = payload;
         },
     },
-})
+});
 
 export const { setGuide } = guidesSlice.actions;

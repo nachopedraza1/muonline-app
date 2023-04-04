@@ -41,13 +41,14 @@ export interface Guide {
     maps?: Maps,
     info?: Info,
     drop?: Drop[],
+    npcs?: Npc[],
     stats?: Stats[],
     monster?: Monster,
     mapsList?: Maps[],
     infoItems?: string[],
-    entryItems?: string[]
+    entryItems?: string[],
     rulesItems?: string[],
-    rooms?: room[]
+    rooms?: room[],
 }
 
 export interface StatCharacter {
@@ -67,10 +68,12 @@ export interface Maps {
     mapName?: string,
     photoUrl?: string,
     logoUrl?: string,
+    path?: string,
 }
 
 export interface Drop {
     itemName: string,
+    itemsBox?: string[],
     photoUrl: string,
     quantity: number,
 }
@@ -85,6 +88,12 @@ export interface Info {
     infoMap?: string,
     infoBoss?: string,
     infoDrop?: string,
+}
+
+export interface Npc {
+    photoUrl: string,
+    coord: string,
+    info: string,
 }
 
 export interface room {

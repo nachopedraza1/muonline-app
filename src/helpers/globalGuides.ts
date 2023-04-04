@@ -21,9 +21,39 @@ export const globalGuides: Guide[] = [
         },
         drop: [
             {
-                itemName: "Box of Kundun",
+                itemName: "Box of Kundun +1",
                 photoUrl: "/assets/images/drop/kundun1.png",
-                quantity: 1
+                quantity: 1,
+                itemsBox: [
+                    "Leather Set",
+                    "Pad Set",
+                    "Vine Set",
+                    "Small Shield",
+                    "Horn Shield",
+                    "Buckler",
+                    "Short Sword",
+                    "Kris",
+                    "Rapier",
+                    "Small Axe",
+                    "Hand Axe",
+                    "Short Bow",
+                    "Bow",
+                    "Crossbow",
+                    "Golden Crossbow",
+                    "Skull Staff",
+                    "Ring of Ice",
+                    "Ring of Fire",
+                    "Ring of Poison",
+                    "Ring of Earth",
+                    "Ring of Wind ",
+                    "Ring of Magic",
+                    "Pendant of Lighting",
+                    "Pendant of Fire",
+                    "Pendant of Ice",
+                    "Pendant of Wind",
+                    "Pendant of Water",
+                    "Pendant of Ability",
+                ],
             },
         ],
         stats: [
@@ -460,9 +490,39 @@ export const globalGuides: Guide[] = [
         },
         drop: [
             {
-                itemName: "Box of Kundun",
+                itemName: "Box of Kundun +1",
                 photoUrl: "/assets/images/drop/kundun1.png",
-                quantity: 1
+                quantity: 1,
+                itemsBox: [
+                    "Leather Set",
+                    "Pad Set",
+                    "Vine Set",
+                    "Small Shield",
+                    "Horn Shield",
+                    "Buckler",
+                    "Short Sword",
+                    "Kris",
+                    "Rapier",
+                    "Small Axe",
+                    "Hand Axe",
+                    "Short Bow",
+                    "Bow",
+                    "Crossbow",
+                    "Golden Crossbow",
+                    "Skull Staff",
+                    "Ring of Ice",
+                    "Ring of Fire",
+                    "Ring of Poison",
+                    "Ring of Earth",
+                    "Ring of Wind ",
+                    "Ring of Magic",
+                    "Pendant of Lighting",
+                    "Pendant of Fire",
+                    "Pendant of Ice",
+                    "Pendant of Wind",
+                    "Pendant of Water",
+                    "Pendant of Ability",
+                ],
             },
         ],
         stats: [
@@ -497,9 +557,39 @@ export const globalGuides: Guide[] = [
         },
         drop: [
             {
-                itemName: "Box of Kundun",
+                itemName: "Box of Kundun +1",
                 photoUrl: "/assets/images/drop/kundun1.png",
-                quantity: 1
+                quantity: 1,
+                itemsBox: [
+                    "Leather Set",
+                    "Pad Set",
+                    "Vine Set",
+                    "Small Shield",
+                    "Horn Shield",
+                    "Buckler",
+                    "Short Sword",
+                    "Kris",
+                    "Rapier",
+                    "Small Axe",
+                    "Hand Axe",
+                    "Short Bow",
+                    "Bow",
+                    "Crossbow",
+                    "Golden Crossbow",
+                    "Skull Staff",
+                    "Ring of Ice",
+                    "Ring of Fire",
+                    "Ring of Poison",
+                    "Ring of Earth",
+                    "Ring of Wind ",
+                    "Ring of Magic",
+                    "Pendant of Lighting",
+                    "Pendant of Fire",
+                    "Pendant of Ice",
+                    "Pendant of Wind",
+                    "Pendant of Water",
+                    "Pendant of Ability",
+                ],
             },
         ],
         stats: [
@@ -534,9 +624,39 @@ export const globalGuides: Guide[] = [
         },
         drop: [
             {
-                itemName: "Box of Kundun",
+                itemName: "Box of Kundun +1",
                 photoUrl: "/assets/images/drop/kundun1.png",
-                quantity: 1
+                quantity: 1,
+                itemsBox: [
+                    "Leather Set",
+                    "Pad Set",
+                    "Vine Set",
+                    "Small Shield",
+                    "Horn Shield",
+                    "Buckler",
+                    "Short Sword",
+                    "Kris",
+                    "Rapier",
+                    "Small Axe",
+                    "Hand Axe",
+                    "Short Bow",
+                    "Bow",
+                    "Crossbow",
+                    "Golden Crossbow",
+                    "Skull Staff",
+                    "Ring of Ice",
+                    "Ring of Fire",
+                    "Ring of Poison",
+                    "Ring of Earth",
+                    "Ring of Wind ",
+                    "Ring of Magic",
+                    "Pendant of Lighting",
+                    "Pendant of Fire",
+                    "Pendant of Ice",
+                    "Pendant of Wind",
+                    "Pendant of Water",
+                    "Pendant of Ability",
+                ],
             },
         ],
         stats: [
@@ -562,7 +682,7 @@ export const globalGuides: Guide[] = [
         maps: {
             mapName: "dungeon",
             logoUrl: "/assets/images/maps/dungeon-text.webp",
-            photoUrl: "/assets/images/maps/dungeon-map.webp"
+            photoUrl: "/assets/images/maps/dungeon-map.webp",
         },
         monster: {
             quantity: 3,
@@ -571,9 +691,39 @@ export const globalGuides: Guide[] = [
         },
         drop: [
             {
-                itemName: "Box of Kundun",
+                itemName: "Box of Kundun +1",
                 photoUrl: "/assets/images/drop/kundun1.png",
-                quantity: 1
+                quantity: 1,
+                itemsBox: [
+                    "Leather Set",
+                    "Pad Set",
+                    "Vine Set",
+                    "Small Shield",
+                    "Horn Shield",
+                    "Buckler",
+                    "Short Sword",
+                    "Kris",
+                    "Rapier",
+                    "Small Axe",
+                    "Hand Axe",
+                    "Short Bow",
+                    "Bow",
+                    "Crossbow",
+                    "Golden Crossbow",
+                    "Skull Staff",
+                    "Ring of Ice",
+                    "Ring of Fire",
+                    "Ring of Poison",
+                    "Ring of Earth",
+                    "Ring of Wind ",
+                    "Ring of Magic",
+                    "Pendant of Lighting",
+                    "Pendant of Fire",
+                    "Pendant of Ice",
+                    "Pendant of Wind",
+                    "Pendant of Water",
+                    "Pendant of Ability",
+                ],
             },
         ],
         stats: [
@@ -608,9 +758,39 @@ export const globalGuides: Guide[] = [
         },
         drop: [
             {
-                itemName: "Box of Kundun",
+                itemName: "Box of Kundun +1",
                 photoUrl: "/assets/images/drop/kundun1.png",
-                quantity: 1
+                quantity: 1,
+                itemsBox: [
+                    "Leather Set",
+                    "Pad Set",
+                    "Vine Set",
+                    "Small Shield",
+                    "Horn Shield",
+                    "Buckler",
+                    "Short Sword",
+                    "Kris",
+                    "Rapier",
+                    "Small Axe",
+                    "Hand Axe",
+                    "Short Bow",
+                    "Bow",
+                    "Crossbow",
+                    "Golden Crossbow",
+                    "Skull Staff",
+                    "Ring of Ice",
+                    "Ring of Fire",
+                    "Ring of Poison",
+                    "Ring of Earth",
+                    "Ring of Wind ",
+                    "Ring of Magic",
+                    "Pendant of Lighting",
+                    "Pendant of Fire",
+                    "Pendant of Ice",
+                    "Pendant of Wind",
+                    "Pendant of Water",
+                    "Pendant of Ability",
+                ],
             },
         ],
         stats: [
@@ -1074,41 +1254,49 @@ export const globalGuides: Guide[] = [
                 mapName: "lorencia",
                 photoUrl: "/assets/images/maps/lorencia-map.webp",
                 logoUrl: "/assets/images/maps/lorencia-text.webp",
+                path: "/guides/24"
             },
             {
                 mapName: "noria",
                 photoUrl: "/assets/images/maps/noria-map.webp",
                 logoUrl: "/assets/images/maps/noria-text.webp",
+                path: "/guides/25"
             },
             {
                 mapName: "devias",
                 photoUrl: "/assets/images/maps/devias-map.webp",
                 logoUrl: "/assets/images/maps/devias-text.webp",
+                path: "/guides/26"
             },
             {
                 mapName: "dungeon",
                 photoUrl: "/assets/images/maps/dungeon-map.webp",
                 logoUrl: "/assets/images/maps/dungeon-text.webp",
+                path: "/guides/27"
             },
             {
                 mapName: "elbeland",
                 photoUrl: "/assets/images/maps/elbeland-map.webp",
                 logoUrl: "/assets/images/maps/elbeland-text.webp",
+                path: "/guides/28"
             },
             {
                 mapName: "atlans",
                 photoUrl: "/assets/images/maps/atlans-map.webp",
                 logoUrl: "/assets/images/maps/atlans-text.webp",
+                path: "/guides/29"
             },
             {
                 mapName: "tarkan",
                 photoUrl: "/assets/images/maps/tarkan-map.webp",
                 logoUrl: "/assets/images/maps/tarkan-text.webp",
+                path: "/guides/30"
             },
             {
                 mapName: "aida",
                 photoUrl: "/assets/images/maps/aida-map.webp",
                 logoUrl: "/assets/images/maps/aida-text.webp",
+                path: "/guides/31"
             }
         ],
     },
@@ -1123,6 +1311,10 @@ export const globalGuides: Guide[] = [
         info: {
             infoMap: "Lorencia es una amplia planicie ubicada en el centro de MU. Los Caballeros Oscuros y los Hechiceros Oscuros comienzan sus carreras aquí. Debido a las fuertes lluvias, abundan los árboles altos y la hierba. Es un lugar de caza adecuado para aventureros de bajo nivel (1-20).",
         },
+        npcs: [
+            { photoUrl: "/assets/images/npcs/vanert.png", coord: "30,30", info: "lorem ipsun" },
+            { photoUrl: "/assets/images/npcs/dupiran.png", coord: "30,30", info: "lorem ipsun" }
+        ]
     },
     {
         id: "25",
@@ -1133,7 +1325,7 @@ export const globalGuides: Guide[] = [
             logoUrl: "/assets/images/maps/noria-text.webp",
         },
         info: {
-            infoMap: "Noria, el mundo natal del reino de las Hadas, es un enorme bosque ubicado en el extremo oriental del Continente MU. Originalmente, Noria estuvo poblada una vez solo por las hadas, pero después de la invasión de MU por parte de Kundun, el intercambio entre humanos se hizo más frecuente y los asentamientos humanos en la región se hicieron más pronunciados. Todos los personajes de hadas comienzan sus carreras dentro de Noria. La ubicación de la región puede parecer trivial, pero como punto de acceso al Mar del Este y la ciudad submarina de Atlans, juega un papel importante. El Duende del Caos que crea objetos y alas del Caos a través del exclusivo Sistema del Caos también reside aquí.",
+            infoMap: "Noria, el mundo natal del reino de las Hadas, es un enorme bosque situado en el extremo oriental del continente de MU. Originalmente, Noria estuvo poblada sólo por hadas, pero tras la invasión de Kundun a MU, el intercambio entre humanos se hizo más frecuente y el asentamiento humano en la región se hizo más pronunciado. Todos los personajes de hadas comienzan su carrera en Noria. ",
         },
     },
     {
@@ -1156,7 +1348,7 @@ export const globalGuides: Guide[] = [
             logoUrl: "/assets/images/maps/dungeon-text.webp",
         },
         info: {
-            infoMap: "Dungeon es una formidable cueva situada en el norte de Lorencia Antaño fue una prisión subterránea, ¡pero ahora es una guarida para el Ejército de Kundun! La feroz Gorgona espera a cualquiera que se atreva a desafiarle, al final de esta traicionera cámara. Antaño gestionada por la Iglesia de Devias, esta cueva se utilizaba como prisión del imperio. Se podían encontrar aquí guardias, en número, que prestaban servicio de justicia a los criminales. En su mayor parte, ya no entran MUtizens en la Mazmorra, salvo guerreros experimentados en busca de algún botín. Este lugar ha sido saqueado y está en ruinas. Ha habido muchos cuentos sobre grandes tesoros escondidos en la Mazmorra, sin embargo ningún guerrero, que haya vuelto con vida, ha regresado nunca con mucho más que el típico botín. Traducción realizada con la versión gratuita del traductor www.DeepL.com/Translator",
+            infoMap: "Dungeon es una formidable cueva situada en el norte de Lorencia Antaño una prisión subterránea, ¡ahora es una guarida del ejército Kundun! La feroz Gorgona espera a cualquiera que se atreva a desafiarle, al final de esta traicionera cámara. Antaño regentada por la Iglesia de Devias, esta cueva se utilizaba como prisión del imperio. Aquí se encontraban numerosos guardias que hacían justicia a los criminales.",
         },
     },
     {
@@ -1168,7 +1360,7 @@ export const globalGuides: Guide[] = [
             logoUrl: "/assets/images/maps/elbeland-text.webp",
         },
         info: {
-            infoMap: "Elbeland es la ciudad natal del reino de los Invocadores. El linaje de los Invocadores se ha conservado desde la antigüedad y ha tenido poco contacto con los humanos durante mucho tiempo. Sin embargo, debido a la resurrección de Kundun, se produjo una gran confusión y los Invocadores decidieron hacer las paces con los humanos para intentar salvar el continente. Los Invocadores poseen dones naturales como manipular poderes mágicos, comunicarse con otra dimensión e invocar monstruos misteriosos para que luchen por ellos. A través de sus constantes oraciones y meditaciones, los Invocadores pueden incapacitar a sus enemigos comprometiendo sus debilidades.",
+            infoMap: "Elbeland es la patria del reino de los Invocadores. El linaje de los Invocadores se ha conservado desde la antigüedad y ha tenido poco contacto con los humanos durante mucho tiempo. Sin embargo, debido a la resurrección de Kundun, se produjo una gran agitación y los Invocadores decidieron hacer las paces con los humanos en un intento de salvar el continente",
         },
     }
     ,
@@ -1179,6 +1371,9 @@ export const globalGuides: Guide[] = [
         maps: {
             photoUrl: "/assets/images/maps/atlans-map.webp",
             logoUrl: "/assets/images/maps/atlans-text.webp",
+        },
+        info: {
+            infoMap: "Atlans era una antigua ciudad construida por el Pueblo Kanturu, que había desarrollado sistemas muy avanzados en el interior de las Reliquias Kanturu. El Pueblo Kanturu prosperaba gracias a los recursos naturales, por lo que creó esta ciudad por sus abundantes recursos naturales.",
         },
     },
     {
