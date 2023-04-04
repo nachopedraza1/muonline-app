@@ -1,10 +1,10 @@
-import { Grid, Typography } from '@mui/material';
+import { useCustomSelector } from '../hooks/useRedux';
+import { Grid, Tooltip, Typography } from '@mui/material';
+import { TooltipKundun } from './TooltipKundun';
 
-import { Drop, Info } from '../interfaces/interfaces';
+export const DropMob: React.FC = () => {
 
-export const DropMob: React.FC<{ drop: Drop[], info: Info }> = ({ drop, info }) => {
-
-    const { infoDrop } = info;
+    const { info, drop } = useCustomSelector(state => state.guideList.guide);
 
     return (
         <Grid container justifyContent="center" m={2}>
@@ -19,21 +19,26 @@ export const DropMob: React.FC<{ drop: Drop[], info: Info }> = ({ drop, info }) 
                     color="#6e5856"
                     mb={2}
                 >
-                    {infoDrop}
+                    {info?.infoDrop}
                 </Typography>
             </Grid>
-            {drop.map(({ itemName, itemUrl }) => (
-                <Grid
-                    className="item-drop"
-                    display="flex"
-                    flexDirection="column"
-                    alignItems="center"
-                    key={itemName}
-                    p={2}
-                >
-                    <img src={itemUrl} width="50px" alt={`${itemName} protocol mu`} />
-                    <Typography variant='h6' color="#6e5856" fontWeight={600}>{itemName.toUpperCase()} </Typography>
-                </Grid>
+            {drop?.map(({ itemName, photoUrl, itemsBox }) => (
+                <Tooltip placement='right' title={
+                    itemName.includes("Kundun") &&
+                    <TooltipKundun itemsBox={itemsBox} />
+                }>
+                    <Grid
+                        key={itemName}
+                        className="item-drop"
+                        display="flex"
+                        flexDirection="column"
+                        alignItems="center"
+                        p={2}
+                    >
+                        <img src={photoUrl} width="50px" alt={`${itemName} protocol mu`} />
+                        <Typography variant='h6' color="#6e5856" fontWeight={600}>{itemName.toUpperCase()} </Typography>
+                    </Grid>
+                </Tooltip>
             ))}
         </Grid>
     )

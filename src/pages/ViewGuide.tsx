@@ -1,16 +1,31 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import { useFindMob } from '../hooks/useFindMob';
+import { useCustomSelector } from '../hooks/useRedux';
+import { updateGuides } from '../helpers/updateGuides';
 
+import { SidebarGuide, GuideMonster, GuideEvent, SelectMapDrop, GuideMapDrop } from '../components';
 import { MainLayout } from '../layout/MainLayout';
-import { SidebarGuide, MainGuide } from '../components';
-import { Grid, Typography } from '@mui/material';
 
+import { Grid, Typography } from '@mui/material';
 
 export const ViewGuide: React.FC = () => {
 
-    const { guides } = useFindMob();
+    const { type } = useCustomSelector(state => state.guideList.guide);
+
+    const diplayTypeGuide = () => {
+        if (type === "Droplist") {
+            return <SelectMapDrop />
+        } else if (type === "Events") {
+            return <GuideEvent />
+        } else if (type === "MapDrop") {
+            return <GuideMapDrop />
+        } else {
+            return <GuideMonster />
+        }
+    }
+
+    updateGuides();
 
     return (
         <MainLayout className="bgGuides">
@@ -32,7 +47,9 @@ export const ViewGuide: React.FC = () => {
                 </Grid>
 
                 <Grid item xs={8.8}>
-                    <MainGuide guides={guides} />
+                    <>
+                        {diplayTypeGuide()}
+                    </>
                 </Grid>
 
             </Grid>

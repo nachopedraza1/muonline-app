@@ -1,15 +1,14 @@
-
+import { useCustomSelector } from '../hooks/useRedux';
 import { Grid, Typography } from '@mui/material';
-import { Media, Stats } from '../interfaces/interfaces';
 
-export const MobStats: React.FC<{ stats: Stats[], media: Media }> = ({ stats, media }) => {
+export const MobStats: React.FC = () => {
 
-    const { photoUrl, photoWidth } = media;
+    const { stats, monster } = useCustomSelector(state => state.guideList.guide);
 
     return (
-        <Grid container mt={2}>
+        <>
             <Grid item xs={4} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
-                {stats.slice(0, 4).map(({ id, name, value, iconUrl }) => (
+                {stats?.slice(0, 4).map(({ id, name, value, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" gap={1.5} m={1} key={id}>
                         <img src={iconUrl} width="40px" />
                         <Typography variant='h5' fontFamily="Bebas Neue" color="#6e5856">
@@ -31,11 +30,11 @@ export const MobStats: React.FC<{ stats: Stats[], media: Media }> = ({ stats, me
                 justifyContent="center"
                 className="bgStats"
             >
-                <img src={photoUrl} alt={`${name} protocol mu`} width={photoWidth} />
+                <img src={monster?.photoUrl} alt={`${name} protocol mu`} width={monster?.photoWidth} />
             </Grid>
 
             <Grid item xs={4} display="flex" flexDirection="column" justifyContent="center" className="bgStats">
-                {stats.slice(4, 8).map(({ id, name, value, iconUrl }) => (
+                {stats?.slice(4, 8).map(({ id, name, value, iconUrl }) => (
                     <Grid item display="flex" alignItems="center" justifyContent="end" gap={1.5} m={1} key={id}>
                         <Typography variant='h5' fontFamily="Bebas Neue" color="#6e5856">
                             {name}:
@@ -47,6 +46,6 @@ export const MobStats: React.FC<{ stats: Stats[], media: Media }> = ({ stats, me
                     </Grid>
                 ))}
             </Grid>
-        </Grid>
+        </>
     )
 }

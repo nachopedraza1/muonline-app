@@ -2,7 +2,7 @@ import { Link as RouterLink } from 'react-router-dom';
 
 import { SubMenuLayout } from '../layout/SubMenuLayout';
 import { Grid, Box, Link, IconButton, Tooltip } from '@mui/material';
-import { Circle, CloseOutlined } from '@mui/icons-material';
+import { CloseOutlined } from '@mui/icons-material';
 
 import { guidesLinks } from '../../helpers';
 import { SubMenuProps } from '../../interfaces/interfaces';
@@ -10,6 +10,8 @@ import { SubMenuProps } from '../../interfaces/interfaces';
 export const InvasionsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose }) => {
 
     const invasiones = guidesLinks.invasiones
+        .concat({ id: 9, text: "Golden Invasion", img: "/assets/images/invasions/golden.webp", width: "95px", path: "/guides/1", status: "active" })
+
 
     const typeMenu = openSubmenu === "invasions" ? "submenu-active" : "";
 
@@ -23,27 +25,24 @@ export const InvasionsMenu: React.FC<SubMenuProps> = ({ openSubmenu, handleClose
                     onClick={handleClose}
                     className={status != "active" ? 'submenu-item-gray' : 'submenu-item'}
                 >
-                    <Link
-                        fontFamily="Bebas Neue"
-                        component={RouterLink}
-                        to={path}
-                        variant='h5'
-                    >
-                        <Box width={width}>
-                            <img
-                                src={img}
-                                alt={`Protocol Mu ${text}`}
-                                width="100%"
-                                className='mob-img'
-                            />
-                        </Box>
-                        {text}
-                        <Tooltip title={status.toUpperCase()} arrow placement="top">
-                            <IconButton>
-                                <Circle sx={{ fontSize: "10px", color: status != "active" ? "red" : "green" }} />
-                            </IconButton>
-                        </Tooltip>
-                    </Link>
+                    <Tooltip title={status != "active" ? "INACTIVE" : ""} arrow placement="top">
+                        <Link
+                            fontFamily="Bebas Neue"
+                            component={RouterLink}
+                            to={path}
+                            variant='h5'
+                        >
+                            <Box width={width}>
+                                <img
+                                    src={img}
+                                    alt={`Protocol Mu ${text}`}
+                                    width="100%"
+                                    className='mob-img'
+                                />
+                            </Box>
+                            {text}
+                        </Link>
+                    </Tooltip>
                 </Grid>
             ))}
             <IconButton

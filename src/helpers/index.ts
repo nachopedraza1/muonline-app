@@ -1,4 +1,4 @@
 export * from "./arrows";
-export * from "./guides";
-export * from "./characterStats";
-export * from "./guidesLinks"
+export * from "./characters";
+export * from "./guidesLinks";
+export * from "./updateGuides";

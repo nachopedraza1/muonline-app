@@ -85,6 +85,72 @@ export const SidebarGuide = () => {
                     </AccordionDetails>
                 </Accordion>
 
+                <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMore fontSize='large' />}
+                    >
+                        <Typography variant="subtitle1" ml={1} fontSize={27}> Golden Invasion</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails >
+                        <List disablePadding>
+                            {
+                                guidesLinks.golden.map(({ text, status, path }) => (
+                                    <ListItem component={RouterLink} to={path} key={text} className="item-sidebar">
+                                        <Circle sx={{ fontSize: "10px", color: status != "active" ? "red" : "green" }} />
+                                        <Typography variant="subtitle1" ml={1} fontSize={20}>
+                                            {text}
+                                        </Typography>
+                                    </ListItem>
+                                ))
+                            }
+                        </List>
+                    </AccordionDetails>
+                </Accordion>
+
+                <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMore fontSize='large' />}
+                    >
+                        <Typography variant="subtitle1" ml={1} fontSize={27}> Events</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails >
+                        <List disablePadding>
+                            {
+                                guidesLinks.eventos.map(({ text, status, path }) => (
+                                    <ListItem component={RouterLink} to={path} key={text} className="item-sidebar">
+                                        <Circle sx={{ fontSize: "10px", color: status != "active" ? "red" : "green" }} />
+                                        <Typography variant="subtitle1" ml={1} fontSize={20}>
+                                            {text}
+                                        </Typography>
+                                    </ListItem>
+                                ))
+                            }
+                        </List>
+                    </AccordionDetails>
+                </Accordion>
+
+                <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                    <AccordionSummary
+                        expandIcon={<ExpandMore fontSize='large' />}
+                    >
+                        <Typography variant="subtitle1" ml={1} fontSize={27}> Mapas</Typography>
+                    </AccordionSummary>
+                    <AccordionDetails >
+                        <List disablePadding>
+                            {
+                                guidesLinks.maps.map(({ text, status, path }) => (
+                                    <ListItem component={RouterLink} to={path} key={text} className="item-sidebar">
+                                        <Circle sx={{ fontSize: "10px", color: status != "active" ? "red" : "green" }} />
+                                        <Typography variant="subtitle1" ml={1} fontSize={20}>
+                                            {text}
+                                        </Typography>
+                                    </ListItem>
+                                ))
+                            }
+                        </List>
+                    </AccordionDetails>
+                </Accordion>
+
             </Grid>
         </>
     )

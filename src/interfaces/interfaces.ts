@@ -19,15 +19,42 @@ export interface SubMenuProps {
     handleClose?: () => void,
 }
 
-export interface GuideType {
+
+export interface SliderHero {
+    id: number,
+    name: string,
+    heroUrl: string,
+    heroClass: string,
+    info: string,
+    stats: StatCharacter[]
+}
+
+export interface SetDisplayHero {
+    handleTouchSlider: (value: number) => void,
+}
+
+
+export interface Guide {
     id: string,
     name: string,
     type: string,
-    info: Info,
-    maps: Maps,
-    media: Media
-    drop: Drop[],
-    stats: Stats[],
+    maps?: Maps,
+    info?: Info,
+    drop?: Drop[],
+    npcs?: Npc[],
+    stats?: Stats[],
+    monster?: Monster,
+    mapsList?: Maps[],
+    infoItems?: string[],
+    entryItems?: string[],
+    rulesItems?: string[],
+    rooms?: room[],
+}
+
+export interface StatCharacter {
+    tittle: string,
+    value: number,
+    color: string,
 }
 
 export interface Stats {
@@ -38,42 +65,41 @@ export interface Stats {
 }
 
 export interface Maps {
-    mapName: string,
-    mapUrlTex: string,
-    mapUrl: string,
+    mapName?: string,
+    photoUrl?: string,
+    logoUrl?: string,
+    path?: string,
 }
 
 export interface Drop {
-    itemUrl: string,
     itemName: string,
+    itemsBox?: string[],
+    photoUrl: string,
     quantity: number,
 }
 
-export interface Media {
-    photoUrl: string,
-    photoWidth: string,
+export interface Monster {
+    quantity?: number,
+    photoUrl?: string,
+    photoWidth?: string,
 }
 
 export interface Info {
-    infoBoss: string,
-    infoDrop: string,
+    infoMap?: string,
+    infoBoss?: string,
+    infoDrop?: string,
 }
 
-export interface SliderHero {
-    id: number,
-    name: string,
-    heroUrl: string,
-    heroClass: string,
+export interface Npc {
+    photoUrl: string,
+    coord: string,
     info: string,
-    stats: Stat[]
 }
 
-export interface Stat {
-    tittle: string,
-    value: number,
-    color: string,
-}
-
-export interface SetDisplayHero {
-    handleTouchSlider: (value: number) => void,
+export interface room {
+    level?: number | string,
+    reward?: string,
+    rewardList?: string[],
+    entryLevel?: string,
+    entryLevel2?: string,
 }

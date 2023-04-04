@@ -267,7 +267,7 @@ button:hover {
     }
 
     &__img {
-        box-shadow: 0px 17px 33px rgba(10, 151, 254, 0.3);
+        box-shadow: 0px 0px 15px #174464;
         transition: all 0.3s;
     }
 
@@ -682,14 +682,6 @@ button:hover {
     height: 86px;
 }
 
-/* .bgGuides {
-    background: url(/assets/images/arribaguides.jpg) center top no-repeat,
-        url(/assets/images/abajo.jpg) center bottom no-repeat;
-    background-size: contain;
-    max-width: 1456px;
-    margin: auto;
-} */
-
 .bgGuides {
     background: url(/assets/images/wiki_guide_bg.jpg) top center no-repeat #0f0b0a;
     background-size: 100% auto;
@@ -698,16 +690,16 @@ button:hover {
 }
 
 .bgBottom {
-    background: url(/assets/images/abajo.jpg) center bottom no-repeat;
-    background-size: cover;
+    background: url(/assets/images/abajo.webp) center bottom no-repeat;
+    background-size: 100%;
     max-width: 1456px;
     min-height: 900px;
     margin: auto;
 }
 
 .bgCharacters {
-    background: url(/assets/images/arribaguides.jpg) center top no-repeat;
-    background-size: cover;
+    background: url(/assets/images/arribaguides.webp) center top no-repeat;
+    background-size: 100%;
     min-height: 100vh;
     margin: auto;
 }
@@ -762,4 +754,108 @@ button:hover {
 
 .active {
     z-index: -1;
+}
+
+
+.paper-guide {
+    position: relative;
+}
+
+.paper-guide::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: -150px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background-image: url(/assets/images/wiki-before.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+.vs-btn:after {
+    bottom: 0;
+    right: 0;
+    border-right: 2px solid #040612;
+    border-bottom: 2px solid #040612;
+}
+
+.vs-btn:before {
+    left: 0;
+    top: 0;
+    border-top: 2px solid #040612;
+    border-left: 2px solid #040612;
+}
+
+.vs-btn:after,
+.vs-btn:before {
+    content: '';
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    position: absolute;
+    background-color: #040612;
+    -webkit-transition: all ease 0.4s;
+    transition: all ease 0.4s;
+    border-radius: 7px;
+    z-index: -1;
+}
+
+.vs-btn {
+    border: none;
+    display: inline-block;
+    background-color: #0b133e;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 19.5px 40px;
+    line-height: 1;
+    border-radius: 7px 15px 7px 15px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: color 0.4s, background-color 0.4s, border-radius 0.4s;
+    transition: color 0.4s, background-color 0.4s, border-radius 0.4s;
+}
+
+.vs-btn:hover:after,
+.vs-btn:hover:before {
+    width: 30%;
+    height: 50%;
+    background-color: transparent;
+    border-color: #FFC010;
+}
+
+.vs-btn:hover:after {
+    border-radius: 0 0 7px 0;
+}
+
+.vs-btn:hover:before {
+    border-radius: 7px 0 0 0;
+}
+
+.vs-btn:hover:after,
+.vs-btn:hover:before {
+    width: 30%;
+    height: 50%;
+    background-color: transparent;
+    border-color: #0A97FE;
+}
+
+.map-item {
+    background-color: #39282654;
+    border-radius: 5px;
+    transition: all 0.3s;
+
+    img {
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 10px #62221c;
+
+        img {
+            transform: scale(105%);
+        }
+    }
 }
