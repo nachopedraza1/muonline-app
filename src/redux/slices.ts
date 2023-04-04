@@ -1,17 +1,21 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { guideList } from '../helpers';
 import { GuideType } from '../interfaces/interfaces';
 
-const initialState: GuideType[] = guideList;
+interface Guides {
+    guide: GuideType | {}
+}
+
+const initialState: Guides = {
+    guide: guideList[0]
+}
 
 export const guidesSlice = createSlice({
     name: 'guides',
-    initialState: {
-        guideList
-    },
+    initialState,
     reducers: {
-        setGuides: (state, { payload }: PayloadAction<GuideType[]>) => {
-            state.guideList = payload;
+        setGuides: (state, { payload }: PayloadAction<GuideType | {}>) => {
+            state.guide = payload
         },
     },
 })
