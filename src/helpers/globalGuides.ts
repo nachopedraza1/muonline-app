@@ -93,26 +93,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],
@@ -153,26 +153,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],
@@ -214,16 +214,16 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
         ],
@@ -265,16 +265,16 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
         ],
@@ -315,26 +315,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],
@@ -375,26 +375,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],
@@ -435,26 +435,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],
@@ -829,26 +829,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],
@@ -888,26 +888,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],
@@ -980,26 +980,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],
@@ -1073,26 +1073,26 @@ export const globalGuides: Guide[] = [
             },
             {
                 itemName: "Jewel of Soul",
-                photoUrl: "/assets/images/drop/JewelOfSoul.webp",
+                photoUrl: "/assets/images/drop/soul.webp",
                 quantity: 1
             }, {
                 itemName: "Jewel of Bless",
-                photoUrl: "/assets/images/drop/JewelOfBless.webp",
+                photoUrl: "/assets/images/drop/bless.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Chaos",
-                photoUrl: "/assets/images/drop/JewelOfChaos.webp",
+                photoUrl: "/assets/images/drop/chaos.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Life",
-                photoUrl: "/assets/images/drop/JewelOfLife.webp",
+                photoUrl: "/assets/images/drop/life.webp",
                 quantity: 1
             },
             {
                 itemName: "Jewel of Creation",
-                photoUrl: "/assets/images/drop/JewelOfCreation.webp",
+                photoUrl: "/assets/images/drop/creation.webp",
                 quantity: 1
             },
         ],

@@ -7,18 +7,6 @@ export const MapContainer: React.FC = () => {
 
     return (
         <Grid item xs={6} position="relative" mt={2}>
-            <img
-                src={maps?.photoUrl}
-                width="120px"
-                alt={`${maps?.mapName} protocol mu`}
-                style={{
-                    position: "absolute",
-                    top: 90,
-                    left: 0,
-                    right: 0,
-                    margin: "auto"
-                }}
-            />
             <img src={maps?.photoUrl} alt={`${name} protocol mu`} width="100%" />
         </Grid>
     );
