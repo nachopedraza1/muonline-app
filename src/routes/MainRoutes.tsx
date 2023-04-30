@@ -13,7 +13,6 @@ export const MainRoutes = () => {
             <Routes>
                 <Route path="/" element={< HomePage />} />
                 <Route path="/guides/:guideId" element={<ViewGuide />} />
-                <Route path="/characters" element={<CharacterPage />} />
                 <Route path="/*" element={<Navigate to="/" replace={true} />} />
             </Routes>
         </>

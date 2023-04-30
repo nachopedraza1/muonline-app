@@ -4,6 +4,7 @@ export * from "./TitleMob";
 export * from "./MobStats";
 export * from "./GuideEvent";
 export * from "./ShareGuide";
+export * from "./ModalBuild";
 export * from "./ServerInfo";
 export * from "./SearchGuide";
 export * from "./GuideMonster";

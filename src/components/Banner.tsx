@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { Container, Grid, Typography } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { ModalEventTimmer } from './ModalEventTimmer';
+import { globalGuides } from '../helpers/globalGuides';
 
 import Typewriter from 'typewriter-effect';
 
@@ -52,6 +53,7 @@ export const Banner = () => {
                     height: "280px",
                 }}>
                 <Grid item>
+                    <Typography variant='h5' position="absolute" top={35} left={50} fontWeight={600} color="green" > {globalGuides.length} </Typography>
                     <Typography
                         className='eventText'
                         variant='h3'

@@ -133,6 +133,15 @@ button:hover {
                 }
             }
         }
+        &:nth-child(5) {
+            a {
+                &:hover {
+                    .fab {
+                        color: #FF0000;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -389,7 +398,7 @@ button:hover {
     height: 86px;
     left: 50%;
     margin-left: -574px;
-    top: 10px
+    top: 10px;
 }
 
 .tabs-content {
@@ -404,7 +413,8 @@ button:hover {
 }
 
 .slideTabs {
-    position: relative
+    position: relative;
+    z-index: 1;
 }
 
 .slideContent {
@@ -424,7 +434,26 @@ button:hover {
     left: -10px;
     top: 180px;
     transition: .2s all ease;
-    cursor: pointer;
+    cursor: url(../assets/cursor/CursorPush.png), auto;
+}
+
+.hero-build {
+    position: absolute;
+    left: 30px;
+    top: 350px;
+    transition: .2s all ease;
+    cursor: url(../assets/cursor/CursorPush.png), auto;
+}
+
+.hero-build::after {
+    content: "BUILD";
+    color: white;
+    font-size: 22px;
+    margin-left: 14px;
+}
+
+.hero-build:hover {
+    transform: scale(1.1);
 }
 
 .hero-trailer:hover {
@@ -858,4 +887,20 @@ button:hover {
             transform: scale(105%);
         }
     }
+}
+
+
+.modal-container {
+    position: relative;
+}
+
+.modal-container::after {
+    content: "";
+    position: absolute;
+    background: url(/assets/images/line.png) no-repeat;
+    width: 1148px;
+    height: 86px;
+    left: 50%;
+    margin-left: -574px;
+    top: -40px;
 }

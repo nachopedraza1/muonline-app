@@ -23,7 +23,7 @@ export const DropMob: React.FC = () => {
                 </Typography>
             </Grid>
             {drop?.map(({ itemName, photoUrl, itemsBox }) => (
-                <Tooltip placement='right' title={
+                <Tooltip key={itemName} placement='right' title={
                     itemName.includes("Kundun") &&
                     <TooltipKundun itemsBox={itemsBox} />
                 }>

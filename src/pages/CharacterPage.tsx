@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { characterStats } from "../helpers";
 
-import { MainLayout } from "../layout/MainLayout";
-import { SliderCharacters } from "../components";
+import { ModalBuild, SliderCharacters } from "../components";
 
 import { SliderHero } from '../interfaces/interfaces';
 
@@ -10,17 +9,21 @@ export const CharacterPage: React.FC = () => {
 
     const [heroDisplay, setHeroDisplay] = useState<SliderHero>(characterStats[0]);
 
-    const { id, name, heroUrl, heroClass, info, stats } = heroDisplay;
+    const { id, name, heroUrl, heroClass, info, stats, builds } = heroDisplay;
 
     const handleTouchSlider = (id: number) => {
         const heroInfo = characterStats.find(hero => hero.id === id) as SliderHero;
         setHeroDisplay(heroInfo);
     }
 
+    const [openModal, setOpenModal] = useState(false);
+    const handleOpen = () => setOpenModal(true);
+    const handleClose = () => setOpenModal(false);
+
     return (
-        <MainLayout className="bgBottom">
+        <>
             <SliderCharacters handleTouchSlider={handleTouchSlider} />
-            <div className="slider slider-for slick-initialized slick-slider">
+            <div className="slider slider-for slick-initialized slick-slider" style={{ marginBottom: "30px" }}>
                 <div className="slick-list draggable">
                     <div className="slick-track" style={{ opacity: 1, width: "100%" }}>
                         <div
@@ -58,10 +61,13 @@ export const CharacterPage: React.FC = () => {
                                                 <img
                                                     src="https://x500.paragon-mu.com/assets/eos/images/hero-trailer.png"
                                                     alt="Hero Trailer"
-                                                    className="open_modal hero-trailer"
+                                                    className="hero-trailer"
                                                     data-title="Dark Knight Presentation"
                                                     data-video="7StU88B3JVk"
                                                 />
+                                            </div>
+                                            <div className='hero-build' onClick={handleOpen}>
+                                                <img src="/assets/images/build.png" alt="Build protocol mu" width={80} />
                                             </div>
                                         </div>
                                         <div className="slideInfo">
@@ -89,6 +95,7 @@ export const CharacterPage: React.FC = () => {
                     </div>
                 </div>
             </div>
-        </MainLayout >
+            <ModalBuild openModal={openModal} handleClose={handleClose} builds={builds} />
+        </ >
     )
 }

@@ -1,9 +1,10 @@
-import { SetStateAction } from 'react';
+import { MouseEventHandler, SetStateAction } from 'react';
 
 export interface ModalType {
     openModal: boolean,
-    handleClose: (value: SetStateAction<boolean>) => void,
+    handleClose: (value: SetStateAction<boolean>) => void
     handleOpen?: (value: SetStateAction<boolean>) => void,
+    builds?: Builds[]
 }
 
 export interface TabPanelProps {
@@ -27,6 +28,14 @@ export interface SliderHero {
     heroClass: string,
     info: string,
     stats: StatCharacter[]
+    builds?: Builds[]
+}
+
+export interface Builds {
+    type: string,
+    info: string,
+    imgStats: string,
+    imgTree: string,
 }
 
 export interface SetDisplayHero {

@@ -43,7 +43,6 @@ export const SliderCharacters: React.FC<SetDisplayHero> = ({ handleTouchSlider }
                     </div>
                 ))}
             </Slider>
-           {/*  <span className="line"></span> */}
         </>
     )
 }

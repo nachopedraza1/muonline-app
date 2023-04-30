@@ -12,7 +12,7 @@ const navLinks = [
     { id: 2, text: "SEMIBOSSES", type: "semiboss", path: "" },
     { id: 3, text: "BOSSES", type: "boss", path: "" },
     { id: 4, text: "EVENTOS", type: "events", path: "" },
-    { id: 5, text: "MAPAS", type: "mapas", path: "/guides/23" },
+    /* { id: 5, text: "MAPAS", type: "mapas", path: "/guides/23" }, */
 ];
 
 
@@ -53,7 +53,7 @@ export const Navbar: React.FC = () => {
                         </Grid>
 
                         <Grid item xs={2} textAlign="end">
-                            <Button variant="outlined">
+                            <Button variant="outlined" href='https://protocolmuonline.com/' target='_blank'>
                                 juega ahora
                             </Button>
                         </Grid>

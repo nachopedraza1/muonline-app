@@ -26,15 +26,6 @@ const eventTimes = [
     { name: "Balrog", eventsTimes: ["20:30:00", "22:00:00"] },
     { name: "Rey del mu", eventsTimes: ["20:20:00", "23:40:00", "01:00:00"] },
     { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
-    { name: "Ferea", eventsTimes: ["07:00:00", "13:40:00"] },
 ];
 
 export const DailyTimmerEvent: React.FC = () => {

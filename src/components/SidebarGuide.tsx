@@ -129,7 +129,7 @@ export const SidebarGuide = () => {
                     </AccordionDetails>
                 </Accordion>
 
-                <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                {/*   <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
                     <AccordionSummary
                         expandIcon={<ExpandMore fontSize='large' />}
                     >
@@ -149,7 +149,7 @@ export const SidebarGuide = () => {
                             }
                         </List>
                     </AccordionDetails>
-                </Accordion>
+                </Accordion> */}
 
             </Grid>
         </>

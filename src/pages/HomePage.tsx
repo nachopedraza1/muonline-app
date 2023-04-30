@@ -4,6 +4,7 @@ import { MainLayout } from '../layout/MainLayout';
 import { Banner } from '../components/Banner';
 import { Box, Grid, Typography } from '@mui/material';
 import { ServerInfo } from '../components';
+import { CharacterPage } from './CharacterPage';
 
 
 export const HomePage: React.FC = () => {
@@ -13,23 +14,9 @@ export const HomePage: React.FC = () => {
             <Box textAlign="center">
                 <img src="/assets/images/scroll-icon.png" width="500px" />
             </Box>
-            <MainLayout className="bgBottom">
-                <Grid container justifyContent="space-between" spacing={5} pt={3}>
-                    <Grid item xs={4} className="middle-menu">
-                        <Typography>DROP LIST</Typography>
-                        <img src="/assets/images/img1.png" className="middle-menu__img" alt="" width="100%" />
-                    </Grid>
-                    <Grid item xs={4} className="middle-menu" component={Link} to="/characters">
-                        <Typography>CHARACTER</Typography>
-                        <img src="/assets/images/img2.png" className="middle-menu__img" alt="" width="100%" />
-                    </Grid>
-                    <Grid item xs={4} className="middle-menu">
-                        <Typography>SUPPORT</Typography>
-                        <img src="/assets/images/img3.png" className="middle-menu__img" alt="" width="100%" />
-                    </Grid>
-                </Grid>
-                <ServerInfo />
-            </MainLayout >
+            <MainLayout className='bgBottom'>
+                <CharacterPage />
+            </MainLayout>
         </>
     )
 }
