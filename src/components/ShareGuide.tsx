@@ -2,6 +2,8 @@ import { Grid, Typography, Tooltip, IconButton, Alert, Stack, Button } from '@mu
 import { Share } from '@mui/icons-material';
 import { useState } from 'react';
 
+//share
+
 export const ShareGuide: React.FC = () => {
 
     const [copyText, setCopyText] = useState<string>("Compartir Guia");
